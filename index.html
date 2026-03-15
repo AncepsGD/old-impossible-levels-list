@@ -74,10 +74,9 @@
         aria-label="Filter levels by verification status"
       >
         <option value="all">All Statuses</option>
-        <option value="verified">Verified / 100%</option>
+        <option value="verified">Verified</option>
         <option value="unverified">Unverified</option>
       </select>
-      <!-- Rating filter removed -->
       <select id="filterDuo" aria-label="Filter levels by player mode">
         <option value="all">Solo &amp; 2-Player</option>
         <option value="solo">Solo Only</option>
@@ -90,6 +89,19 @@
         aria-label="Toggle sort order by rank"
       >
         ▲ RANK
+      </button>
+      <button
+        class="btn-sort"
+        id="editBtn"
+        onclick="openEditMode()"
+        aria-label="Open list editor"
+        style="
+          background: var(--purple);
+          color: #fff;
+          border-color: var(--purple);
+        "
+      >
+        ✎ EDIT
       </button>
     </div>
 
@@ -133,14 +145,33 @@
       </div>
     </div>
 
-    <!-- Edit Mode Overlay -->
     <div class="edit-overlay" id="editOverlay">
       <div class="edit-bar">
         <span class="edit-bar-title">List Editor</span>
         <span class="edit-bar-count" id="editCount">0 levels</span>
-        <span class="edit-bar-hint">Click a row to expand fields</span>
+        <div class="edit-search-wrap">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.35-4.35" />
+          </svg>
+          <input
+            type="text"
+            id="editSearch"
+            placeholder="Filter levels…"
+            aria-label="Filter levels in editor"
+          />
+        </div>
         <button class="edit-action-btn add" onclick="addLevel()">
           + Add Level
+        </button>
+        <button class="edit-action-btn copy" onclick="importJSON()">
+          Import JSON
         </button>
         <button class="edit-action-btn copy" onclick="copyJSON()">
           Copy JSON
