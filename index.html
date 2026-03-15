@@ -960,8 +960,8 @@
       const dateCache = new Map();
       function formatDate(d) {
         if (dateCache.has(d)) return dateCache.get(d);
-        if (!d || typeof d !== 'string' || d.split("-").length !== 3) {
-            return "Invalid date";
+        if (!d || typeof d !== "string" || d.split("-").length !== 3) {
+          return "Invalid date";
         }
         const [y, m, day] = d.split("-");
         const result = `${MONTHS[+m - 1]} ${+day}, ${y}`;
@@ -1156,10 +1156,30 @@
         if (!lvl) return;
 
         lastModalRank = rank;
+        let thumb = "";
+        if (lvl.thumbnail) {
+          thumb = `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`;
+        } else {
+          let fallbackId = "";
+          if (lvl.ids && lvl.ids.length) {
+            const raw = lvl.ids[0].id
+              ? String(lvl.ids[0].id)
+              : String(lvl.ids[0]);
+            const m = raw.match(/^\d+/);
+            if (m) fallbackId = m[0];
+          } else if (lvl.id) {
+            const m = String(lvl.id).match(/^\d+/);
+            if (m) fallbackId = m[0];
+          }
 
-        const thumb = lvl.thumbnail
-          ? `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`
-          : `<div style="font-size:50px"></div>`;
+          if (fallbackId) {
+            const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}`;
+
+            thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div style=\\'font-size:50px\\'></div>'">`;
+          } else {
+            thumb = `<div style="font-size:50px"></div>`;
+          }
+        }
         const wrPct = lvl.worldRecord ? lvl.worldRecord.percentage : null;
         const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
         const wr = wrPct === 100 ? "100%" : !wrPct ? "None" : wrPct + "%";
