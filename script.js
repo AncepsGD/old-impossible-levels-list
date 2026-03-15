@@ -33,7 +33,6 @@ function cacheDOM() {
   dom.levelList = document.getElementById("levelList");
   dom.searchInput = document.getElementById("searchInput");
   dom.filterStatus = document.getElementById("filterStatus");
-  dom.filterRate = document.getElementById("filterRate");
   dom.filterDuo = document.getElementById("filterDuo");
   dom.sortBtn = document.getElementById("sortBtn");
   dom.statVerified = document.getElementById("statVerified");
@@ -236,7 +235,6 @@ function updateStats() {
 function applyFilters() {
   const q = dom.searchInput.value.toLowerCase();
   const status = dom.filterStatus.value;
-  const rate = dom.filterRate.value;
   const duo = dom.filterDuo.value;
 
   filtered = LEVELS.filter((lvl) => {
@@ -249,7 +247,6 @@ function applyFilters() {
       return false;
     if (status === "verified" && !lvl.verified) return false;
     if (status === "unverified" && lvl.verified) return false;
-    if (rate !== "all" && lvl.rateStatus !== rate) return false;
     if (duo === "solo" && lvl.twoPlayer) return false;
     if (duo === "duo" && !lvl.twoPlayer) return false;
     return true;
@@ -678,7 +675,7 @@ function init() {
     searchDebounceTimer = setTimeout(applyFilters, 250);
   });
 
-  [dom.filterStatus, dom.filterRate, dom.filterDuo].forEach((el) => {
+  [dom.filterStatus, dom.filterDuo].forEach((el) => {
     el.addEventListener("change", applyFilters);
   });
 
