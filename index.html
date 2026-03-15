@@ -960,6 +960,9 @@
       const dateCache = new Map();
       function formatDate(d) {
         if (dateCache.has(d)) return dateCache.get(d);
+        if (!d || typeof d !== 'string' || d.split("-").length !== 3) {
+            return "Invalid date";
+        }
         const [y, m, day] = d.split("-");
         const result = `${MONTHS[+m - 1]} ${+day}, ${y}`;
         dateCache.set(d, result);
