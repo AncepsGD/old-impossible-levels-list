@@ -21,13 +21,15 @@
       ],
       "worldRecord": {
         "percentage": 0.04,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-04-15",
       "creators": ["IcEDCave"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 2,
@@ -46,13 +48,15 @@
       ],
       "worldRecord": {
         "percentage": 0.02,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-04",
       "creators": ["gdmiracle"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 3,
@@ -71,13 +75,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-03-12",
       "creators": ["GionniBlood"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 4,
@@ -100,13 +106,15 @@
       ],
       "worldRecord": {
         "percentage": 0.89,
-        "holder": "Anceps"
+        "holder": "Anceps",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-09-26",
       "creators": ["IcEDCave"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 5,
@@ -121,13 +129,15 @@
       ],
       "worldRecord": {
         "percentage": 8.32,
-        "holder": "Nomas"
+        "holder": "Nomas",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-15",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 6,
@@ -146,13 +156,15 @@
       ],
       "worldRecord": {
         "percentage": 1.0,
-        "holder": "AsumehRocks"
+        "holder": "AsumehRocks",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-12",
       "creators": ["Cyrillic"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 7,
@@ -171,13 +183,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-01",
       "creators": ["DiosselMusic"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 8,
@@ -192,13 +206,15 @@
       ],
       "worldRecord": {
         "percentage": 42.7,
-        "holder": "seels55"
+        "holder": "seels55",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-09-19",
       "creators": ["Cyrillic", "TheRealSailent"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 9,
@@ -217,13 +233,15 @@
       ],
       "worldRecord": {
         "percentage": 5.48,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-22",
       "creators": ["IIZebII"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 10,
@@ -238,13 +256,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-12-29",
       "creators": ["IcEDCave"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 11,
@@ -267,13 +287,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-28",
       "creators": ["IIZebII"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 12,
@@ -292,13 +314,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-05-09",
       "creators": ["Nox Eternis"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 13,
@@ -321,13 +345,15 @@
       ],
       "worldRecord": {
         "percentage": 5.0,
-        "holder": "Edoppd"
+        "holder": "Edoppd",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-01",
       "creators": ["gw roadmc2"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 14,
@@ -346,13 +372,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-05-22",
       "creators": ["youomoples"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 15,
@@ -371,13 +399,15 @@
       ],
       "worldRecord": {
         "percentage": 9.07,
-        "holder": "ssent"
+        "holder": "ssent",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-10",
       "creators": ["Plutonium238"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 16,
@@ -400,13 +430,15 @@
       ],
       "worldRecord": {
         "percentage": 2.2,
-        "holder": "HaloZombies"
+        "holder": "HaloZombies",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-07-31",
       "creators": ["gdmiracle"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 17,
@@ -425,13 +457,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-03",
       "creators": ["IIIspitfireIII"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 18,
@@ -450,13 +484,15 @@
       ],
       "worldRecord": {
         "percentage": 24.2,
-        "holder": "Hipo"
+        "holder": "Hipo",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-17",
       "creators": ["hhuuko", "cairillic"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 19,
@@ -471,13 +507,15 @@
       ],
       "worldRecord": {
         "percentage": 3.39,
-        "holder": "HaloZombies"
+        "holder": "HaloZombies",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-07-28",
       "creators": ["Nautilus2K"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 20,
@@ -496,13 +534,15 @@
       ],
       "worldRecord": {
         "percentage": 8.0,
-        "holder": "Emp"
+        "holder": "Emp",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-18",
       "creators": ["danmaster007"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 21,
@@ -521,13 +561,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-05-16",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 22,
@@ -550,13 +592,15 @@
       ],
       "worldRecord": {
         "percentage": 19.4,
-        "holder": "Emp"
+        "holder": "Emp",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-21",
       "creators": ["KaotikJumper"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 23,
@@ -575,13 +619,15 @@
       ],
       "worldRecord": {
         "percentage": 47.14,
-        "holder": "Hover"
+        "holder": "Hover",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-08-05",
       "creators": ["KaotikJumper"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 24,
@@ -600,13 +646,15 @@
       ],
       "worldRecord": {
         "percentage": 30.97,
-        "holder": "TosGD"
+        "holder": "TosGD",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-03-07",
       "creators": ["Nox Eternis"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 25,
@@ -621,13 +669,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-14",
       "creators": ["1CicL3"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 26,
@@ -646,13 +696,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-08-31",
       "creators": ["IcEDCave"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 27,
@@ -671,13 +723,15 @@
       ],
       "worldRecord": {
         "percentage": 26.38,
-        "holder": "Esoteric Hydra"
+        "holder": "Esoteric Hydra",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-09-07",
       "creators": ["KaotikJumper"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 28,
@@ -696,13 +750,15 @@
       ],
       "worldRecord": {
         "percentage": 8.07,
-        "holder": "juipukka69"
+        "holder": "juipukka69",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-04-28",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 29,
@@ -721,13 +777,15 @@
       ],
       "worldRecord": {
         "percentage": 3.62,
-        "holder": "juipukka69"
+        "holder": "juipukka69",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-16",
       "creators": ["youomoples"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 30,
@@ -746,13 +804,15 @@
       ],
       "worldRecord": {
         "percentage": 9.41,
-        "holder": "Anceps"
+        "holder": "Anceps",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-01",
       "creators": ["KaotikJumper"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 31,
@@ -771,13 +831,15 @@
       ],
       "worldRecord": {
         "percentage": 12.94,
-        "holder": "Sapphuby"
+        "holder": "Sapphuby",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-11",
       "creators": ["BuzzStorm"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 32,
@@ -796,13 +858,15 @@
       ],
       "worldRecord": {
         "percentage": 7.67,
-        "holder": "axellssl"
+        "holder": "axellssl",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-18",
       "creators": ["DrShai"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 33,
@@ -821,13 +885,15 @@
       ],
       "worldRecord": {
         "percentage": 12.0,
-        "holder": "xLunaires"
+        "holder": "xLunaires",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-07",
       "creators": ["1CicL3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 34,
@@ -846,13 +912,15 @@
       ],
       "worldRecord": {
         "percentage": 36.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-13",
       "creators": ["Saria"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 35,
@@ -871,13 +939,15 @@
       ],
       "worldRecord": {
         "percentage": 7.0,
-        "holder": "IAmNot60Hz"
+        "holder": "IAmNot60Hz",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-05-26",
       "creators": ["TheRealSailen"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 36,
@@ -896,13 +966,15 @@
       ],
       "worldRecord": {
         "percentage": 20.0,
-        "holder": "LucyIsSilly"
+        "holder": "LucyIsSilly",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-07-03",
       "creators": ["hhuuko"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 37,
@@ -917,13 +989,15 @@
       ],
       "worldRecord": {
         "percentage": 53.0,
-        "holder": "PureL"
+        "holder": "PureL",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-06",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 38,
@@ -942,13 +1016,15 @@
       ],
       "worldRecord": {
         "percentage": 11.0,
-        "holder": "Jevan"
+        "holder": "Jevan",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-24",
       "creators": ["hieroglyphic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 39,
@@ -967,13 +1043,15 @@
       ],
       "worldRecord": {
         "percentage": 10.0,
-        "holder": "juipukka69"
+        "holder": "juipukka69",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-03-01",
       "creators": ["danmaster007"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 40,
@@ -992,13 +1070,15 @@
       ],
       "worldRecord": {
         "percentage": 14.0,
-        "holder": "Weiwot"
+        "holder": "Weiwot",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-04-16",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 41,
@@ -1013,13 +1093,15 @@
       ],
       "worldRecord": {
         "percentage": 15.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-13",
       "creators": ["Koyomi24"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 42,
@@ -1038,13 +1120,15 @@
       ],
       "worldRecord": {
         "percentage": 11.0,
-        "holder": "Koozoo2k"
+        "holder": "Koozoo2k",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-09-04",
       "creators": ["CryptiaN"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 43,
@@ -1059,13 +1143,15 @@
       ],
       "worldRecord": {
         "percentage": 23.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-29",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 44,
@@ -1080,13 +1166,15 @@
       ],
       "worldRecord": {
         "percentage": 4.0,
-        "holder": "Limon4ik2812"
+        "holder": "Limon4ik2812",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-06-26",
       "creators": ["Aason"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 45,
@@ -1105,13 +1193,15 @@
       ],
       "worldRecord": {
         "percentage": 10.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-27",
       "creators": ["xJames"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 46,
@@ -1126,13 +1216,15 @@
       ],
       "worldRecord": {
         "percentage": 51.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-06-17",
       "creators": ["danmaster007", "SoulsTRK"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 47,
@@ -1151,13 +1243,15 @@
       ],
       "worldRecord": {
         "percentage": 28.44,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-16",
       "creators": ["Shin3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 48,
@@ -1172,13 +1266,15 @@
       ],
       "worldRecord": {
         "percentage": 26.0,
-        "holder": "sobot"
+        "holder": "sobot",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["TheRealSailent"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 49,
@@ -1193,13 +1289,15 @@
       ],
       "worldRecord": {
         "percentage": 36.0,
-        "holder": "Koozoo2k"
+        "holder": "Koozoo2k",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["AniFaulscabek"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 50,
@@ -1214,13 +1312,15 @@
       ],
       "worldRecord": {
         "percentage": 18.0,
-        "holder": "Rqn"
+        "holder": "Rqn",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["HiloNubs"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 51,
@@ -1235,13 +1335,15 @@
       ],
       "worldRecord": {
         "percentage": 23.0,
-        "holder": "TheGeensooX"
+        "holder": "TheGeensooX",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-04",
       "creators": ["hhuuko"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 52,
@@ -1256,13 +1358,15 @@
       ],
       "worldRecord": {
         "percentage": 43.0,
-        "holder": "Sashozz"
+        "holder": "Sashozz",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["MrRonan"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 53,
@@ -1281,13 +1385,15 @@
       ],
       "worldRecord": {
         "percentage": 36.0,
-        "holder": "StormBlazer"
+        "holder": "StormBlazer",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-05-27",
       "creators": ["Riot"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 54,
@@ -1306,13 +1412,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-04-20",
       "creators": ["Optic Sunflow"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 55,
@@ -1327,13 +1435,15 @@
       ],
       "worldRecord": {
         "percentage": 16.0,
-        "holder": "Cuack"
+        "holder": "Cuack",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Kerploosh"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 56,
@@ -1352,13 +1462,15 @@
       ],
       "worldRecord": {
         "percentage": 21.0,
-        "holder": "Achlys"
+        "holder": "Achlys",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-??-??",
       "creators": ["xZach2002"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 57,
@@ -1377,13 +1489,15 @@
       ],
       "worldRecord": {
         "percentage": 66.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-14",
       "creators": ["danmaster007", "Zobros"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 58,
@@ -1398,13 +1512,15 @@
       ],
       "worldRecord": {
         "percentage": 9.0,
-        "holder": "Cuack"
+        "holder": "Cuack",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["cosmokobold"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 59,
@@ -1419,13 +1535,15 @@
       ],
       "worldRecord": {
         "percentage": 10.0,
-        "holder": "Rawre"
+        "holder": "Rawre",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-22",
       "creators": ["NoeTuka"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 60,
@@ -1440,13 +1558,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "a3dus"
+        "holder": "a3dus",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-22",
       "creators": ["Nick24"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 61,
@@ -1461,13 +1581,15 @@
       ],
       "worldRecord": {
         "percentage": 46.0,
-        "holder": "Hipo"
+        "holder": "Hipo",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-06-18",
       "creators": ["Kylra"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 62,
@@ -1486,13 +1608,15 @@
       ],
       "worldRecord": {
         "percentage": 90.0,
-        "holder": "nensa"
+        "holder": "nensa",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-07-04",
       "creators": ["Dyson9"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 63,
@@ -1511,13 +1635,15 @@
       ],
       "worldRecord": {
         "percentage": 34.0,
-        "holder": "sobot"
+        "holder": "sobot",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Acrk0"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 64,
@@ -1536,13 +1662,15 @@
       ],
       "worldRecord": {
         "percentage": 30.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-15",
       "creators": ["Zephyruz"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 65,
@@ -1557,13 +1685,15 @@
       ],
       "worldRecord": {
         "percentage": 48.0,
-        "holder": "luminovsky"
+        "holder": "luminovsky",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-10",
       "creators": ["GeoNinjaX17"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 66,
@@ -1578,13 +1708,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Whizkid05"
+        "holder": "Whizkid05",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-11-01",
       "creators": ["TheRealSailent"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 67,
@@ -1599,13 +1731,15 @@
       ],
       "worldRecord": {
         "percentage": 90.0,
-        "holder": "DankDrew"
+        "holder": "DankDrew",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-03-14",
       "creators": ["Benjamaster7"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 68,
@@ -1620,13 +1754,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Zoink"
+        "holder": "Zoink",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2017-01-13",
       "creators": ["ViPriN", "Riot"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 69,
@@ -1645,13 +1781,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "paqoe"
+        "holder": "paqoe",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["DarkX", "Compendium"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 70,
@@ -1666,13 +1804,15 @@
       ],
       "worldRecord": {
         "percentage": 31.0,
-        "holder": "nensa"
+        "holder": "nensa",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["faren29"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 71,
@@ -1687,13 +1827,15 @@
       ],
       "worldRecord": {
         "percentage": 25.0,
-        "holder": "Cuack"
+        "holder": "Cuack",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["ViPriN", "Riot"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 72,
@@ -1708,13 +1850,15 @@
       ],
       "worldRecord": {
         "percentage": 44.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-07-04",
       "creators": ["DiaCreeper"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 73,
@@ -1729,13 +1873,15 @@
       ],
       "worldRecord": {
         "percentage": 13.0,
-        "holder": "Mewtwo557"
+        "holder": "Mewtwo557",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["HiloNubs"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 74,
@@ -1750,13 +1896,15 @@
       ],
       "worldRecord": {
         "percentage": 8.0,
-        "holder": "pohgii"
+        "holder": "pohgii",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["1CicL3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 75,
@@ -1771,13 +1919,15 @@
       ],
       "worldRecord": {
         "percentage": 16.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-15",
       "creators": ["Koopi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 76,
@@ -1792,13 +1942,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mewtwo557"
+        "holder": "Mewtwo557",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Electro2001", "Cypher"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 77,
@@ -1813,13 +1965,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-19",
       "creators": ["gdmiracle"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 78,
@@ -1838,13 +1992,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Sevant"
+        "holder": "Sevant",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-10-17",
       "creators": ["Soulax"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 79,
@@ -1859,13 +2015,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Koopi"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 80,
@@ -1880,13 +2038,15 @@
       ],
       "worldRecord": {
         "percentage": 23.0,
-        "holder": "azadanzan"
+        "holder": "azadanzan",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Zimnior12"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 81,
@@ -1901,13 +2061,15 @@
       ],
       "worldRecord": {
         "percentage": 31.0,
-        "holder": "Mentrillum"
+        "holder": "Mentrillum",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-16",
       "creators": ["dozen"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 82,
@@ -1922,13 +2084,15 @@
       ],
       "worldRecord": {
         "percentage": 33.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-25",
       "creators": ["PLAY 4075365"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 83,
@@ -1943,13 +2107,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Electro2001"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 84,
@@ -1964,13 +2130,15 @@
       ],
       "worldRecord": {
         "percentage": 14.0,
-        "holder": "HaloZombies"
+        "holder": "HaloZombies",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Taggis"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 85,
@@ -1985,13 +2153,15 @@
       ],
       "worldRecord": {
         "percentage": 87.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-03-01",
       "creators": ["Spectruh"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 86,
@@ -2006,13 +2176,15 @@
       ],
       "worldRecord": {
         "percentage": 60.0,
-        "holder": "Sizzli"
+        "holder": "Sizzli",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-04-06",
       "creators": ["PossibleJump"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 87,
@@ -2027,13 +2199,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "MostDefinitelyAlbert"
+        "holder": "MostDefinitelyAlbert",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2017-07-05",
       "creators": ["Manix648", "LazerBlitz", "knobbelboy"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 88,
@@ -2048,13 +2222,15 @@
       ],
       "worldRecord": {
         "percentage": 32.0,
-        "holder": "Circleguy78"
+        "holder": "Circleguy78",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-06",
       "creators": ["SeveranceD"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 89,
@@ -2069,13 +2245,15 @@
       ],
       "worldRecord": {
         "percentage": 58.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Piccolini"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 90,
@@ -2090,13 +2268,15 @@
       ],
       "worldRecord": {
         "percentage": 25.0,
-        "holder": "WatchPiggy"
+        "holder": "WatchPiggy",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-16",
       "creators": ["lfaker"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 91,
@@ -2111,13 +2291,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Sevant"
+        "holder": "Sevant",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Titan Channel"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 92,
@@ -2132,13 +2314,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "exsii"
+        "holder": "exsii",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-26",
       "creators": ["PLAY 4075365"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 93,
@@ -2157,13 +2341,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Atomic"
+        "holder": "Atomic",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-12-07",
       "creators": ["HidekiX"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 94,
@@ -2182,13 +2368,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GMDslur"
+        "holder": "GMDslur",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-10-22",
       "creators": ["ItzRetro", "GoldenCreep"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 95,
@@ -2203,13 +2391,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "conski"
+        "holder": "conski",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["DTheWolf"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 96,
@@ -2224,13 +2414,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "AidanTR"
+        "holder": "AidanTR",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["ICEDCave"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 97,
@@ -2249,13 +2441,15 @@
       ],
       "worldRecord": {
         "percentage": 26.0,
-        "holder": "DankDrew"
+        "holder": "DankDrew",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-06",
       "creators": ["JKM GD"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 98,
@@ -2270,13 +2464,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Tuggy75"
+        "holder": "Tuggy75",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["EnDerModzKiNG"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 99,
@@ -2295,13 +2491,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-27",
       "creators": ["MaJackO"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 100,
@@ -2316,13 +2514,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Kiseta"
+        "holder": "Kiseta",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-05-31",
       "creators": ["IIIspitfireIII"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 101,
@@ -2337,13 +2537,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Hipo"
+        "holder": "Hipo",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["ExoSkull7"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 102,
@@ -2358,13 +2560,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "enzbro"
+        "holder": "enzbro",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-12-30",
       "creators": ["PinchPeak5203"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 103,
@@ -2379,13 +2583,15 @@
       ],
       "worldRecord": {
         "percentage": 31.0,
-        "holder": "AkashicRecords"
+        "holder": "AkashicRecords",
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Cristian12905"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 104,
@@ -2404,13 +2610,15 @@
       ],
       "worldRecord": {
         "percentage": 38.0,
-        "holder": "WellNot"
+        "holder": "WellNot",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-21",
       "creators": ["TheRealSailen"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 105,
@@ -2425,13 +2633,15 @@
       ],
       "worldRecord": {
         "percentage": 60.0,
-        "holder": "WellNot"
+        "holder": "WellNot",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-06",
       "creators": ["KaotikJumper"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 106,
@@ -2450,13 +2660,15 @@
       ],
       "worldRecord": {
         "percentage": 80.0,
-        "holder": "vao"
+        "holder": "vao",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-10-16",
       "creators": ["KaotikJumper"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 107,
@@ -2475,13 +2687,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ywuChaos"
+        "holder": "ywuChaos",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-26",
       "creators": ["Noobas"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 108,
@@ -2500,13 +2714,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Luqualizer"
+        "holder": "Luqualizer",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-04-01",
       "creators": ["blackps2full"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 109,
@@ -2521,13 +2737,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SpeedyMuffin"
+        "holder": "SpeedyMuffin",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-05-12",
       "creators": ["Yoyo24"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 110,
@@ -2546,13 +2764,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "enzbro"
+        "holder": "enzbro",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-12-30",
       "creators": ["PinchPeak5203"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 111,
@@ -2567,13 +2787,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Tuggy75"
+        "holder": "Tuggy75",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-23",
       "creators": ["roadjunior"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 112,
@@ -2588,13 +2810,15 @@
       ],
       "worldRecord": {
         "percentage": 34.0,
-        "holder": "WatchPiggy"
+        "holder": "WatchPiggy",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-08-12",
       "creators": ["lunar758"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 113,
@@ -2613,13 +2837,15 @@
       ],
       "worldRecord": {
         "percentage": 35.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-10",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 114,
@@ -2634,13 +2860,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GeoDasher36"
+        "holder": "GeoDasher36",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-04-06",
       "creators": ["Nautilus2K"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 115,
@@ -2655,13 +2883,15 @@
       ],
       "worldRecord": {
         "percentage": 77.0,
-        "holder": "zhexyuh"
+        "holder": "zhexyuh",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-17",
       "creators": ["Zephyr"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 116,
@@ -2676,13 +2906,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Hipolaaa"
+        "holder": "Hipolaaa",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-11-21",
       "creators": ["Steel257"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 117,
@@ -2697,13 +2929,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "WatchPiggy"
+        "holder": "WatchPiggy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Kylra"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 118,
@@ -2718,13 +2952,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Chloie"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 119,
@@ -2743,13 +2979,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Stormfly"
+        "holder": "Stormfly",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-31",
       "creators": ["Sohn0924"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 120,
@@ -2764,13 +3002,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["TheRealSailent"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 121,
@@ -2785,13 +3025,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "eandis"
+        "holder": "eandis",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Ggb0y", "Riot", "Exenity"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 122,
@@ -2806,13 +3048,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mewtwo557"
+        "holder": "Mewtwo557",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Kast987"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 123,
@@ -2831,13 +3075,15 @@
       ],
       "worldRecord": {
         "percentage": 28.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-06-02",
       "creators": ["DefenderToiler"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 124,
@@ -2852,13 +3098,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "sunix"
+        "holder": "sunix",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-25",
       "creators": ["Cyclic"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 125,
@@ -2877,13 +3125,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-06-12",
       "creators": ["Xyriak"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 126,
@@ -2902,13 +3152,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ElEeek"
+        "holder": "ElEeek",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-07-09",
       "creators": ["Nick24"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 127,
@@ -2923,13 +3175,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mentrillum"
+        "holder": "Mentrillum",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-02-23",
       "creators": ["HiloNubs"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 128,
@@ -2948,13 +3202,15 @@
       ],
       "worldRecord": {
         "percentage": 11.48,
-        "holder": "Anceps"
+        "holder": "Anceps",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-01",
       "creators": ["faren29"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 129,
@@ -2969,13 +3225,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Lolzaru"
+        "holder": "Lolzaru",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-02-18",
       "creators": ["Majed"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 130,
@@ -2990,13 +3248,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Furaux"
+        "holder": "Furaux",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-05-27",
       "creators": ["GwRo3dBose"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 131,
@@ -3011,13 +3271,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mewtwo557"
+        "holder": "Mewtwo557",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-07-24",
       "creators": ["AEROSTATIK"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 132,
@@ -3032,13 +3294,15 @@
       ],
       "worldRecord": {
         "percentage": 78.0,
-        "holder": "xaura2k"
+        "holder": "xaura2k",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-16",
       "creators": ["Pain"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 133,
@@ -3053,13 +3317,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Metalface221"
+        "holder": "Metalface221",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2017-04-08",
       "creators": ["Yoyo24"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 134,
@@ -3078,13 +3344,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Hipo"
+        "holder": "Hipo",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-10-13",
       "creators": ["TheRealSailent"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 135,
@@ -3103,13 +3371,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Hipo"
+        "holder": "Hipo",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-20",
       "creators": ["Cyclic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 136,
@@ -3128,13 +3398,15 @@
       ],
       "worldRecord": {
         "percentage": 35.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "201?-??-??",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 137,
@@ -3149,13 +3421,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KPGDylan"
+        "holder": "KPGDylan",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Gw Illusion"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 138,
@@ -3174,13 +3448,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Sonic80"
+        "holder": "Sonic80",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-01",
       "creators": ["EnemyMOABs"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 139,
@@ -3195,13 +3471,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ButterFish"
+        "holder": "ButterFish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-10-29",
       "creators": ["Crimsion ICED"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 140,
@@ -3216,13 +3494,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Luqualizer"
+        "holder": "Luqualizer",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-09-03",
       "creators": ["DemonClown"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 141,
@@ -3237,13 +3517,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "WellNot"
+        "holder": "WellNot",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-12-24",
       "creators": ["planckLength"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 142,
@@ -3258,13 +3540,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "BensonGD"
+        "holder": "BensonGD",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-12",
       "creators": ["JJjo"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 143,
@@ -3279,13 +3563,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Stormfly"
+        "holder": "Stormfly",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-08",
       "creators": ["Sohn0924"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 144,
@@ -3300,13 +3586,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Stormfly"
+        "holder": "Stormfly",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-12",
       "creators": ["Sohn0924"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 145,
@@ -3325,13 +3613,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "lkwavs"
+        "holder": "lkwavs",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-02-28",
       "creators": ["RobBuck"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 146,
@@ -3346,13 +3636,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-18",
       "creators": ["Koopi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 147,
@@ -3367,13 +3659,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Motor8"
+        "holder": "Motor8",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-10",
       "creators": ["leena"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 148,
@@ -3392,13 +3686,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "WellNot"
+        "holder": "WellNot",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-08",
       "creators": ["Helpegasus"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 149,
@@ -3413,13 +3709,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Saturny"
+        "holder": "Saturny",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-31",
       "creators": ["Steel257"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 150,
@@ -3434,13 +3732,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "WellNot"
+        "holder": "WellNot",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-12",
       "creators": ["GMTSean"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 151,
@@ -3459,13 +3759,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "x2147"
+        "holder": "x2147",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-02-23",
       "creators": ["TgSaturne"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 152,
@@ -3480,13 +3782,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-09-04",
       "creators": ["PsychoManiac14"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 153,
@@ -3501,13 +3805,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Trusta"
+        "holder": "Trusta",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-08",
       "creators": ["Noobas"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 154,
@@ -3522,13 +3828,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Zylenox"
+        "holder": "Zylenox",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["FRF"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 155,
@@ -3543,13 +3851,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Xanii"
+        "holder": "Xanii",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-02-01",
       "creators": ["Koopi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 156,
@@ -3564,13 +3874,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "DankDrew"
+        "holder": "DankDrew",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-05-29",
       "creators": ["AnonIIExt"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 157,
@@ -3585,13 +3897,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "HaloZombies"
+        "holder": "HaloZombies",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-08-08",
       "creators": ["Kerploosh"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 158,
@@ -3606,13 +3920,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-06-25",
       "creators": ["iIPrototypeIi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 159,
@@ -3631,13 +3947,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-11-19",
       "creators": ["Koopi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 160,
@@ -3656,13 +3974,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GeometryJosh"
+        "holder": "GeometryJosh",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-04-26",
       "creators": ["Scrypy"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 161,
@@ -3677,13 +3997,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KumorY"
+        "holder": "KumorY",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["RenStep"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 162,
@@ -3698,13 +4020,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ButterFish"
+        "holder": "ButterFish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-02-05",
       "creators": ["Nautilus2K", "PainisCupcake"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 163,
@@ -3723,13 +4047,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KumorY"
+        "holder": "KumorY",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-13",
       "creators": ["JasusGames URG"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 164,
@@ -3744,13 +4070,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mentrillum"
+        "holder": "Mentrillum",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-01-03",
       "creators": ["dozen"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 165,
@@ -3769,13 +4097,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Jakercut"
+        "holder": "Jakercut",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-03",
       "creators": ["N1XO"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 166,
@@ -3790,13 +4120,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Glow"
+        "holder": "Glow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-27",
       "creators": ["MaJackO"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 167,
@@ -3811,13 +4143,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KumorY"
+        "holder": "KumorY",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-12-22",
       "creators": ["Arceans"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 168,
@@ -3832,13 +4166,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GDEDS"
+        "holder": "GDEDS",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["squirtlesurgeon"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 169,
@@ -3853,13 +4189,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Razzley"
+        "holder": "Razzley",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-04",
       "creators": ["MrPepsea"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 170,
@@ -3874,13 +4212,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Angel415"
+        "holder": "Angel415",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-??-??",
       "creators": ["Myomei"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 171,
@@ -3895,13 +4235,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Mufferasu"
+        "holder": "Mufferasu",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-07-06",
       "creators": ["officialpanda"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 172,
@@ -3916,13 +4258,15 @@
       ],
       "worldRecord": {
         "percentage": 47.0,
-        "holder": "steuniluver"
+        "holder": "steuniluver",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-03",
       "creators": ["VicesG"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 173,
@@ -3937,13 +4281,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Castro 13GD"
+        "holder": "Castro 13GD",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-02-16",
       "creators": ["Kamoflage"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 174,
@@ -3962,13 +4308,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SpeedyMuffin"
+        "holder": "SpeedyMuffin",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2017-01-??",
       "creators": ["Minus"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 175,
@@ -3987,13 +4335,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Motor8"
+        "holder": "Motor8",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-05-04",
       "creators": ["Cubatron3k"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 176,
@@ -4008,13 +4358,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SkyJax"
+        "holder": "SkyJax",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-02",
       "creators": ["ozpectro"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 177,
@@ -4029,13 +4381,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "HequinoX"
+        "holder": "HequinoX",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-10-26",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 178,
@@ -4050,13 +4404,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ButterFish"
+        "holder": "ButterFish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["PLAY 4075365"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 179,
@@ -4071,13 +4427,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GeometryJosh"
+        "holder": "GeometryJosh",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-08-15",
       "creators": ["Nautilus2K", "Optagonus"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 180,
@@ -4092,13 +4450,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Stormfly"
+        "holder": "Stormfly",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-24",
       "creators": ["Sohn0924"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 181,
@@ -4113,13 +4473,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Piracy"
+        "holder": "Piracy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-07-24",
       "creators": ["Geometry Mastrz0"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 182,
@@ -4134,13 +4496,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KumorY"
+        "holder": "KumorY",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-12-14",
       "creators": ["Nyxess Moon"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 183,
@@ -4155,13 +4519,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "TrueJumpy"
+        "holder": "TrueJumpy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-08-16",
       "creators": ["RESTLESS"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 184,
@@ -4176,13 +4542,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-20",
       "creators": ["GW JAENG"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 185,
@@ -4197,13 +4565,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "nSwish"
+        "holder": "nSwish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-07-16",
       "creators": ["Megadere"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 186,
@@ -4218,13 +4588,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SrGuillester"
+        "holder": "SrGuillester",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-10-11",
       "creators": ["saRy", "IIINePtunEIII"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 187,
@@ -4243,13 +4615,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-10-07",
       "creators": ["saRy"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 188,
@@ -4264,13 +4638,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "iBrow"
+        "holder": "iBrow",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-04-07",
       "creators": ["Critica"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 189,
@@ -4285,13 +4661,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Riot"
+        "holder": "Riot",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-10-18",
       "creators": ["CreeperMILK"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 190,
@@ -4306,13 +4684,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Riot"
+        "holder": "Riot",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-05-20",
       "creators": ["-roadbose-"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 191,
@@ -4327,13 +4707,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Giron"
+        "holder": "Giron",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Ggb0y", "Riot", "Exenity"],
       "twoPlayer": false,
-      "rateStatus": "Outdated Version"
+      "rateStatus": "Outdated Version",
+      "video": null
     },
     {
       "rank": 192,
@@ -4352,13 +4734,15 @@
       ],
       "worldRecord": {
         "percentage": 82.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-08-26",
       "creators": ["Flectx"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 193,
@@ -4373,13 +4757,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "snowspike"
+        "holder": "snowspike",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-04-20",
       "creators": ["-", "Jax"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 194,
@@ -4394,13 +4780,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-03-31",
       "creators": ["Step4enko", "ZorroZ Zet"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 195,
@@ -4415,13 +4803,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "GMDElite"
+        "holder": "GMDElite",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-09-29",
       "creators": ["IIINePtunEIII"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 196,
@@ -4436,13 +4826,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-17",
       "creators": ["Nagn"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 197,
@@ -4457,13 +4849,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Zobros"
+        "holder": "Zobros",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-04-10",
       "creators": ["blackp2sfull"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 198,
@@ -4482,13 +4876,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "monkley gd"
+        "holder": "monkley gd",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-27",
       "creators": ["roadjunior"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 199,
@@ -4503,13 +4899,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Elzeko"
+        "holder": "Elzeko",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-14",
       "creators": ["roadjunior"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 200,
@@ -4524,13 +4922,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Remy"
+        "holder": "Remy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Richinator"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 201,
@@ -4545,13 +4945,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Kian"
+        "holder": "Kian",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-09-08",
       "creators": ["nether"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 202,
@@ -4566,13 +4968,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "MetaManZ"
+        "holder": "MetaManZ",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-06-06",
       "creators": ["Megadere"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 203,
@@ -4587,13 +4991,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Sevant"
+        "holder": "Sevant",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-10",
       "creators": ["Titanium"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 204,
@@ -4608,13 +5014,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Koreaqwer"
+        "holder": "Koreaqwer",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-06-09",
       "creators": ["ozpectro"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 205,
@@ -4629,13 +5037,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Remy"
+        "holder": "Remy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-05-25",
       "creators": ["OrcaSN"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 206,
@@ -4650,13 +5060,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Zobros"
+        "holder": "Zobros",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["Cyclic"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 207,
@@ -4671,13 +5083,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "IceMush"
+        "holder": "IceMush",
+        "video": null
       },
       "verified": true,
       "dateUploaded": null,
       "creators": ["GW Mundo"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 208,
@@ -4692,13 +5106,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KrmaL"
+        "holder": "KrmaL",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-01-25",
       "creators": ["zaRIKU"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 209,
@@ -4717,13 +5133,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ButterFish"
+        "holder": "ButterFish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-03-13",
       "creators": ["GW mundo"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 210,
@@ -4738,13 +5156,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "SandwichGuy"
+        "holder": "SandwichGuy",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-18",
       "creators": ["GW mundo"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 211,
@@ -4759,13 +5179,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "RandomB"
+        "holder": "RandomB",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2013-10-20",
       "creators": ["-"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 212,
@@ -4780,13 +5202,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "3588000038602"
+        "holder": "3588000038602",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2013-08-25",
       "creators": ["jackey"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 213,
@@ -4801,13 +5225,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Knali2001"
+        "holder": "Knali2001",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2013-10-26",
       "creators": ["gomchi"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 214,
@@ -4826,13 +5252,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "선우제갈"
+        "holder": "\u00ec\u201e\u00a0\u00ec\u0161\u00b0\u00ec\u00a0\u0153\u00ea\u00b0\u02c6",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-11-02",
       "creators": ["Minus"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 215,
@@ -4847,13 +5275,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "LunarSIMG"
+        "holder": "LunarSIMG",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-07-09",
       "creators": ["IIINePtunEIII"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": 216,
@@ -4868,13 +5298,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "HequinoX"
+        "holder": "HequinoX",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-07-25",
       "creators": ["Megadere"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 217,
@@ -4889,13 +5321,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Knali2001"
+        "holder": "Knali2001",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2015-04-01",
       "creators": ["FD HenryCen0"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": 218,
@@ -4910,13 +5344,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Tricks33"
+        "holder": "Tricks33",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-11-27",
       "creators": ["MaJackO"],
       "twoPlayer": false,
-      "rateStatus": "Formerly Rated"
+      "rateStatus": "Formerly Rated",
+      "video": null
     },
     {
       "rank": 219,
@@ -4931,13 +5367,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ButterFish"
+        "holder": "ButterFish",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2013-10-27",
       "creators": ["s"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -4952,13 +5390,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "ChiefWoof"
+        "holder": "ChiefWoof",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-07-29",
       "creators": ["lolleo10"],
       "twoPlayer": false,
-      "rateStatus": "Rated"
+      "rateStatus": "Rated",
+      "video": null
     },
     {
       "rank": null,
@@ -4973,13 +5413,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-16",
       "creators": ["Kyrla"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -4994,13 +5436,15 @@
       ],
       "worldRecord": {
         "percentage": null,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5015,13 +5459,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-08-25",
       "creators": ["Cyrillic"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5040,13 +5486,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-11",
       "creators": ["animaniacs333"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5056,13 +5504,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5081,13 +5531,15 @@
       ],
       "worldRecord": {
         "percentage": 36.92,
-        "holder": "Anceps"
+        "holder": "Anceps",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "N/A",
       "creators": ["saRy"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5110,13 +5562,15 @@
       ],
       "worldRecord": {
         "percentage": 1.89,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-09",
       "creators": ["Maddirisa"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5139,13 +5593,15 @@
       ],
       "worldRecord": {
         "percentage": 1.89,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-24",
       "creators": ["Maddirisa"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5168,13 +5624,15 @@
       ],
       "worldRecord": {
         "percentage": 2.31,
-        "holder": "Zevzzz"
+        "holder": "Zevzzz",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-24",
       "creators": ["Maddirisa"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5193,13 +5651,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-04-07",
       "creators": ["Kylra"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5214,13 +5674,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5235,13 +5697,15 @@
       ],
       "worldRecord": {
         "percentage": 34.63,
-        "holder": "Syndrr"
+        "holder": "Syndrr",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-07-14",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5260,13 +5724,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-10",
       "creators": ["GDUsr5116"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5276,13 +5742,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 1.09,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5301,13 +5769,15 @@
       ],
       "worldRecord": {
         "percentage": 41.0,
-        "holder": "OdieTheGreat"
+        "holder": "OdieTheGreat",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-10",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5322,13 +5792,15 @@
       ],
       "worldRecord": {
         "percentage": 62.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-02",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5343,13 +5815,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "BeckettGD"
+        "holder": "BeckettGD",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2014-02-14",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5359,13 +5833,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5375,13 +5851,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5396,13 +5874,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5417,13 +5897,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5438,13 +5920,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2025-03-22",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5463,13 +5947,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-03-15",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5488,13 +5974,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-05-25",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5509,13 +5997,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-07-04",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5534,13 +6024,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-04",
       "creators": ["1CicL3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5555,13 +6047,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-02-20",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5576,13 +6070,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-05-23",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5601,13 +6097,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-19",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5622,13 +6120,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-08",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5647,13 +6147,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-30",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5668,13 +6170,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["EsisOfficial"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5693,13 +6197,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-13",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5714,13 +6220,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-06",
       "creators": ["profoxxer"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5735,13 +6243,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-10-19",
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5760,13 +6270,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-09",
       "creators": ["1CicL3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5781,13 +6293,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5806,13 +6320,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-25",
       "creators": ["1CicL3"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5827,13 +6343,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-04",
       "creators": ["1CicL3"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5848,13 +6366,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5873,13 +6393,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-17",
       "creators": ["1CicL3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5894,13 +6416,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-03-13",
       "creators": ["1CicL3"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5915,13 +6439,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5936,13 +6462,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5957,13 +6485,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5978,13 +6508,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -5999,13 +6531,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6020,13 +6554,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6036,13 +6572,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6052,13 +6590,15 @@
       "ids": [],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6077,13 +6617,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-22",
       "creators": ["MrMooDyH", "ItsSailentAgain", "MRforlod"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6102,13 +6644,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-10-08",
       "creators": ["Convindix"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6127,13 +6671,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["ShiN3"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6152,13 +6698,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["IAmGone"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6177,13 +6725,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["User ID: 671764"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6202,13 +6752,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["Small"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6227,13 +6779,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["OldNukleear"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6252,13 +6806,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": ["User ID: 194581"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6277,13 +6833,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6302,13 +6860,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6327,13 +6887,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6348,13 +6910,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6373,13 +6937,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6394,13 +6960,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6419,13 +6987,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6440,13 +7010,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6461,13 +7033,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6486,13 +7060,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6511,13 +7087,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-18",
       "creators": ["IUltraVenomI"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6532,13 +7110,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6553,13 +7133,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6574,13 +7156,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6595,13 +7179,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6616,13 +7202,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6637,13 +7225,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6662,13 +7252,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-05",
       "creators": ["Kylra"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6683,13 +7275,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6708,13 +7302,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-10-30",
       "creators": ["XaonGD"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6729,13 +7325,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-10-19",
       "creators": ["StylesIndo17"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6750,13 +7348,15 @@
       ],
       "worldRecord": {
         "percentage": 84.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-05-04",
       "creators": ["JinHyun"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6771,13 +7371,15 @@
       ],
       "worldRecord": {
         "percentage": 28.0,
-        "holder": "johnlikediamond"
+        "holder": "johnlikediamond",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-07",
       "creators": ["XHeiDax"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6792,13 +7394,15 @@
       ],
       "worldRecord": {
         "percentage": 30.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-11-03",
       "creators": ["SeveranceD"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6813,7 +7417,8 @@
       ],
       "worldRecord": {
         "percentage": 40.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-12-23",
@@ -6826,7 +7431,8 @@
         "korekonica"
       ],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6841,13 +7447,15 @@
       ],
       "worldRecord": {
         "percentage": 53.0,
-        "holder": "DankDrew"
+        "holder": "DankDrew",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-16",
       "creators": ["Lunar758"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6862,13 +7470,15 @@
       ],
       "worldRecord": {
         "percentage": 28.0,
-        "holder": "qwertyokbomb"
+        "holder": "qwertyokbomb",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-01-17",
       "creators": ["Ginsay"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6883,13 +7493,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-05-19",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6908,13 +7520,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-02-21",
       "creators": ["IiIOpTiCaLIiI"],
       "twoPlayer": true,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6933,13 +7547,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-06-30",
       "creators": ["Zephyruz"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6958,13 +7574,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2015-07-12",
       "creators": ["Acr0zeD"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -6979,13 +7597,15 @@
       ],
       "worldRecord": {
         "percentage": 48.0,
-        "holder": "Technobuild"
+        "holder": "Technobuild",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-08-07",
       "creators": ["Aelerity"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7000,13 +7620,15 @@
       ],
       "worldRecord": {
         "percentage": null,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": null,
       "creators": [],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7021,13 +7643,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "KumorY"
+        "holder": "KumorY",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-09-13",
       "creators": ["AnonIIExt"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7042,13 +7666,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Onibii"
+        "holder": "Onibii",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-09-27",
       "creators": ["CaKippie"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7063,13 +7689,15 @@
       ],
       "worldRecord": {
         "percentage": 58.0,
-        "holder": "SeptaGon7"
+        "holder": "SeptaGon7",
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2016-09-30",
       "creators": ["CorVert"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7084,13 +7712,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-10-08",
       "creators": ["Dukekdg777"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7105,13 +7735,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "Bää"
+        "holder": "B\u00c3\u00a4\u00c3\u00a4",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2013-12-14",
       "creators": ["NEON"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7126,13 +7758,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "MaruiG"
+        "holder": "MaruiG",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-01-03",
       "creators": ["youomoples"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7147,13 +7781,15 @@
       ],
       "worldRecord": {
         "percentage": 100.0,
-        "holder": "RoflGD"
+        "holder": "RoflGD",
+        "video": null
       },
       "verified": true,
       "dateUploaded": "2016-08-10",
       "creators": ["Andromeda GMD"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     },
     {
       "rank": null,
@@ -7172,13 +7808,15 @@
       ],
       "worldRecord": {
         "percentage": 0.0,
-        "holder": null
+        "holder": null,
+        "video": null
       },
       "verified": false,
       "dateUploaded": "2014-03-20",
       "creators": ["Optic Sunflow"],
       "twoPlayer": false,
-      "rateStatus": null
+      "rateStatus": null,
+      "video": null
     }
   ]
 }
