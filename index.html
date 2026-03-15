@@ -65,11 +65,10 @@
 
       h1 {
         font-family: "Inter", sans-serif;
-        font-size: clamp(52px, 8vw, 96px);
-        line-height: 1.2;
+        font-size: clamp(11px, 1.8vw, 17px);
+        line-height: 1.7;
         color: var(--purple-light);
-        letter-spacing: 2px;
-        margin-bottom: 8px;
+        letter-spacing: 1px;
       }
 
       .stats-bar {
@@ -426,6 +425,8 @@
       .tag:hover {
         transform: scale(1.05);
       }
+
+      /* Rating-specific tag styles removed */
       .tag.duo {
         color: var(--duo);
         border-color: var(--duo);
@@ -753,6 +754,9 @@
           height: 130px;
         }
       }
+
+      /* ─── EDIT MODE ─── */
+
       .edit-overlay {
         position: fixed;
         inset: 0;
@@ -1113,6 +1117,8 @@
         background: rgba(239, 68, 68, 0.1);
         border-color: var(--unverified);
       }
+
+      /* Toast */
       .toast {
         position: fixed;
         bottom: 24px;
@@ -1126,9 +1132,7 @@
         border-radius: 6px;
         z-index: 9999;
         opacity: 0;
-        transition:
-          opacity 0.2s,
-          transform 0.2s;
+        transition: opacity 0.2s, transform 0.2s;
         pointer-events: none;
         white-space: nowrap;
         font-family: "Inter", sans-serif;
@@ -1155,24 +1159,6 @@
           >Join our Discord</a
         >
       </p>
-      <button
-        id="editModeBtn"
-        style="
-          margin-top: 16px;
-          padding: 10px 24px;
-          font-size: 16px;
-          background: var(--purple-light);
-          color: #fff;
-          border: none;
-          border-radius: 6px;
-          cursor: pointer;
-          box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
-          font-family: &quot;Inter&quot;, sans-serif;
-          letter-spacing: 1px;
-        "
-      >
-        Edit List
-      </button>
     </header>
 
     <div class="stats-bar">
@@ -1285,15 +1271,9 @@
         <span class="edit-bar-title">List Editor</span>
         <span class="edit-bar-count" id="editCount">0 levels</span>
         <span class="edit-bar-hint">Click a row to expand fields</span>
-        <button class="edit-action-btn add" onclick="addLevel()">
-          + Add Level
-        </button>
-        <button class="edit-action-btn copy" onclick="copyJSON()">
-          Copy JSON
-        </button>
-        <button class="edit-action-btn close-edit" onclick="closeEditMode()">
-          ✕ Close
-        </button>
+        <button class="edit-action-btn add" onclick="addLevel()">+ Add Level</button>
+        <button class="edit-action-btn copy" onclick="copyJSON()">Copy JSON</button>
+        <button class="edit-action-btn close-edit" onclick="closeEditMode()">✕ Close</button>
       </div>
       <div class="edit-list" id="editList"></div>
     </div>
@@ -1304,18 +1284,8 @@
       let BATCH_SIZE = 30;
       const ANIMATION_CAP = 10;
       const MONTHS = [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
+        "Jan","Feb","Mar","Apr","May","Jun",
+        "Jul","Aug","Sep","Oct","Nov","Dec",
       ];
 
       let LEVELS = [];
@@ -1368,6 +1338,9 @@
         if (r <= 10) return "top10";
         return "";
       }
+
+      /* Rating classes removed */
+
       function buildRowHTML(lvl, i) {
         const rCls = getRankClass(lvl.rank);
         const rowCls = lvl.verified ? "verified-row" : "unverified-row";
@@ -1378,9 +1351,7 @@
         } else {
           let fallbackId = "";
           if (lvl.ids && lvl.ids.length) {
-            const raw = lvl.ids[0].id
-              ? String(lvl.ids[0].id)
-              : String(lvl.ids[0]);
+            const raw = lvl.ids[0].id ? String(lvl.ids[0].id) : String(lvl.ids[0]);
             const m = raw.match(/^\d+/);
             if (m) fallbackId = m[0];
           } else if (lvl.id) {
@@ -1399,8 +1370,7 @@
         const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
         const wr = wrPct === 100 ? "100%" : !wrPct ? "—" : wrPct + "%";
         const wrCls = wrPct === 100 ? "complete" : !wrPct ? "none" : "";
-        const delay =
-          i < ANIMATION_CAP ? ` style="animation-delay:${i * 0.05}s"` : "";
+        const delay = i < ANIMATION_CAP ? ` style="animation-delay:${i * 0.05}s"` : "";
         const tags = buildTagsHTML(lvl);
         const firstId = lvl.ids && lvl.ids.length ? lvl.ids[0] : null;
 
@@ -1426,9 +1396,7 @@
 
       function buildTagsHTML(lvl) {
         const parts = [];
-        parts.push(
-          `<span class="tag ${lvl.verified ? "v-yes" : "v-no"}">${lvl.verified ? "VERIFIED" : "UNVERIFIED"}</span>`,
-        );
+        parts.push(`<span class="tag ${lvl.verified ? "v-yes" : "v-no"}">${lvl.verified ? "VERIFIED" : "UNVERIFIED"}</span>`);
         if (lvl.twoPlayer) parts.push(`<span class="tag duo">2-PLAYER</span>`);
         return parts.join("");
       }
@@ -1443,9 +1411,7 @@
         }
 
         const slice = filtered.slice(0, BATCH_SIZE);
-        dom.levelList.innerHTML = slice
-          .map((lvl, i) => buildRowHTML(lvl, i))
-          .join("");
+        dom.levelList.innerHTML = slice.map((lvl, i) => buildRowHTML(lvl, i)).join("");
         renderedCount = slice.length;
 
         if (renderedCount < filtered.length) {
@@ -1461,9 +1427,7 @@
         const slice = filtered.slice(renderedCount, renderedCount + BATCH_SIZE);
         const frag = document.createDocumentFragment();
         const tmp = document.createElement("div");
-        tmp.innerHTML = slice
-          .map((lvl, i) => buildRowHTML(lvl, renderedCount + i))
-          .join("");
+        tmp.innerHTML = slice.map((lvl, i) => buildRowHTML(lvl, renderedCount + i)).join("");
         while (tmp.firstChild) frag.appendChild(tmp.firstChild);
 
         disconnectSentinel();
@@ -1489,7 +1453,7 @@
           (entries) => {
             if (entries[0].isIntersecting) renderNextBatch();
           },
-          { rootMargin: "200px" },
+          { rootMargin: "200px" }
         );
         sentinelObserver.observe(sentinel);
       }
@@ -1511,11 +1475,9 @@
 
         const totalProgress = LEVELS.reduce((sum, l) => {
           const fromVerified = l.verified ? 100 : 0;
-          const fromWR =
-            l.worldRecord && l.worldRecord.percentage != null
-              ? l.worldRecord.percentage
-              : 0;
-          return sum + Math.max(fromVerified, fromWR) / 100;
+          const fromWR = l.worldRecord && l.worldRecord.percentage != null
+            ? l.worldRecord.percentage : 0;
+          return sum + (Math.max(fromVerified, fromWR) / 100);
         }, 0);
 
         const pct = total ? Math.round((totalProgress / total) * 100) : 0;
@@ -1565,8 +1527,7 @@
       }
 
       function openModal(rank) {
-        if (rank === lastModalRank && dom.modal.classList.contains("open"))
-          return;
+        if (rank === lastModalRank && dom.modal.classList.contains("open")) return;
         const lvl = LEVELS.find((l) => l.rank === rank);
         if (!lvl) return;
 
@@ -1577,9 +1538,7 @@
         } else {
           let fallbackId = "";
           if (lvl.ids && lvl.ids.length) {
-            const raw = lvl.ids[0].id
-              ? String(lvl.ids[0].id)
-              : String(lvl.ids[0]);
+            const raw = lvl.ids[0].id ? String(lvl.ids[0].id) : String(lvl.ids[0]);
             const m = raw.match(/^\d+/);
             if (m) fallbackId = m[0];
           } else if (lvl.id) {
@@ -1601,21 +1560,15 @@
         const tags = buildTagsHTML(lvl);
         const idsHTML =
           lvl.ids && lvl.ids.length
-            ? lvl.ids
-                .map(
-                  (entry) =>
-                    `<span class="detail-val code" style="display:block;margin-bottom:4px">${entry.id}${entry.label ? `<span style="font-family:sans-serif;font-size:10px;color:var(--muted);margin-left:8px;letter-spacing:0">${entry.label}</span>` : ""}</span>`,
-                )
-                .join("")
+            ? lvl.ids.map((entry) =>
+                `<span class="detail-val code" style="display:block;margin-bottom:4px">${entry.id}${entry.label ? `<span style="font-family:sans-serif;font-size:10px;color:var(--muted);margin-left:8px;letter-spacing:0">${entry.label}</span>` : ""}</span>`
+              ).join("")
             : `<span class="detail-val" style="color:var(--muted)">—</span>`;
 
         const progressDisplay = wrPct != null ? wrPct + "%" : "—";
-        const progressCls =
-          wrPct === 100 ? "big green" : wrPct != null ? "big" : "detail-val";
-        const verifiedNote =
-          wrPct === 100
-            ? `<div class="progress-verified-note">✓ Verified</div>`
-            : "";
+        const progressCls = wrPct === 100 ? "big green" : wrPct != null ? "big" : "detail-val";
+        const verifiedNote = wrPct === 100
+          ? `<div class="progress-verified-note">✓ Verified</div>` : "";
 
         dom.modalHero.innerHTML = `
   <div class="modal-thumb">${thumb}</div>
@@ -1665,6 +1618,9 @@
             dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Could not load levels.<br>${err.message}</p></div>`;
           });
       }
+
+      // ─── EDIT MODE ───
+
       function esc(s) {
         return String(s == null ? "" : s)
           .replace(/&/g, "&amp;")
@@ -1691,39 +1647,29 @@
 
       function renderEditList() {
         dom.editCount.textContent = `${LEVELS.length} level${LEVELS.length !== 1 ? "s" : ""}`;
-        dom.editList.innerHTML = LEVELS.map((lvl, i) =>
-          buildEditCard(lvl, i),
-        ).join("");
+        dom.editList.innerHTML = LEVELS.map((lvl, i) => buildEditCard(lvl, i)).join("");
       }
 
       function buildEditCard(lvl, idx) {
-        const wrPct =
-          lvl.worldRecord && lvl.worldRecord.percentage != null
-            ? lvl.worldRecord.percentage
-            : "";
-        const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder || "" : "";
+        const wrPct = lvl.worldRecord && lvl.worldRecord.percentage != null
+          ? lvl.worldRecord.percentage : "";
+        const wrHolder = lvl.worldRecord ? (lvl.worldRecord.holder || "") : "";
         const wrDisplay = wrPct !== "" ? wrPct + "%" : "—";
         const isVerified = lvl.verified;
 
-        const idsHTML = (lvl.ids || [])
-          .map(
-            (entry, i) => `
+        const idsHTML = (lvl.ids || []).map((entry, i) => `
           <div class="edit-id-row">
             <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
               oninput="updateIdField(${idx},${i},'id',this.value)">
             <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
               oninput="updateIdField(${idx},${i},'label',this.value)">
             <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
-          </div>`,
-          )
-          .join("");
+          </div>`
+        ).join("");
 
-        const rateOptions = ["", "legendary", "epic", "featured", "rated"]
-          .map(
-            (v) =>
-              `<option value="${v}" ${(lvl.rateStatus || "") === v ? "selected" : ""}>${v || "Unrated"}</option>`,
-          )
-          .join("");
+        const rateOptions = ["", "legendary", "epic", "featured", "rated"].map(v =>
+          `<option value="${v}" ${(lvl.rateStatus || "") === v ? "selected" : ""}>${v || "Unrated"}</option>`
+        ).join("");
 
         return `<div class="edit-card" id="edit-card-${idx}">
   <div class="edit-card-bar" onclick="toggleEditCard(${idx})">
@@ -1813,9 +1759,7 @@
       }
 
       function toggleEditCard(idx) {
-        document
-          .getElementById("edit-card-" + idx)
-          ?.classList.toggle("expanded");
+        document.getElementById("edit-card-" + idx)?.classList.toggle("expanded");
       }
 
       function updateField(idx, field, value) {
@@ -1834,10 +1778,7 @@
 
       function updateCreators(idx, value) {
         if (!LEVELS[idx]) return;
-        LEVELS[idx].creators = value
-          .split(",")
-          .map((s) => s.trim())
-          .filter(Boolean);
+        LEVELS[idx].creators = value.split(",").map(s => s.trim()).filter(Boolean);
       }
 
       function updateWR(idx, field, value) {
@@ -1846,10 +1787,7 @@
           LEVELS[idx].worldRecord = { percentage: null, holder: "" };
         }
         LEVELS[idx].worldRecord[field] = value;
-        if (
-          LEVELS[idx].worldRecord.percentage === null &&
-          !LEVELS[idx].worldRecord.holder
-        ) {
+        if (LEVELS[idx].worldRecord.percentage === null && !LEVELS[idx].worldRecord.holder) {
           LEVELS[idx].worldRecord = null;
         }
       }
@@ -1899,24 +1837,19 @@
         LEVELS[idx].ids.splice(idIdx, 1);
         const list = document.getElementById("ids-list-" + idx);
         if (!list) return;
-        list.innerHTML = LEVELS[idx].ids
-          .map(
-            (entry, i) => `
+        list.innerHTML = LEVELS[idx].ids.map((entry, i) => `
           <div class="edit-id-row">
             <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
               oninput="updateIdField(${idx},${i},'id',this.value)">
             <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
               oninput="updateIdField(${idx},${i},'label',this.value)">
             <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
-          </div>`,
-          )
-          .join("");
+          </div>`
+        ).join("");
       }
 
       function addLevel() {
-        const maxRank = LEVELS.length
-          ? Math.max(...LEVELS.map((l) => l.rank))
-          : 0;
+        const maxRank = LEVELS.length ? Math.max(...LEVELS.map(l => l.rank)) : 0;
         LEVELS.push({
           rank: maxRank + 1,
           name: "New Level",
@@ -1956,19 +1889,14 @@
           ta.style.cssText = "position:fixed;opacity:0;top:0;left:0";
           document.body.appendChild(ta);
           ta.select();
-          try {
-            document.execCommand("copy");
-          } catch (e) {}
+          try { document.execCommand("copy"); } catch(e) {}
           document.body.removeChild(ta);
           showToast("✓ JSON copied to clipboard");
         };
         if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard
-            .writeText(json)
-            .then(() => {
-              showToast("✓ JSON copied to clipboard");
-            })
-            .catch(doFallback);
+          navigator.clipboard.writeText(json).then(() => {
+            showToast("✓ JSON copied to clipboard");
+          }).catch(doFallback);
         } else {
           doFallback();
         }
@@ -1985,6 +1913,11 @@
         cacheDOM();
 
         dom.searchInput.addEventListener("input", () => {
+          if (dom.searchInput.value.trim().toLowerCase() === "edit") {
+            dom.searchInput.value = "";
+            openEditMode();
+            return;
+          }
           clearTimeout(searchDebounceTimer);
           searchDebounceTimer = setTimeout(applyFilters, 250);
         });
@@ -1998,13 +1931,12 @@
             if (editMode) closeEditMode();
             else closeModalDirect();
           }
+          if (e.shiftKey && e.key === "M") {
+            e.preventDefault();
+            if (editMode) closeEditMode();
+            else openEditMode();
+          }
         });
-        const editBtn = document.getElementById("editModeBtn");
-        if (editBtn) {
-          editBtn.addEventListener("click", () => {
-            openEditMode();
-          });
-        }
 
         loadLevels();
       }
