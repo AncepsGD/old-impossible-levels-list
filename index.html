@@ -236,7 +236,7 @@
 
       .list-header {
         display: grid;
-        grid-template-columns: 56px 1fr 160px 200px;
+        grid-template-columns: 56px 220px 1fr 160px;
         background: var(--surface2);
         border-bottom: 1px solid var(--border2);
         position: sticky;
@@ -724,7 +724,7 @@
       @media (max-width: 700px) {
         .list-header,
         .level-row {
-          grid-template-columns: 40px 1fr 110px;
+          grid-template-columns: 40px 110px 1fr;
         }
         .lh-cell:last-child,
         .wr-col {
@@ -758,7 +758,7 @@
       @media (min-width: 768px) and (max-width: 1023px) {
         .list-header,
         .level-row {
-          grid-template-columns: 60px 1fr 140px 160px;
+          grid-template-columns: 60px 220px 1fr 160px;
         }
         .thumb-inner {
           width: 160px;
@@ -775,7 +775,7 @@
         }
         .list-header,
         .level-row {
-          grid-template-columns: 64px 1fr 160px 220px;
+          grid-template-columns: 64px 220px 1fr 160px;
         }
         .thumb-inner {
           width: 220px;
@@ -875,9 +875,9 @@
     <div>
       <div class="list-header">
         <div class="lh-cell">#</div>
+        <div class="lh-cell">Thumbnail</div>
         <div class="lh-cell">Level Info</div>
         <div class="lh-cell">World Record</div>
-        <div class="lh-cell">Thumbnail</div>
       </div>
       <div id="levelList"></div>
     </div>
@@ -913,7 +913,7 @@
     </div>
 
     <script>
-      const BATCH_SIZE = 30;
+      let BATCH_SIZE = 30;
       const ANIMATION_CAP = 10;
       const MONTHS = [
         "Jan",
@@ -995,6 +995,7 @@
 
         return `<div class="level-row ${rowCls}" onclick="openModal(${lvl.rank})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${lvl.rank});}" role="button" tabindex="0" aria-label="View details for ${lvl.name}"${delay}>
   <div class="rank-col"><span class="rank-num ${rCls}">#${lvl.rank}</span></div>
+  <div class="thumb-col"><div class="thumb-inner">${thumb}</div></div>
   <div class="info-col">
     <div class="level-name">${lvl.name}</div>
     <div class="level-creators">by ${lvl.creators.join(", ")}</div>
@@ -1009,7 +1010,6 @@
     <span class="wr-pct ${wrCls}">${wr}</span>
     <span class="wr-holder">${wrHolder ? "by " + wrHolder : "No record"}</span>
   </div>
-  <div class="thumb-col"><div class="thumb-inner">${thumb}</div></div>
 </div>`;
       }
 
@@ -1220,6 +1220,7 @@
           })
           .then((data) => {
             LEVELS = data.levels;
+            BATCH_SIZE = LEVELS.length;
             updateStats();
             applyFilters();
           })
