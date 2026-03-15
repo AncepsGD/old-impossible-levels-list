@@ -16,6 +16,7 @@ const MONTHS = [
 ];
 
 let LEVELS = [];
+let rankMap = new Map();
 let sortAsc = true;
 let filtered = [];
 let renderedCount = 0;
@@ -32,6 +33,7 @@ function cacheDOM() {
   dom.levelList = document.getElementById("levelList");
   dom.searchInput = document.getElementById("searchInput");
   dom.filterStatus = document.getElementById("filterStatus");
+  dom.filterRate = document.getElementById("filterRate");
   dom.filterDuo = document.getElementById("filterDuo");
   dom.sortBtn = document.getElementById("sortBtn");
   dom.statVerified = document.getElementById("statVerified");
@@ -65,31 +67,35 @@ function getRankClass(r) {
   if (r <= 10) return "top10";
   return "";
 }
+
+function buildThumbHTML(lvl, altText, errorFallback) {
+  if (lvl.thumbnail) {
+    return `<img src="${lvl.thumbnail}" alt="${altText}" loading="lazy" decoding="async">`;
+  }
+  let fallbackId = "";
+  if (lvl.ids && lvl.ids.length) {
+    const raw = lvl.ids[0].id ? String(lvl.ids[0].id) : String(lvl.ids[0]);
+    const m = raw.match(/^\d+/);
+    if (m) fallbackId = m[0];
+  } else if (lvl.id) {
+    const m = String(lvl.id).match(/^\d+/);
+    if (m) fallbackId = m[0];
+  }
+  if (fallbackId) {
+    const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
+    return `<img src="${url}" alt="${altText}" loading="lazy" decoding="async" onerror="${errorFallback}">`;
+  }
+  return `<div class="thumb-placeholder"></div>`;
+}
+
 function buildRowHTML(lvl, i) {
   const rCls = getRankClass(lvl.rank);
   const rowCls = lvl.verified ? "verified-row" : "unverified-row";
-
-  let thumb = "";
-  if (lvl.thumbnail) {
-    thumb = `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`;
-  } else {
-    let fallbackId = "";
-    if (lvl.ids && lvl.ids.length) {
-      const raw = lvl.ids[0].id ? String(lvl.ids[0].id) : String(lvl.ids[0]);
-      const m = raw.match(/^\d+/);
-      if (m) fallbackId = m[0];
-    } else if (lvl.id) {
-      const m = String(lvl.id).match(/^\d+/);
-      if (m) fallbackId = m[0];
-    }
-
-    if (fallbackId) {
-      const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
-      thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'thumb-placeholder\\'></div>'">`;
-    } else {
-      thumb = `<div class="thumb-placeholder"></div>`;
-    }
-  }
+  const thumb = buildThumbHTML(
+    lvl,
+    lvl.name,
+    "this.onerror=null;this.parentElement.innerHTML='<div class=\\'thumb-placeholder\\'></div>'",
+  );
   const wrPct = lvl.worldRecord ? lvl.worldRecord.percentage : null;
   const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
   const wr = wrPct === 100 ? "100%" : !wrPct ? "—" : wrPct + "%";
@@ -202,16 +208,18 @@ function disconnectSentinel() {
 
 function updateStats() {
   const total = LEVELS.length;
-  const verified = LEVELS.filter((l) => l.verified).length;
+  let verified = 0;
+  let totalProgress = 0;
 
-  const totalProgress = LEVELS.reduce((sum, l) => {
+  for (const l of LEVELS) {
+    if (l.verified) verified++;
     const fromVerified = l.verified ? 100 : 0;
     const fromWR =
       l.worldRecord && l.worldRecord.percentage != null
         ? l.worldRecord.percentage
         : 0;
-    return sum + Math.max(fromVerified, fromWR) / 100;
-  }, 0);
+    totalProgress += Math.max(fromVerified, fromWR) / 100;
+  }
 
   const pct = total ? Math.round((totalProgress / total) * 100) : 0;
 
@@ -247,7 +255,7 @@ function applyFilters() {
     return true;
   });
 
-  if (!sortAsc) filtered = filtered.slice().reverse();
+  if (!sortAsc) filtered.reverse();
   renderList();
 }
 
@@ -255,41 +263,24 @@ function toggleSort() {
   sortAsc = !sortAsc;
   dom.sortBtn.textContent = (sortAsc ? "▲" : "▼") + " RANK";
   dom.sortBtn.classList.toggle("desc", !sortAsc);
-  filtered = filtered.slice().reverse();
+  filtered.reverse();
   renderList();
 }
 
 function openModal(rank) {
   if (rank === lastModalRank && dom.modal.classList.contains("open")) return;
-  const lvl = LEVELS.find((l) => l.rank === rank);
+  const lvl = rankMap.get(rank);
   if (!lvl) return;
 
   lastModalRank = rank;
-  let thumb = "";
-  if (lvl.thumbnail) {
-    thumb = `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`;
-  } else {
-    let fallbackId = "";
-    if (lvl.ids && lvl.ids.length) {
-      const raw = lvl.ids[0].id ? String(lvl.ids[0].id) : String(lvl.ids[0]);
-      const m = raw.match(/^\d+/);
-      if (m) fallbackId = m[0];
-    } else if (lvl.id) {
-      const m = String(lvl.id).match(/^\d+/);
-      if (m) fallbackId = m[0];
-    }
-
-    if (fallbackId) {
-      const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
-      thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div style=\\'font-size:50px\\'></div>'">`;
-    } else {
-      thumb = `<div style="font-size:50px"></div>`;
-    }
-  }
+  const thumb = buildThumbHTML(
+    lvl,
+    lvl.name,
+    "this.onerror=null;this.parentElement.innerHTML='<div style=\\'font-size:50px\\'></div>'",
+  );
   const wrPct = lvl.worldRecord ? lvl.worldRecord.percentage : null;
   const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
   const wr = wrPct === 100 ? "100%" : !wrPct ? "None" : wrPct + "%";
-  const wrCls = wrPct === 100 ? "big green" : "big";
   const tags = buildTagsHTML(lvl);
   const idsHTML =
     lvl.ids && lvl.ids.length
@@ -339,6 +330,10 @@ function closeModalDirect() {
   lastModalRank = -1;
 }
 
+function rebuildRankMap() {
+  rankMap = new Map(LEVELS.map((l) => [l.rank, l]));
+}
+
 function loadLevels() {
   return fetch("levels.json")
     .then((r) => {
@@ -348,6 +343,7 @@ function loadLevels() {
     .then((data) => {
       LEVELS = data.levels;
       BATCH_SIZE = LEVELS.length;
+      rebuildRankMap();
       updateStats();
       applyFilters();
     })
@@ -355,6 +351,7 @@ function loadLevels() {
       dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Could not load levels.<br>${err.message}</p></div>`;
     });
 }
+
 function esc(s) {
   return String(s == null ? "" : s)
     .replace(/&/g, "&amp;")
@@ -375,6 +372,7 @@ function closeEditMode() {
   editMode = false;
   dom.editOverlay.classList.remove("open");
   document.body.style.overflow = "";
+  rebuildRankMap();
   updateStats();
   applyFilters();
 }
@@ -602,7 +600,7 @@ function removeId(idx, idIdx) {
 }
 
 function addLevel() {
-  const maxRank = LEVELS.length ? Math.max(...LEVELS.map((l) => l.rank)) : 0;
+  const maxRank = LEVELS.reduce((max, l) => (l.rank > max ? l.rank : max), 0);
   LEVELS.push({
     rank: maxRank + 1,
     name: "New Level",
