@@ -410,6 +410,9 @@ function renderEditList() {
   if (dom.editSearch && dom.editSearch.value) {
     filterEditList(dom.editSearch.value);
   }
+
+  const cards = dom.editList.querySelectorAll(".edit-card");
+  cards.forEach((card) => card.classList.add("expanded"));
 }
 
 function filterEditList(q) {
