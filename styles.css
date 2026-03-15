@@ -1116,3 +1116,32 @@ select:focus {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+.edit-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.edit-search-wrap svg {
+  position: absolute;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+#editSearch {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+  font-size: 12px;
+  padding: 5px 10px 5px 27px;
+  width: 160px;
+  outline: none;
+}
+
+#editSearch:focus {
+  border-color: var(--purple);
+}
