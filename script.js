@@ -69,16 +69,6 @@ function getRankClass(r) {
   return "";
 }
 
-function getRateClass(status) {
-  const map = {
-    legendary: "legendary",
-    epic: "epic",
-    featured: "featured",
-    rated: "rated",
-  };
-  return map[status] || "unrated";
-}
-
 function buildThumbHTML(lvl, altText, errorFallback) {
   if (lvl.thumbnail) {
     return `<img src="${lvl.thumbnail}" alt="${altText}" loading="lazy" decoding="async">`;
@@ -319,7 +309,6 @@ function openModal(rank) {
   dom.modalGrid.innerHTML = `
   <div class="detail-block"><div class="detail-key">Progress</div><div class="detail-val ${progressCls}">${progressDisplay}</div>${verifiedNote}</div>
   <div class="detail-block"><div class="detail-key">Record Holder</div><div class="detail-val">${wrHolder || "—"}</div></div>
-  <div class="detail-block"><div class="detail-key">Rate Status</div><div class="detail-val"><span class="tag ${lvl.rateStatus ? getRateClass(lvl.rateStatus) : "unrated"}">${lvl.rateStatus ? lvl.rateStatus.toUpperCase() : "UNRATED"}</span></div></div>
   <div class="detail-block full"><div class="detail-key">Level IDs</div>${idsHTML}</div>
   <div class="detail-block"><div class="detail-key">Date Uploaded</div><div class="detail-val">${formatDate(lvl.dateUploaded)}</div></div>
   <div class="detail-block"><div class="detail-key">2-Player</div><div class="detail-val">${lvl.twoPlayer ? "Yes" : "No"}</div></div>
@@ -463,21 +452,13 @@ function buildEditCard(lvl, idx) {
 
   const idsHTML = buildIdsRowsHTML(idx);
 
-  const rateOptions = ["", "legendary", "epic", "featured", "rated"]
-    .map(
-      (v) =>
-        `<option value="${v}" ${(lvl.rateStatus || "") === v ? "selected" : ""}>${v || "Unrated"}</option>`,
-    )
-    .join("");
-
   return `<div class="edit-card expanded" id="edit-card-${idx}">
-  <div class="edit-card-bar" onclick="toggleEditCard(${idx})">
+  <div class="edit-card-bar">
     <span class="edit-card-rank">#${lvl.rank}</span>
     <span class="edit-card-name">${esc(lvl.name)}</span>
     <span class="tag ${isVerified ? "v-yes" : "v-no"}" style="flex-shrink:0;font-size:9px">${isVerified ? "VERIFIED" : "UNVERIFIED"}</span>
     <span class="edit-card-wr">${wrDisplay}</span>
     <button class="edit-card-del-btn" onclick="event.stopPropagation();deleteLevel(${idx})">Delete</button>
-    <span class="edit-expand-arrow">▼</span>
   </div>
   <div class="edit-body">
     <div class="edit-row" style="padding-top:10px">
@@ -505,12 +486,6 @@ function buildEditCard(lvl, idx) {
       </div>
     </div>
     <div class="edit-row">
-      <div class="edit-field">
-        <span class="edit-label">Rate Status</span>
-        <select class="edit-select" onchange="updateField(${idx},'rateStatus',this.value||null)">
-          ${rateOptions}
-        </select>
-      </div>
       <div class="edit-field">
         <span class="edit-label">Verified</span>
         <label class="edit-check-group">
@@ -555,10 +530,6 @@ function buildEditCard(lvl, idx) {
     <button class="edit-delete-level-btn" onclick="deleteLevel(${idx})">🗑 Delete Level</button>
   </div>
 </div>`;
-}
-
-function toggleEditCard(idx) {
-  document.getElementById("edit-card-" + idx)?.classList.toggle("expanded");
 }
 
 function updateField(idx, field, value) {
@@ -650,7 +621,6 @@ function addLevel() {
     creators: [],
     verified: false,
     twoPlayer: false,
-    rateStatus: null,
     thumbnail: null,
     ids: [],
     dateUploaded: new Date().toISOString().slice(0, 10),
