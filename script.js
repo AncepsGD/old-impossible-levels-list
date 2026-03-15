@@ -26,6 +26,7 @@ let sentinel = null;
 let sentinelObserver = null;
 let editMode = false;
 let toastTimer = null;
+let hasUnsavedChanges = false;
 
 const dom = {};
 
@@ -45,6 +46,7 @@ function cacheDOM() {
   dom.editOverlay = document.getElementById("editOverlay");
   dom.editList = document.getElementById("editList");
   dom.editCount = document.getElementById("editCount");
+  dom.editSearch = document.getElementById("editSearch");
   dom.toast = document.getElementById("toast");
 }
 
@@ -65,6 +67,16 @@ function getRankClass(r) {
   if (r <= 3) return "top3";
   if (r <= 10) return "top10";
   return "";
+}
+
+function getRateClass(status) {
+  const map = {
+    legendary: "legendary",
+    epic: "epic",
+    featured: "featured",
+    rated: "rated",
+  };
+  return map[status] || "unrated";
 }
 
 function buildThumbHTML(lvl, altText, errorFallback) {
@@ -357,16 +369,32 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function markDirty() {
+  hasUnsavedChanges = true;
+}
+
 function openEditMode() {
   closeModalDirect();
   editMode = true;
+  hasUnsavedChanges = false;
   renderEditList();
   dom.editOverlay.classList.add("open");
   document.body.style.overflow = "hidden";
+  if (dom.editSearch) {
+    dom.editSearch.value = "";
+    dom.editSearch.focus();
+  }
 }
 
 function closeEditMode() {
+  if (
+    hasUnsavedChanges &&
+    !confirm("You have unsaved changes. Close without copying JSON?")
+  ) {
+    return;
+  }
   editMode = false;
+  hasUnsavedChanges = false;
   dom.editOverlay.classList.remove("open");
   document.body.style.overflow = "";
   rebuildRankMap();
@@ -379,6 +407,46 @@ function renderEditList() {
   dom.editList.innerHTML = LEVELS.map((lvl, i) => buildEditCard(lvl, i)).join(
     "",
   );
+  if (dom.editSearch && dom.editSearch.value) {
+    filterEditList(dom.editSearch.value);
+  }
+}
+
+function filterEditList(q) {
+  const query = q.toLowerCase().trim();
+  const cards = dom.editList.querySelectorAll(".edit-card");
+  cards.forEach((card, i) => {
+    const lvl = LEVELS[i];
+    if (!lvl) return;
+    const match =
+      !query ||
+      lvl.name.toLowerCase().includes(query) ||
+      (lvl.creators || []).some((c) => c.toLowerCase().includes(query)) ||
+      (lvl.ids || []).some((entry) => entry.id.includes(query)) ||
+      String(lvl.rank).includes(query);
+    card.style.display = match ? "" : "none";
+  });
+}
+
+function buildIdsRowsHTML(idx) {
+  return (LEVELS[idx].ids || [])
+    .map(
+      (entry, i) => `
+      <div class="edit-id-row">
+        <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
+          oninput="updateIdField(${idx},${i},'id',this.value)">
+        <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
+          oninput="updateIdField(${idx},${i},'label',this.value)">
+        <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
+      </div>`,
+    )
+    .join("");
+}
+
+function reRenderIdsList(idx) {
+  const list = document.getElementById("ids-list-" + idx);
+  if (!list) return;
+  list.innerHTML = buildIdsRowsHTML(idx);
 }
 
 function buildEditCard(lvl, idx) {
@@ -390,18 +458,7 @@ function buildEditCard(lvl, idx) {
   const wrDisplay = wrPct !== "" ? wrPct + "%" : "—";
   const isVerified = lvl.verified;
 
-  const idsHTML = (lvl.ids || [])
-    .map(
-      (entry, i) => `
-          <div class="edit-id-row">
-            <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
-              oninput="updateIdField(${idx},${i},'id',this.value)">
-            <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
-              oninput="updateIdField(${idx},${i},'label',this.value)">
-            <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
-          </div>`,
-    )
-    .join("");
+  const idsHTML = buildIdsRowsHTML(idx);
 
   const rateOptions = ["", "legendary", "epic", "featured", "rated"]
     .map(
@@ -504,6 +561,7 @@ function toggleEditCard(idx) {
 function updateField(idx, field, value) {
   if (!LEVELS[idx]) return;
   LEVELS[idx][field] = value;
+  markDirty();
 }
 
 function updateFieldLive(idx, field, value, queryCls, display) {
@@ -513,6 +571,7 @@ function updateFieldLive(idx, field, value, queryCls, display) {
   if (!card) return;
   const el = card.querySelector("." + queryCls);
   if (el) el.textContent = display;
+  markDirty();
 }
 
 function updateCreators(idx, value) {
@@ -521,6 +580,7 @@ function updateCreators(idx, value) {
     .split(",")
     .map((s) => s.trim())
     .filter(Boolean);
+  markDirty();
 }
 
 function updateWR(idx, field, value) {
@@ -535,6 +595,7 @@ function updateWR(idx, field, value) {
   ) {
     LEVELS[idx].worldRecord = null;
   }
+  markDirty();
 }
 
 function syncWRDisplay(idx, rawValue) {
@@ -556,44 +617,26 @@ function syncVerifiedBadge(idx, verified) {
 function updateIdField(idx, idIdx, field, value) {
   if (!LEVELS[idx] || !LEVELS[idx].ids || !LEVELS[idx].ids[idIdx]) return;
   LEVELS[idx].ids[idIdx][field] = value;
+  markDirty();
 }
 
 function addId(idx) {
   if (!LEVELS[idx]) return;
   if (!LEVELS[idx].ids) LEVELS[idx].ids = [];
-  const i = LEVELS[idx].ids.length;
   LEVELS[idx].ids.push({ id: "", label: "" });
+  reRenderIdsList(idx);
   const list = document.getElementById("ids-list-" + idx);
-  if (!list) return;
-  const row = document.createElement("div");
-  row.className = "edit-id-row";
-  row.innerHTML = `
-          <input class="edit-input" type="text" value="" placeholder="Level ID"
-            oninput="updateIdField(${idx},${i},'id',this.value)">
-          <input class="edit-input" type="text" value="" placeholder="Label (optional)"
-            oninput="updateIdField(${idx},${i},'label',this.value)">
-          <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>`;
-  list.appendChild(row);
-  list.lastChild.querySelector("input").focus();
+  if (list && list.lastElementChild) {
+    list.lastElementChild.querySelector("input")?.focus();
+  }
+  markDirty();
 }
 
 function removeId(idx, idIdx) {
   if (!LEVELS[idx] || !LEVELS[idx].ids) return;
   LEVELS[idx].ids.splice(idIdx, 1);
-  const list = document.getElementById("ids-list-" + idx);
-  if (!list) return;
-  list.innerHTML = LEVELS[idx].ids
-    .map(
-      (entry, i) => `
-          <div class="edit-id-row">
-            <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
-              oninput="updateIdField(${idx},${i},'id',this.value)">
-            <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
-              oninput="updateIdField(${idx},${i},'label',this.value)">
-            <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
-          </div>`,
-    )
-    .join("");
+  reRenderIdsList(idx);
+  markDirty();
 }
 
 function addLevel() {
@@ -610,6 +653,7 @@ function addLevel() {
     dateUploaded: new Date().toISOString().slice(0, 10),
     worldRecord: null,
   });
+  markDirty();
   renderEditList();
   setTimeout(() => {
     const newIdx = LEVELS.length - 1;
@@ -625,6 +669,7 @@ function deleteLevel(idx) {
   const name = LEVELS[idx]?.name || "this level";
   if (!confirm(`Delete "${name}"? This cannot be undone.`)) return;
   LEVELS.splice(idx, 1);
+  markDirty();
   renderEditList();
 }
 
@@ -648,11 +693,37 @@ function copyJSON() {
       .writeText(json)
       .then(() => {
         showToast("✓ JSON copied to clipboard");
+        hasUnsavedChanges = false;
       })
       .catch(doFallback);
   } else {
     doFallback();
+    hasUnsavedChanges = false;
   }
+}
+
+function importJSON() {
+  const raw = prompt(
+    'Paste your levels.json content below (must be { "levels": [...] }):',
+  );
+  if (raw == null || raw.trim() === "") return;
+  let data;
+  try {
+    data = JSON.parse(raw);
+  } catch (e) {
+    alert("Invalid JSON: " + e.message);
+    return;
+  }
+  if (!data.levels || !Array.isArray(data.levels)) {
+    alert('Expected an object with a "levels" array.');
+    return;
+  }
+  LEVELS = data.levels;
+  hasUnsavedChanges = false;
+  renderEditList();
+  showToast(
+    `✓ Imported ${LEVELS.length} level${LEVELS.length !== 1 ? "s" : ""}`,
+  );
 }
 
 function showToast(msg) {
@@ -678,6 +749,12 @@ function init() {
   [dom.filterStatus, dom.filterDuo].forEach((el) => {
     el.addEventListener("change", applyFilters);
   });
+
+  if (dom.editSearch) {
+    dom.editSearch.addEventListener("input", () => {
+      filterEditList(dom.editSearch.value);
+    });
+  }
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
