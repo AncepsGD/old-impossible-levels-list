@@ -470,7 +470,7 @@ function buildEditCard(lvl, idx) {
     )
     .join("");
 
-  return `<div class="edit-card" id="edit-card-${idx}">
+  return `<div class="edit-card expanded" id="edit-card-${idx}">
   <div class="edit-card-bar" onclick="toggleEditCard(${idx})">
     <span class="edit-card-rank">#${lvl.rank}</span>
     <span class="edit-card-name">${esc(lvl.name)}</span>
