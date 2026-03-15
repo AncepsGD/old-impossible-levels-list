@@ -984,9 +984,30 @@
       function buildRowHTML(lvl, i) {
         const rCls = getRankClass(lvl.rank);
         const rowCls = lvl.verified ? "verified-row" : "unverified-row";
-        const thumb = lvl.thumbnail
-          ? `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`
-          : `<div class="thumb-placeholder"></div>`;
+
+        let thumb = "";
+        if (lvl.thumbnail) {
+          thumb = `<img src="${lvl.thumbnail}" alt="${lvl.name}" loading="lazy" decoding="async">`;
+        } else {
+          let fallbackId = "";
+          if (lvl.ids && lvl.ids.length) {
+            const raw = lvl.ids[0].id
+              ? String(lvl.ids[0].id)
+              : String(lvl.ids[0]);
+            const m = raw.match(/^\d+/);
+            if (m) fallbackId = m[0];
+          } else if (lvl.id) {
+            const m = String(lvl.id).match(/^\d+/);
+            if (m) fallbackId = m[0];
+          }
+
+          if (fallbackId) {
+            const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
+            thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\\'thumb-placeholder\\'></div>'">`;
+          } else {
+            thumb = `<div class="thumb-placeholder"></div>`;
+          }
+        }
         const wrPct = lvl.worldRecord ? lvl.worldRecord.percentage : null;
         const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
         const wr = wrPct === 100 ? "100%" : !wrPct ? "—" : wrPct + "%";
@@ -1173,7 +1194,7 @@
           }
 
           if (fallbackId) {
-            const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}`;
+            const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
 
             thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div style=\\'font-size:50px\\'></div>'">`;
           } else {
