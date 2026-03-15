@@ -1,5 +1,5 @@
-let BATCH_SIZE = 30;
 const ANIMATION_CAP = 10;
+const LOCAL_KEY = "oill_data";
 const MONTHS = [
   "Jan",
   "Feb",
@@ -19,11 +19,8 @@ let LEVELS = [];
 let rankMap = new Map();
 let sortAsc = true;
 let filtered = [];
-let renderedCount = 0;
 let lastModalRank = -1;
 let searchDebounceTimer = null;
-let sentinel = null;
-let sentinelObserver = null;
 
 const dom = {};
 
@@ -36,11 +33,13 @@ function cacheDOM() {
   dom.statVerified = document.getElementById("statVerified");
   dom.statUnverified = document.getElementById("statUnverified");
   dom.statPercent = document.getElementById("statPercent");
+  dom.statPercentSub = document.getElementById("statPercentSub");
   dom.progressFill = document.getElementById("progressFill");
   dom.modal = document.getElementById("modal");
   dom.modalHero = document.getElementById("modalHero");
   dom.modalGrid = document.getElementById("modalGrid");
   dom.toast = document.getElementById("toast");
+  dom.editModal = document.getElementById("edit-modal");
 }
 
 const dateCache = new Map();
@@ -68,12 +67,16 @@ function buildThumbHTML(lvl, altText, errorFallback) {
   }
   let fallbackId = "";
   if (lvl.ids && lvl.ids.length) {
-    fallbackId = lvl.ids[0].id;
-  } else if (lvl.name) {
-    fallbackId = lvl.name.slice(0, 2).toUpperCase();
+    for (const idObj of lvl.ids) {
+      const match = idObj.id.match(/^\d+/);
+      if (match) {
+        fallbackId = match[0];
+        break;
+      }
+    }
   }
   if (fallbackId) {
-    return `<div class="thumb-placeholder">${fallbackId}</div>`;
+    return `<img src="https://levelthumbs.prevter.me/thumbnail/${fallbackId}" alt="${altText}" loading="lazy" onerror="${errorFallback}">`;
   }
   return `<div class="thumb-placeholder"></div>`;
 }
@@ -127,77 +130,14 @@ function buildTagsHTML(lvl) {
 }
 
 function renderList() {
-  disconnectSentinel();
-  renderedCount = 0;
-
   if (!filtered.length) {
     dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon"></div><p>No levels match your search.</p></div>`;
     return;
   }
 
-  const slice = filtered.slice(0, BATCH_SIZE);
-  dom.levelList.innerHTML = slice
+  dom.levelList.innerHTML = filtered
     .map((lvl, i) => buildRowHTML(lvl, i))
     .join("");
-  renderedCount = slice.length;
-
-  if (renderedCount < filtered.length) {
-    attachSentinel();
-  }
-}
-
-function renderNextBatch() {
-  if (renderedCount >= filtered.length) {
-    disconnectSentinel();
-    return;
-  }
-  const slice = filtered.slice(renderedCount, renderedCount + BATCH_SIZE);
-  const frag = document.createDocumentFragment();
-  const tmp = document.createElement("div");
-  tmp.innerHTML = slice
-    .map((lvl, i) => buildRowHTML(lvl, renderedCount + i))
-    .join("");
-  while (tmp.firstChild) frag.appendChild(tmp.firstChild);
-
-  disconnectSentinel();
-
-  if (sentinel && dom.levelList.contains(sentinel)) {
-    dom.levelList.insertBefore(frag, sentinel);
-  } else {
-    dom.levelList.appendChild(frag);
-  }
-  renderedCount += slice.length;
-
-  if (renderedCount < filtered.length) {
-    attachSentinel();
-  }
-}
-
-function attachSentinel() {
-  sentinel = document.createElement("div");
-  sentinel.style.cssText = "height:1px;width:100%;";
-  dom.levelList.appendChild(sentinel);
-
-  sentinelObserver = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        renderNextBatch();
-      }
-    },
-    { rootMargin: "200px" },
-  );
-  sentinelObserver.observe(sentinel);
-}
-
-function disconnectSentinel() {
-  if (sentinelObserver) {
-    sentinelObserver.disconnect();
-    sentinelObserver = null;
-  }
-  if (sentinel && sentinel.parentNode) {
-    sentinel.parentNode.removeChild(sentinel);
-    sentinel = null;
-  }
 }
 
 function updateStats() {
@@ -212,12 +152,14 @@ function updateStats() {
     }
   }
 
-  const pct = total ? Math.round((totalProgress / total) * 100) : 0;
+  const avg = total ? totalProgress / total : 0;
+  const pct = Math.round(avg * 100);
 
   requestAnimationFrame(() => {
     dom.statVerified.textContent = verified;
     dom.statUnverified.textContent = total - verified;
-    dom.statPercent.textContent = pct;
+    dom.statPercent.textContent = avg.toFixed(2) + "%";
+    dom.statPercentSub.textContent = "completed";
     dom.progressFill.style.width = `${pct}%`;
   });
 }
@@ -322,10 +264,27 @@ function closeModalDirect() {
 }
 
 function rebuildRankMap() {
-  rankMap = new Map(LEVELS.map((l) => [l.rank, l]));
+  rankMap = new Map(
+    LEVELS.filter((l) => l.rank != null).map((l) => [l.rank, l]),
+  );
+}
+
+function saveLocal() {
+  localStorage.setItem(LOCAL_KEY, JSON.stringify({ levels: LEVELS }));
 }
 
 function loadLevels() {
+  const saved = localStorage.getItem(LOCAL_KEY);
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      LEVELS = parsed.levels || [];
+      rebuildRankMap();
+      updateStats();
+      applyFilters();
+      return Promise.resolve();
+    } catch (e) {}
+  }
   return fetch("levels.json")
     .then((r) => {
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -365,7 +324,19 @@ function init() {
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      closeModalDirect();
+      if (dom.editModal && dom.editModal.classList.contains("open")) {
+        closeEditMenu();
+      } else {
+        closeModalDirect();
+      }
+    }
+    if (e.shiftKey && e.key === "M") {
+      e.preventDefault();
+      if (dom.editModal && dom.editModal.classList.contains("open")) {
+        closeEditMenu();
+      } else {
+        openEditMenu();
+      }
     }
   });
 
@@ -373,3 +344,261 @@ function init() {
 }
 
 init();
+function openEditMenu() {
+  dom.editModal.classList.add("open");
+  document.body.style.overflow = "hidden";
+  showEditView("list");
+  renderEditTable();
+}
+
+function closeEditMenu() {
+  dom.editModal.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function showEditView(name) {
+  document
+    .querySelectorAll(".edit-view")
+    .forEach((v) => v.classList.remove("active"));
+  document.getElementById("edit-view-" + name).classList.add("active");
+}
+
+function renderEditTable(filterQ) {
+  const tbody = document.getElementById("edit-table-body");
+  let data = LEVELS;
+  if (filterQ) {
+    const q = filterQ.toLowerCase();
+    data = LEVELS.filter(
+      (l) =>
+        l.name.toLowerCase().includes(q) ||
+        l.creators.some((c) => c.toLowerCase().includes(q)) ||
+        (l.ids && l.ids.some((id) => id.id.toLowerCase().includes(q))),
+    );
+  }
+  if (!data.length) {
+    tbody.innerHTML =
+      '<tr><td colspan="7" style="padding:24px;text-align:center;color:var(--muted);font-size:13px">No levels found</td></tr>';
+    return;
+  }
+  tbody.innerHTML = data
+    .map((lvl) => {
+      const idx = LEVELS.indexOf(lvl);
+      const firstId = lvl.ids && lvl.ids.length ? lvl.ids[0].id : "—";
+      return `<tr>
+      <td class="edit-td-rank">${lvl.rank ?? "—"}</td>
+      <td class="edit-td-name">${esc(lvl.name)}</td>
+      <td class="edit-td-creator">${esc(lvl.creators.join(", "))}</td>
+      <td class="edit-td-id">${esc(firstId)}</td>
+      <td class="edit-td-section">${lvl.section}</td>
+      <td class="edit-td-status" style="color:${lvl.verified ? "var(--verified)" : "var(--unverified)"}">
+        ${lvl.verified ? "✓ Verified" : "✗ Unverified"}
+      </td>
+      <td class="edit-td-actions">
+        <button class="ebtn ebtn-ghost ebtn-sm" onclick="openLevelForm(${idx})">Edit</button>
+        <button class="ebtn ebtn-red ebtn-sm" onclick="deleteLevelByIndex(${idx})">Delete</button>
+      </td>
+    </tr>`;
+    })
+    .join("");
+}
+
+function openLevelForm(idx) {
+  editingIndex = idx;
+  const isNew = idx === -1;
+
+  document.getElementById("form-title").textContent = isNew
+    ? "Add Level"
+    : `Editing: ${LEVELS[idx].name}`;
+  document.getElementById("form-delete-btn").style.display = isNew
+    ? "none"
+    : "";
+
+  const item = isNew
+    ? {
+        rank: null,
+        section: "main",
+        onList: true,
+        name: "",
+        ids: [{ id: "", label: null }],
+        worldRecord: { percentage: 0, holder: null, video: null },
+        verified: false,
+        dateUploaded: null,
+        creators: [],
+        twoPlayer: false,
+        rateStatus: null,
+        video: null,
+      }
+    : LEVELS[idx];
+
+  document.getElementById("f-name").value = item.name || "";
+  document.getElementById("f-creators").value = item.creators.join(", ");
+  document.getElementById("f-rank").value = item.rank ?? "";
+  document.getElementById("f-section").value = item.section || "main";
+  document.getElementById("f-onlist").value = String(item.onList !== false);
+  document.getElementById("f-verified").value = String(!!item.verified);
+  document.getElementById("f-twoplayer").value = String(!!item.twoPlayer);
+  document.getElementById("f-date").value = item.dateUploaded || "";
+  document.getElementById("f-ratestatus").value = item.rateStatus || "";
+  document.getElementById("f-wr-pct").value =
+    item.worldRecord?.percentage ?? "";
+  document.getElementById("f-wr-holder").value = item.worldRecord?.holder || "";
+  document.getElementById("f-wr-video").value = item.worldRecord?.video || "";
+
+  const idsList = document.getElementById("ids-list");
+  idsList.innerHTML = "";
+  (item.ids || []).forEach((entry) => addIdRow(entry.id, entry.label));
+  if (!(item.ids && item.ids.length)) addIdRow();
+
+  showEditView("form");
+  document.getElementById("edit-modal").scrollTop = 0;
+}
+
+function addIdRow(id, label) {
+  const list = document.getElementById("ids-list");
+  const div = document.createElement("div");
+  div.className = "id-entry";
+  div.innerHTML = `<div class="id-entry-grid">
+    <div class="form-group">
+      <label class="form-label">ID</label>
+      <input class="form-input" data-field="id" type="text" value="${esc(String(id || ""))}" placeholder="e.g. 12345678">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Label</label>
+      <input class="form-input" data-field="label" type="text" value="${esc(String(label || ""))}" placeholder="Fix / Original / Reupload">
+    </div>
+    <button class="ebtn ebtn-red ebtn-sm id-remove-btn" onclick="this.closest('.id-entry').remove()">✕</button>
+  </div>`;
+  list.appendChild(div);
+}
+
+function saveLevelForm() {
+  const name = document.getElementById("f-name").value.trim();
+  if (!name) {
+    alert("Level name is required.");
+    return;
+  }
+
+  const creatorsRaw = document.getElementById("f-creators").value;
+  const creators = creatorsRaw
+    .split(",")
+    .map((c) => c.trim())
+    .filter(Boolean);
+
+  const rankVal = document.getElementById("f-rank").value.trim();
+  const rank = rankVal === "" ? null : parseInt(rankVal);
+
+  const ids = Array.from(document.querySelectorAll(".id-entry"))
+    .map((el) => ({
+      id: el.querySelector('[data-field="id"]').value.trim(),
+      label: el.querySelector('[data-field="label"]').value.trim() || null,
+    }))
+    .filter((entry) => entry.id);
+
+  const wrPct = parseFloat(document.getElementById("f-wr-pct").value);
+  const wrHolder = document.getElementById("f-wr-holder").value.trim() || null;
+  const wrVideo = document.getElementById("f-wr-video").value.trim() || null;
+
+  const item = {
+    rank,
+    section: document.getElementById("f-section").value,
+    onList: document.getElementById("f-onlist").value === "true",
+    name,
+    ids,
+    worldRecord: {
+      percentage: isNaN(wrPct) ? 0 : wrPct,
+      holder: wrHolder,
+      video: wrVideo,
+    },
+    verified: document.getElementById("f-verified").value === "true",
+    dateUploaded: document.getElementById("f-date").value.trim() || null,
+    creators,
+    twoPlayer: document.getElementById("f-twoplayer").value === "true",
+    rateStatus: document.getElementById("f-ratestatus").value.trim() || null,
+    video: null,
+  };
+
+  if (editingIndex === -1) {
+    LEVELS.push(item);
+  } else {
+    LEVELS[editingIndex] = item;
+  }
+
+  LEVELS.sort((a, b) => {
+    if (a.rank != null && b.rank != null) return a.rank - b.rank;
+    if (a.rank != null) return -1;
+    if (b.rank != null) return 1;
+    return 0;
+  });
+
+  rebuildRankMap();
+  saveLocal();
+  updateStats();
+  applyFilters();
+  showEditView("list");
+  renderEditTable(document.getElementById("edit-search").value);
+  flashMessage("✓ SAVED");
+}
+
+function deleteLevelByIndex(idx) {
+  if (!confirm(`Delete "${LEVELS[idx].name}"?`)) return;
+  LEVELS.splice(idx, 1);
+  rebuildRankMap();
+  saveLocal();
+  updateStats();
+  applyFilters();
+  renderEditTable(document.getElementById("edit-search").value);
+  flashMessage("✓ DELETED");
+}
+
+function deleteCurrentLevel() {
+  if (editingIndex === -1) return;
+  if (!confirm(`Delete "${LEVELS[editingIndex].name}"?`)) return;
+  LEVELS.splice(editingIndex, 1);
+  rebuildRankMap();
+  saveLocal();
+  updateStats();
+  applyFilters();
+  showEditView("list");
+  renderEditTable(document.getElementById("edit-search").value);
+  flashMessage("✓ DELETED");
+}
+
+function exportJSON() {
+  const out = JSON.stringify({ levels: LEVELS }, null, 2);
+  navigator.clipboard
+    .writeText(out)
+    .then(() => {
+      flashMessage("✓ COPIED TO CLIPBOARD");
+    })
+    .catch(() => {
+      const blob = new Blob([out], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "levels.json";
+      a.click();
+      flashMessage("✓ DOWNLOADED");
+    });
+}
+
+function resetToOriginal() {
+  if (!confirm("Clear all local edits and reload from levels.json?")) return;
+  localStorage.removeItem(LOCAL_KEY);
+  fetch("levels.json")
+    .then((r) => r.json())
+    .then((data) => {
+      LEVELS = data.levels || [];
+      rebuildRankMap();
+      updateStats();
+      applyFilters();
+      renderEditTable();
+      flashMessage("✓ RESET TO ORIGINAL");
+    })
+    .catch(() => flashMessage("✗ FAILED TO FETCH"));
+}
+
+function flashMessage(msg) {
+  const el = document.getElementById("save-flash");
+  el.textContent = msg;
+  el.classList.add("show");
+  setTimeout(() => el.classList.remove("show"), 2200);
+}
