@@ -90,19 +90,6 @@
       >
         ▲ RANK
       </button>
-      <button
-        class="btn-sort"
-        id="editBtn"
-        onclick="openEditMode()"
-        aria-label="Open list editor"
-        style="
-          background: var(--purple);
-          color: #fff;
-          border-color: var(--purple);
-        "
-      >
-        ✎ EDIT
-      </button>
     </div>
 
     <div>
@@ -143,44 +130,6 @@
         <div class="modal-hero" id="modalHero"></div>
         <div class="modal-grid" id="modalGrid"></div>
       </div>
-    </div>
-
-    <div class="edit-overlay" id="editOverlay">
-      <div class="edit-bar">
-        <span class="edit-bar-title">List Editor</span>
-        <span class="edit-bar-count" id="editCount">0 levels</span>
-        <div class="edit-search-wrap">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
-          <input
-            type="text"
-            id="editSearch"
-            placeholder="Filter levels…"
-            aria-label="Filter levels in editor"
-          />
-        </div>
-        <button class="edit-action-btn add" onclick="addLevel()">
-          + Add Level
-        </button>
-        <button class="edit-action-btn copy" onclick="importJSON()">
-          Import JSON
-        </button>
-        <button class="edit-action-btn copy" onclick="copyJSON()">
-          Copy JSON
-        </button>
-        <button class="edit-action-btn close-edit" onclick="closeEditMode()">
-          ✕ Close
-        </button>
-      </div>
-      <div class="edit-list" id="editList"></div>
     </div>
 
     <div class="toast" id="toast"></div>
