@@ -27,11 +27,7 @@
         --muted: #6b5d9a;
         --verified: #22c55e;
         --unverified: #ef4444;
-        --rated: #a78bfa;
-        --featured: #818cf8;
-        --epic: #c084fc;
-        --legendary: #e879f9;
-        --unrated: #6b5d9a;
+        --duo: #67e8f9;
         --duo: #67e8f9;
       }
 
@@ -69,10 +65,11 @@
 
       h1 {
         font-family: "Inter", sans-serif;
-        font-size: clamp(11px, 1.8vw, 17px);
-        line-height: 1.7;
+        font-size: clamp(52px, 8vw, 96px);
+        line-height: 1.2;
         color: var(--purple-light);
-        letter-spacing: 1px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
       }
 
       .stats-bar {
@@ -310,7 +307,7 @@
         color: var(--purple-light);
       }
       .rank-num.top3 {
-        color: var(--epic);
+        color: var(--purple-light);
       }
       .rank-num.rank1 {
         color: #fff;
@@ -428,32 +425,6 @@
 
       .tag:hover {
         transform: scale(1.05);
-      }
-
-      .tag.rated {
-        color: var(--rated);
-        border-color: var(--rated);
-        background: rgba(167, 139, 250, 0.1);
-      }
-      .tag.featured {
-        color: var(--featured);
-        border-color: var(--featured);
-        background: rgba(129, 140, 248, 0.1);
-      }
-      .tag.epic {
-        color: var(--epic);
-        border-color: var(--epic);
-        background: rgba(192, 132, 252, 0.1);
-      }
-      .tag.legendary {
-        color: var(--legendary);
-        border-color: var(--legendary);
-        background: rgba(232, 121, 249, 0.1);
-      }
-      .tag.unrated {
-        color: var(--unrated);
-        border-color: var(--border2);
-        background: transparent;
       }
       .tag.duo {
         color: var(--duo);
@@ -782,6 +753,391 @@
           height: 130px;
         }
       }
+      .edit-overlay {
+        position: fixed;
+        inset: 0;
+        background: #050507;
+        z-index: 2000;
+        display: none;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .edit-overlay.open {
+        display: flex;
+      }
+
+      .edit-bar {
+        background: var(--surface);
+        border-bottom: 2px solid var(--purple);
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+      }
+
+      .edit-bar-title {
+        font-size: 11px;
+        color: var(--purple-light);
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .edit-bar-count {
+        font-size: 11px;
+        color: var(--muted);
+        flex: 1;
+        min-width: 80px;
+      }
+
+      .edit-bar-hint {
+        font-size: 10px;
+        color: var(--muted);
+        letter-spacing: 0.3px;
+      }
+
+      .edit-action-btn {
+        font-family: "Inter", sans-serif;
+        font-size: 11px;
+        padding: 7px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid;
+        transition: all 0.15s;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+      }
+
+      .edit-action-btn.add {
+        background: transparent;
+        border-color: var(--purple);
+        color: var(--purple-light);
+      }
+
+      .edit-action-btn.add:hover {
+        background: var(--purple-muted);
+      }
+
+      .edit-action-btn.copy {
+        background: var(--purple);
+        border-color: var(--purple);
+        color: #fff;
+      }
+
+      .edit-action-btn.copy:hover {
+        background: var(--purple-dim);
+      }
+
+      .edit-action-btn.close-edit {
+        background: transparent;
+        border-color: var(--border);
+        color: var(--muted);
+      }
+
+      .edit-action-btn.close-edit:hover {
+        border-color: var(--unverified);
+        color: var(--unverified);
+      }
+
+      .edit-list {
+        flex: 1;
+        overflow-y: auto;
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .edit-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .edit-card-bar {
+        display: flex;
+        align-items: center;
+        padding: 9px 12px;
+        gap: 10px;
+        cursor: pointer;
+        transition: background 0.15s;
+        user-select: none;
+      }
+
+      .edit-card-bar:hover {
+        background: var(--surface2);
+      }
+
+      .edit-card-rank {
+        font-size: 11px;
+        color: var(--muted);
+        min-width: 36px;
+        flex-shrink: 0;
+      }
+
+      .edit-card-name {
+        flex: 1;
+        font-size: 13px;
+        color: var(--text);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .edit-card-wr {
+        font-size: 12px;
+        color: var(--purple-light);
+        min-width: 38px;
+        text-align: right;
+        flex-shrink: 0;
+      }
+
+      .edit-card-del-btn {
+        background: transparent;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 10px;
+        padding: 3px 9px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.15s;
+        flex-shrink: 0;
+      }
+
+      .edit-card-del-btn:hover {
+        border-color: var(--unverified);
+        color: var(--unverified);
+      }
+
+      .edit-expand-arrow {
+        font-size: 9px;
+        color: var(--muted);
+        transition: transform 0.2s;
+        flex-shrink: 0;
+      }
+
+      .edit-card.expanded .edit-expand-arrow {
+        transform: rotate(180deg);
+      }
+
+      .edit-body {
+        display: none;
+        padding: 0 14px 14px;
+        border-top: 1px solid var(--border);
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .edit-card.expanded .edit-body {
+        display: flex;
+      }
+
+      .edit-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: flex-end;
+      }
+
+      .edit-field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .edit-field.grow {
+        flex: 1;
+        min-width: 140px;
+      }
+
+      .edit-label {
+        font-size: 9px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .edit-input {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        color: var(--text);
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        padding: 6px 9px;
+        border-radius: 4px;
+        outline: none;
+        transition: border-color 0.15s;
+      }
+
+      .edit-input:focus {
+        border-color: var(--purple);
+      }
+
+      .edit-input[type="number"] {
+        width: 78px;
+      }
+
+      .edit-input[type="date"] {
+        width: 148px;
+        color-scheme: dark;
+      }
+
+      .edit-select {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        color: var(--text-sub);
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        padding: 6px 26px 6px 9px;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 24 24' fill='none' stroke='%236b5d9a' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 7px center;
+        transition: border-color 0.15s;
+      }
+
+      .edit-select:focus {
+        border-color: var(--purple);
+      }
+
+      .edit-check-group {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 9px;
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .edit-check-group input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        accent-color: var(--purple);
+        cursor: pointer;
+      }
+
+      .edit-check-label {
+        font-size: 12px;
+        color: var(--text-sub);
+        white-space: nowrap;
+      }
+
+      .edit-section-label {
+        font-size: 9px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-top: 4px;
+      }
+
+      .edit-ids-list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .edit-id-row {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+
+      .edit-id-row .edit-input {
+        flex: 1;
+      }
+
+      .edit-id-remove {
+        background: transparent;
+        border: 1px solid var(--border);
+        color: var(--muted);
+        width: 26px;
+        height: 26px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: all 0.15s;
+      }
+
+      .edit-id-remove:hover {
+        border-color: var(--unverified);
+        color: var(--unverified);
+      }
+
+      .edit-add-id-btn {
+        background: transparent;
+        border: 1px dashed var(--border2);
+        color: var(--purple-light);
+        font-size: 11px;
+        padding: 5px 11px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.15s;
+        align-self: flex-start;
+        font-family: "Inter", sans-serif;
+      }
+
+      .edit-add-id-btn:hover {
+        background: var(--purple-muted);
+        border-style: solid;
+      }
+
+      .edit-delete-level-btn {
+        background: transparent;
+        border: 1px solid #3d1212;
+        color: #ef4444;
+        font-size: 11px;
+        padding: 6px 14px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.15s;
+        align-self: flex-start;
+        margin-top: 2px;
+        font-family: "Inter", sans-serif;
+      }
+
+      .edit-delete-level-btn:hover {
+        background: rgba(239, 68, 68, 0.1);
+        border-color: var(--unverified);
+      }
+      .toast {
+        position: fixed;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%) translateY(16px);
+        background: var(--surface2);
+        border: 1px solid var(--border2);
+        color: var(--text);
+        font-size: 13px;
+        padding: 9px 18px;
+        border-radius: 6px;
+        z-index: 9999;
+        opacity: 0;
+        transition:
+          opacity 0.2s,
+          transform 0.2s;
+        pointer-events: none;
+        white-space: nowrap;
+        font-family: "Inter", sans-serif;
+      }
+
+      .toast.show {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
     </style>
   </head>
   <body>
@@ -799,6 +1155,24 @@
           >Join our Discord</a
         >
       </p>
+      <button
+        id="editModeBtn"
+        style="
+          margin-top: 16px;
+          padding: 10px 24px;
+          font-size: 16px;
+          background: var(--purple-light);
+          color: #fff;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
+          font-family: &quot;Inter&quot;, sans-serif;
+          letter-spacing: 1px;
+        "
+      >
+        Edit List
+      </button>
     </header>
 
     <div class="stats-bar">
@@ -814,7 +1188,7 @@
       </div>
       <div class="stat-cell">
         <span class="stat-value purple" id="statPercent">—</span>
-        <span class="stat-sub">of the list completed</span>
+        <span class="stat-sub" id="statPercentSub">of the list completed</span>
       </div>
     </div>
 
@@ -849,14 +1223,7 @@
         <option value="verified">Verified / 100%</option>
         <option value="unverified">Unverified</option>
       </select>
-      <select id="filterRate" aria-label="Filter levels by rating status">
-        <option value="all">All Ratings</option>
-        <option value="legendary">Legendary</option>
-        <option value="epic">Epic</option>
-        <option value="featured">Featured</option>
-        <option value="rated">Rated</option>
-        <option value="unrated">Unrated</option>
-      </select>
+      <!-- Rating filter removed -->
       <select id="filterDuo" aria-label="Filter levels by player mode">
         <option value="all">Solo &amp; 2-Player</option>
         <option value="solo">Solo Only</option>
@@ -912,6 +1279,27 @@
       </div>
     </div>
 
+    <!-- Edit Mode Overlay -->
+    <div class="edit-overlay" id="editOverlay">
+      <div class="edit-bar">
+        <span class="edit-bar-title">List Editor</span>
+        <span class="edit-bar-count" id="editCount">0 levels</span>
+        <span class="edit-bar-hint">Click a row to expand fields</span>
+        <button class="edit-action-btn add" onclick="addLevel()">
+          + Add Level
+        </button>
+        <button class="edit-action-btn copy" onclick="copyJSON()">
+          Copy JSON
+        </button>
+        <button class="edit-action-btn close-edit" onclick="closeEditMode()">
+          ✕ Close
+        </button>
+      </div>
+      <div class="edit-list" id="editList"></div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
     <script>
       let BATCH_SIZE = 30;
       const ANIMATION_CAP = 10;
@@ -938,6 +1326,8 @@
       let searchDebounceTimer = null;
       let sentinel = null;
       let sentinelObserver = null;
+      let editMode = false;
+      let toastTimer = null;
 
       const dom = {};
 
@@ -945,7 +1335,6 @@
         dom.levelList = document.getElementById("levelList");
         dom.searchInput = document.getElementById("searchInput");
         dom.filterStatus = document.getElementById("filterStatus");
-        dom.filterRate = document.getElementById("filterRate");
         dom.filterDuo = document.getElementById("filterDuo");
         dom.sortBtn = document.getElementById("sortBtn");
         dom.statVerified = document.getElementById("statVerified");
@@ -955,6 +1344,10 @@
         dom.modal = document.getElementById("modal");
         dom.modalHero = document.getElementById("modalHero");
         dom.modalGrid = document.getElementById("modalGrid");
+        dom.editOverlay = document.getElementById("editOverlay");
+        dom.editList = document.getElementById("editList");
+        dom.editCount = document.getElementById("editCount");
+        dom.toast = document.getElementById("toast");
       }
 
       const dateCache = new Map();
@@ -975,12 +1368,6 @@
         if (r <= 10) return "top10";
         return "";
       }
-
-      function getRateClass(rateStatus) {
-        if (!rateStatus) return "";
-        return rateStatus.toLowerCase().replace(/\s+/g, "-");
-      }
-
       function buildRowHTML(lvl, i) {
         const rCls = getRankClass(lvl.rank);
         const rowCls = lvl.verified ? "verified-row" : "unverified-row";
@@ -1039,10 +1426,6 @@
 
       function buildTagsHTML(lvl) {
         const parts = [];
-        if (lvl.rateStatus)
-          parts.push(
-            `<span class="tag ${getRateClass(lvl.rateStatus)}">${lvl.rateStatus}</span>`,
-          );
         parts.push(
           `<span class="tag ${lvl.verified ? "v-yes" : "v-no"}">${lvl.verified ? "VERIFIED" : "UNVERIFIED"}</span>`,
         );
@@ -1125,7 +1508,18 @@
       function updateStats() {
         const total = LEVELS.length;
         const verified = LEVELS.filter((l) => l.verified).length;
-        const pct = total ? Math.round((verified / total) * 100) : 0;
+
+        const totalProgress = LEVELS.reduce((sum, l) => {
+          const fromVerified = l.verified ? 100 : 0;
+          const fromWR =
+            l.worldRecord && l.worldRecord.percentage != null
+              ? l.worldRecord.percentage
+              : 0;
+          return sum + Math.max(fromVerified, fromWR) / 100;
+        }, 0);
+
+        const pct = total ? Math.round((totalProgress / total) * 100) : 0;
+
         requestAnimationFrame(() => {
           dom.statVerified.textContent = verified;
           dom.statUnverified.textContent = total - verified;
@@ -1195,7 +1589,6 @@
 
           if (fallbackId) {
             const url = `https://levelthumbs.prevter.me/thumbnail/${fallbackId}/small`;
-
             thumb = `<img src="${url}" alt="${lvl.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.parentElement.innerHTML='<div style=\\'font-size:50px\\'></div>'">`;
           } else {
             thumb = `<div style="font-size:50px"></div>`;
@@ -1272,6 +1665,321 @@
             dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Could not load levels.<br>${err.message}</p></div>`;
           });
       }
+      function esc(s) {
+        return String(s == null ? "" : s)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;");
+      }
+
+      function openEditMode() {
+        closeModalDirect();
+        editMode = true;
+        renderEditList();
+        dom.editOverlay.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeEditMode() {
+        editMode = false;
+        dom.editOverlay.classList.remove("open");
+        document.body.style.overflow = "";
+        updateStats();
+        applyFilters();
+      }
+
+      function renderEditList() {
+        dom.editCount.textContent = `${LEVELS.length} level${LEVELS.length !== 1 ? "s" : ""}`;
+        dom.editList.innerHTML = LEVELS.map((lvl, i) =>
+          buildEditCard(lvl, i),
+        ).join("");
+      }
+
+      function buildEditCard(lvl, idx) {
+        const wrPct =
+          lvl.worldRecord && lvl.worldRecord.percentage != null
+            ? lvl.worldRecord.percentage
+            : "";
+        const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder || "" : "";
+        const wrDisplay = wrPct !== "" ? wrPct + "%" : "—";
+        const isVerified = lvl.verified;
+
+        const idsHTML = (lvl.ids || [])
+          .map(
+            (entry, i) => `
+          <div class="edit-id-row">
+            <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
+              oninput="updateIdField(${idx},${i},'id',this.value)">
+            <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
+              oninput="updateIdField(${idx},${i},'label',this.value)">
+            <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
+          </div>`,
+          )
+          .join("");
+
+        const rateOptions = ["", "legendary", "epic", "featured", "rated"]
+          .map(
+            (v) =>
+              `<option value="${v}" ${(lvl.rateStatus || "") === v ? "selected" : ""}>${v || "Unrated"}</option>`,
+          )
+          .join("");
+
+        return `<div class="edit-card" id="edit-card-${idx}">
+  <div class="edit-card-bar" onclick="toggleEditCard(${idx})">
+    <span class="edit-card-rank">#${lvl.rank}</span>
+    <span class="edit-card-name">${esc(lvl.name)}</span>
+    <span class="tag ${isVerified ? "v-yes" : "v-no"}" style="flex-shrink:0;font-size:9px">${isVerified ? "VERIFIED" : "UNVERIFIED"}</span>
+    <span class="edit-card-wr">${wrDisplay}</span>
+    <button class="edit-card-del-btn" onclick="event.stopPropagation();deleteLevel(${idx})">Delete</button>
+    <span class="edit-expand-arrow">▼</span>
+  </div>
+  <div class="edit-body">
+    <div class="edit-row" style="padding-top:10px">
+      <div class="edit-field">
+        <span class="edit-label">Rank</span>
+        <input class="edit-input" type="number" min="1" value="${esc(lvl.rank)}"
+          oninput="updateFieldLive(${idx},'rank',+this.value||1,'edit-card-rank','#'+value)">
+      </div>
+      <div class="edit-field grow">
+        <span class="edit-label">Name</span>
+        <input class="edit-input" type="text" value="${esc(lvl.name)}"
+          oninput="updateFieldLive(${idx},'name',this.value,'edit-card-name',value)">
+      </div>
+      <div class="edit-field">
+        <span class="edit-label">Date Uploaded</span>
+        <input class="edit-input" type="date" value="${esc(lvl.dateUploaded || "")}"
+          onchange="updateField(${idx},'dateUploaded',this.value)">
+      </div>
+    </div>
+    <div class="edit-row">
+      <div class="edit-field grow">
+        <span class="edit-label">Creators (comma-separated)</span>
+        <input class="edit-input" type="text" value="${esc((lvl.creators || []).join(", "))}"
+          oninput="updateCreators(${idx},this.value)">
+      </div>
+    </div>
+    <div class="edit-row">
+      <div class="edit-field">
+        <span class="edit-label">Rate Status</span>
+        <select class="edit-select" onchange="updateField(${idx},'rateStatus',this.value||null)">
+          ${rateOptions}
+        </select>
+      </div>
+      <div class="edit-field">
+        <span class="edit-label">Verified</span>
+        <label class="edit-check-group">
+          <input type="checkbox" ${lvl.verified ? "checked" : ""}
+            onchange="updateField(${idx},'verified',this.checked);syncVerifiedBadge(${idx},this.checked)">
+          <span class="edit-check-label">Yes</span>
+        </label>
+      </div>
+      <div class="edit-field">
+        <span class="edit-label">2-Player</span>
+        <label class="edit-check-group">
+          <input type="checkbox" ${lvl.twoPlayer ? "checked" : ""}
+            onchange="updateField(${idx},'twoPlayer',this.checked)">
+          <span class="edit-check-label">Yes</span>
+        </label>
+      </div>
+    </div>
+    <div class="edit-row">
+      <div class="edit-field grow">
+        <span class="edit-label">Thumbnail URL</span>
+        <input class="edit-input" type="text" value="${esc(lvl.thumbnail || "")}"
+          oninput="updateField(${idx},'thumbnail',this.value||null)">
+      </div>
+    </div>
+    <div class="edit-field" style="gap:6px">
+      <span class="edit-section-label">Level IDs</span>
+      <div class="edit-ids-list" id="ids-list-${idx}">${idsHTML}</div>
+      <button class="edit-add-id-btn" onclick="addId(${idx})">+ Add ID</button>
+    </div>
+    <div class="edit-row">
+      <div class="edit-field">
+        <span class="edit-label">WR %</span>
+        <input class="edit-input" type="number" min="0" max="100" value="${esc(wrPct)}" placeholder="—"
+          oninput="updateWR(${idx},'percentage',this.value===''?null:+this.value);syncWRDisplay(${idx},this.value)">
+      </div>
+      <div class="edit-field grow">
+        <span class="edit-label">WR Holder</span>
+        <input class="edit-input" type="text" value="${esc(wrHolder)}" placeholder="Player name"
+          oninput="updateWR(${idx},'holder',this.value)">
+      </div>
+    </div>
+    <button class="edit-delete-level-btn" onclick="deleteLevel(${idx})">🗑 Delete Level</button>
+  </div>
+</div>`;
+      }
+
+      function toggleEditCard(idx) {
+        document
+          .getElementById("edit-card-" + idx)
+          ?.classList.toggle("expanded");
+      }
+
+      function updateField(idx, field, value) {
+        if (!LEVELS[idx]) return;
+        LEVELS[idx][field] = value;
+      }
+
+      function updateFieldLive(idx, field, value, queryCls, display) {
+        if (!LEVELS[idx]) return;
+        LEVELS[idx][field] = value;
+        const card = document.getElementById("edit-card-" + idx);
+        if (!card) return;
+        const el = card.querySelector("." + queryCls);
+        if (el) el.textContent = display;
+      }
+
+      function updateCreators(idx, value) {
+        if (!LEVELS[idx]) return;
+        LEVELS[idx].creators = value
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean);
+      }
+
+      function updateWR(idx, field, value) {
+        if (!LEVELS[idx]) return;
+        if (!LEVELS[idx].worldRecord) {
+          LEVELS[idx].worldRecord = { percentage: null, holder: "" };
+        }
+        LEVELS[idx].worldRecord[field] = value;
+        if (
+          LEVELS[idx].worldRecord.percentage === null &&
+          !LEVELS[idx].worldRecord.holder
+        ) {
+          LEVELS[idx].worldRecord = null;
+        }
+      }
+
+      function syncWRDisplay(idx, rawValue) {
+        const card = document.getElementById("edit-card-" + idx);
+        if (!card) return;
+        const el = card.querySelector(".edit-card-wr");
+        if (el) el.textContent = rawValue !== "" ? rawValue + "%" : "—";
+      }
+
+      function syncVerifiedBadge(idx, verified) {
+        const card = document.getElementById("edit-card-" + idx);
+        if (!card) return;
+        const badge = card.querySelector(".edit-card-bar .tag");
+        if (!badge) return;
+        badge.className = "tag " + (verified ? "v-yes" : "v-no");
+        badge.textContent = verified ? "VERIFIED" : "UNVERIFIED";
+      }
+
+      function updateIdField(idx, idIdx, field, value) {
+        if (!LEVELS[idx] || !LEVELS[idx].ids || !LEVELS[idx].ids[idIdx]) return;
+        LEVELS[idx].ids[idIdx][field] = value;
+      }
+
+      function addId(idx) {
+        if (!LEVELS[idx]) return;
+        if (!LEVELS[idx].ids) LEVELS[idx].ids = [];
+        const i = LEVELS[idx].ids.length;
+        LEVELS[idx].ids.push({ id: "", label: "" });
+        const list = document.getElementById("ids-list-" + idx);
+        if (!list) return;
+        const row = document.createElement("div");
+        row.className = "edit-id-row";
+        row.innerHTML = `
+          <input class="edit-input" type="text" value="" placeholder="Level ID"
+            oninput="updateIdField(${idx},${i},'id',this.value)">
+          <input class="edit-input" type="text" value="" placeholder="Label (optional)"
+            oninput="updateIdField(${idx},${i},'label',this.value)">
+          <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>`;
+        list.appendChild(row);
+        list.lastChild.querySelector("input").focus();
+      }
+
+      function removeId(idx, idIdx) {
+        if (!LEVELS[idx] || !LEVELS[idx].ids) return;
+        LEVELS[idx].ids.splice(idIdx, 1);
+        const list = document.getElementById("ids-list-" + idx);
+        if (!list) return;
+        list.innerHTML = LEVELS[idx].ids
+          .map(
+            (entry, i) => `
+          <div class="edit-id-row">
+            <input class="edit-input" type="text" value="${esc(entry.id)}" placeholder="Level ID"
+              oninput="updateIdField(${idx},${i},'id',this.value)">
+            <input class="edit-input" type="text" value="${esc(entry.label || "")}" placeholder="Label (optional)"
+              oninput="updateIdField(${idx},${i},'label',this.value)">
+            <button class="edit-id-remove" onclick="removeId(${idx},${i})" title="Remove">−</button>
+          </div>`,
+          )
+          .join("");
+      }
+
+      function addLevel() {
+        const maxRank = LEVELS.length
+          ? Math.max(...LEVELS.map((l) => l.rank))
+          : 0;
+        LEVELS.push({
+          rank: maxRank + 1,
+          name: "New Level",
+          creators: [],
+          verified: false,
+          twoPlayer: false,
+          rateStatus: null,
+          thumbnail: null,
+          ids: [],
+          dateUploaded: new Date().toISOString().slice(0, 10),
+          worldRecord: null,
+        });
+        renderEditList();
+        setTimeout(() => {
+          const newIdx = LEVELS.length - 1;
+          const card = document.getElementById("edit-card-" + newIdx);
+          if (card) {
+            card.classList.add("expanded");
+            card.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+        }, 30);
+      }
+
+      function deleteLevel(idx) {
+        const name = LEVELS[idx]?.name || "this level";
+        if (!confirm(`Delete "${name}"? This cannot be undone.`)) return;
+        LEVELS.splice(idx, 1);
+        renderEditList();
+      }
+
+      function copyJSON() {
+        const sorted = [...LEVELS].sort((a, b) => a.rank - b.rank);
+        const json = JSON.stringify({ levels: sorted }, null, 2);
+        const doFallback = () => {
+          const ta = document.createElement("textarea");
+          ta.value = json;
+          ta.style.cssText = "position:fixed;opacity:0;top:0;left:0";
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand("copy");
+          } catch (e) {}
+          document.body.removeChild(ta);
+          showToast("✓ JSON copied to clipboard");
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard
+            .writeText(json)
+            .then(() => {
+              showToast("✓ JSON copied to clipboard");
+            })
+            .catch(doFallback);
+        } else {
+          doFallback();
+        }
+      }
+
+      function showToast(msg) {
+        dom.toast.textContent = msg;
+        dom.toast.classList.add("show");
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => dom.toast.classList.remove("show"), 2500);
+      }
 
       function init() {
         cacheDOM();
@@ -1286,8 +1994,17 @@
         });
 
         document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeModalDirect();
+          if (e.key === "Escape") {
+            if (editMode) closeEditMode();
+            else closeModalDirect();
+          }
         });
+        const editBtn = document.getElementById("editModeBtn");
+        if (editBtn) {
+          editBtn.addEventListener("click", () => {
+            openEditMode();
+          });
+        }
 
         loadLevels();
       }
