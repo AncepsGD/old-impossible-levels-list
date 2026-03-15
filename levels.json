@@ -1,0 +1,7184 @@
+{
+  "levels": [
+    {
+      "rank": 1,
+      "section": "main",
+      "onList": true,
+      "name": "Minus World",
+      "ids": [
+        {
+          "id": "111168619",
+          "label": "Fix"
+        },
+        {
+          "id": "21877962",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "18924465",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.04,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-04-15",
+      "creators": ["IcEDCave"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 2,
+      "section": "main",
+      "onList": true,
+      "name": "Kingdom of Miracalis",
+      "ids": [
+        {
+          "id": "74840910",
+          "label": "Fix"
+        },
+        {
+          "id": "16508408",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.02,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-04",
+      "creators": ["gdmiracle"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 3,
+      "section": "main",
+      "onList": true,
+      "name": "Six Paths Of Pain",
+      "ids": [
+        {
+          "id": "126178977",
+          "label": "Fix"
+        },
+        {
+          "id": "17777889",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-03-12",
+      "creators": ["GionniBlood"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 4,
+      "section": "main",
+      "onList": true,
+      "name": "Slaughterhouse",
+      "ids": [
+        {
+          "id": "127817234",
+          "label": "Fix"
+        },
+        {
+          "id": "118295220",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "12453036",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.89,
+        "holder": "Anceps"
+      },
+      "verified": false,
+      "dateUploaded": "2015-09-26",
+      "creators": ["IcEDCave"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 5,
+      "section": "main",
+      "onList": true,
+      "name": "Divine Geometry",
+      "ids": [
+        {
+          "id": "13973215",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 8.32,
+        "holder": "Nomas"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-15",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 6,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Engine I",
+      "ids": [
+        {
+          "id": "125331754",
+          "label": "Fix"
+        },
+        {
+          "id": "13113459",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 1.0,
+        "holder": "AsumehRocks"
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-12",
+      "creators": ["Cyrillic"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 7,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Skrillex",
+      "ids": [
+        {
+          "id": "73836744",
+          "label": "Fix"
+        },
+        {
+          "id": "15460856",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-01",
+      "creators": ["DiosselMusic"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 8,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Circles",
+      "ids": [
+        {
+          "id": "12169905",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 42.7,
+        "holder": "seels55"
+      },
+      "verified": false,
+      "dateUploaded": "2015-09-19",
+      "creators": ["Cyrillic", "TheRealSailent"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 9,
+      "section": "main",
+      "onList": true,
+      "name": "SaTans Circles",
+      "ids": [
+        {
+          "id": "126896892",
+          "label": "Fix"
+        },
+        {
+          "id": "13318906",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 5.48,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-22",
+      "creators": ["IIZebII"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 10,
+      "section": "main",
+      "onList": true,
+      "name": "Slaughterhouse II",
+      "ids": [
+        {
+          "id": "27690219",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-12-29",
+      "creators": ["IcEDCave"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 11,
+      "section": "main",
+      "onList": true,
+      "name": "Slaughters Hell",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "N/A",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "13477383",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-28",
+      "creators": ["IIZebII"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 12,
+      "section": "main",
+      "onList": true,
+      "name": "Chaotic Circles XII",
+      "ids": [
+        {
+          "id": "77580798",
+          "label": "Fix"
+        },
+        {
+          "id": "19680667",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-05-09",
+      "creators": ["Nox Eternis"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 13,
+      "section": "main",
+      "onList": true,
+      "name": "Deadly Silent Club",
+      "ids": [
+        {
+          "id": "126241846",
+          "label": "Fix"
+        },
+        {
+          "id": "119143775",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "7900137",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 5.0,
+        "holder": "Edoppd"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-01",
+      "creators": ["gw roadmc2"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 14,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Skrillex v2",
+      "ids": [
+        {
+          "id": "66626147",
+          "label": "Fix"
+        },
+        {
+          "id": "20052541",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-05-22",
+      "creators": ["youomoples"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 15,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Processing",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "13811031",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 9.07,
+        "holder": "ssent"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-10",
+      "creators": ["Plutonium238"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 16,
+      "section": "main",
+      "onList": true,
+      "name": "realm of bloodshadow",
+      "ids": [
+        {
+          "id": "119141644",
+          "label": "Fix"
+        },
+        {
+          "id": "12463880",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "10140774",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 2.2,
+        "holder": "HaloZombies"
+      },
+      "verified": false,
+      "dateUploaded": "2015-07-31",
+      "creators": ["gdmiracle"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 17,
+      "section": "main",
+      "onList": true,
+      "name": "Satanic Hell",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "14496667",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-03",
+      "creators": ["IIIspitfireIII"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 18,
+      "section": "main",
+      "onList": true,
+      "name": "silent silhouette",
+      "ids": [
+        {
+          "id": "84145309",
+          "label": "Fix"
+        },
+        {
+          "id": "14012748",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 24.2,
+        "holder": "Hipo"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-17",
+      "creators": ["hhuuko", "cairillic"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 19,
+      "section": "main",
+      "onList": true,
+      "name": "sailent clubstar",
+      "ids": [
+        {
+          "id": "10031383",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 3.39,
+        "holder": "HaloZombies"
+      },
+      "verified": false,
+      "dateUploaded": "2015-07-28",
+      "creators": ["Nautilus2K"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 20,
+      "section": "main",
+      "onList": true,
+      "name": "sakupen circles v2",
+      "ids": [
+        {
+          "id": "78178046",
+          "label": "Fix"
+        },
+        {
+          "id": "15976710",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 8.0,
+        "holder": "Emp"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-18",
+      "creators": ["danmaster007"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 21,
+      "section": "main",
+      "onList": true,
+      "name": "Something Satanic",
+      "ids": [
+        {
+          "id": "125533818",
+          "label": "Fix"
+        },
+        {
+          "id": "19890875",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-05-16",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 22,
+      "section": "main",
+      "onList": true,
+      "name": "Haunted Corridor",
+      "ids": [
+        {
+          "id": "124228891",
+          "label": "Fix"
+        },
+        {
+          "id": "16408398",
+          "label": "OG Reupload"
+        },
+        {
+          "id": "13307631",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 19.4,
+        "holder": "Emp"
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-21",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 23,
+      "section": "main",
+      "onList": true,
+      "name": "Death Corridor (Unnerfed)",
+      "ids": [
+        {
+          "id": "95122145",
+          "label": "Reupload"
+        },
+        {
+          "id": "10314379",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 47.14,
+        "holder": "Hover"
+      },
+      "verified": false,
+      "dateUploaded": "2015-08-05",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 24,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Circles XII",
+      "ids": [
+        {
+          "id": "80910910",
+          "label": "Fix"
+        },
+        {
+          "id": "17621647",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 30.97,
+        "holder": "TosGD"
+      },
+      "verified": false,
+      "dateUploaded": "2016-03-07",
+      "creators": ["Nox Eternis"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 25,
+      "section": "main",
+      "onList": true,
+      "name": "ultra silent circles",
+      "ids": [
+        {
+          "id": "15846790",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-14",
+      "creators": ["1CicL3"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 26,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Factory (Restoration)",
+      "ids": [
+        {
+          "id": "80307362",
+          "label": "Restoration"
+        },
+        {
+          "id": "11349024",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-08-31",
+      "creators": ["IcEDCave"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 27,
+      "section": "main",
+      "onList": true,
+      "name": "Death Corridor",
+      "ids": [
+        {
+          "id": "92551175",
+          "label": "Fix"
+        },
+        {
+          "id": "10314379",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 26.38,
+        "holder": "Esoteric Hydra"
+      },
+      "verified": false,
+      "dateUploaded": "2015-09-07",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 28,
+      "section": "main",
+      "onList": true,
+      "name": "XSaTan",
+      "ids": [
+        {
+          "id": "121511843",
+          "label": "Fix"
+        },
+        {
+          "id": "19329044",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 8.07,
+        "holder": "juipukka69"
+      },
+      "verified": false,
+      "dateUploaded": "2016-04-28",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 29,
+      "section": "main",
+      "onList": true,
+      "name": "deathwish",
+      "ids": [
+        {
+          "id": "71237223",
+          "label": "Fix"
+        },
+        {
+          "id": "13173452",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 3.62,
+        "holder": "juipukka69"
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-16",
+      "creators": ["youomoples"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 30,
+      "section": "main",
+      "onList": true,
+      "name": "Chaotic World",
+      "ids": [
+        {
+          "id": "105119769",
+          "label": "Fix"
+        },
+        {
+          "id": "13596762",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 9.41,
+        "holder": "Anceps"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-01",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 31,
+      "section": "main",
+      "onList": true,
+      "name": "silent locked",
+      "ids": [
+        {
+          "id": "126843656",
+          "label": "Fix"
+        },
+        {
+          "id": "24773813",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 12.94,
+        "holder": "Sapphuby"
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-11",
+      "creators": ["BuzzStorm"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 32,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Cycles",
+      "ids": [
+        {
+          "id": "80137830",
+          "label": "Fix"
+        },
+        {
+          "id": "14943357",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 7.67,
+        "holder": "axellssl"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-18",
+      "creators": ["DrShai"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 33,
+      "section": "main",
+      "onList": true,
+      "name": "sonic wave v3",
+      "ids": [
+        {
+          "id": "89335576",
+          "label": "Fix"
+        },
+        {
+          "id": "16614408",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 12.0,
+        "holder": "xLunaires"
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-07",
+      "creators": ["1CicL3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 34,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Machine",
+      "ids": [
+        {
+          "id": "90261044",
+          "label": "Fix"
+        },
+        {
+          "id": "8326866",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 36.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-13",
+      "creators": ["Saria"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 35,
+      "section": "main",
+      "onList": true,
+      "name": "silent step",
+      "ids": [
+        {
+          "id": "104332408",
+          "label": "Fix"
+        },
+        {
+          "id": "7708965",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 7.0,
+        "holder": "IAmNot60Hz"
+      },
+      "verified": false,
+      "dateUploaded": "2015-05-26",
+      "creators": ["TheRealSailen"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 36,
+      "section": "main",
+      "onList": true,
+      "name": "BAKEMONOGATARI",
+      "ids": [
+        {
+          "id": "95927517",
+          "label": "Fix"
+        },
+        {
+          "id": "21356559",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 20.0,
+        "holder": "LucyIsSilly"
+      },
+      "verified": false,
+      "dateUploaded": "2016-07-03",
+      "creators": ["hhuuko"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 37,
+      "section": "main",
+      "onList": true,
+      "name": "Crimson World",
+      "ids": [
+        {
+          "id": "8038902",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 53.0,
+        "holder": "PureL"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-06",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 38,
+      "section": "main",
+      "onList": true,
+      "name": "Ultra Sonic Wave",
+      "ids": [
+        {
+          "id": "67171741",
+          "label": "Fix"
+        },
+        {
+          "id": "15157485",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 11.0,
+        "holder": "Jevan"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-24",
+      "creators": ["hieroglyphic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 39,
+      "section": "main",
+      "onList": true,
+      "name": "ultimate sonic wave",
+      "ids": [
+        {
+          "id": "63818819",
+          "label": "Fix"
+        },
+        {
+          "id": "17408009",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 10.0,
+        "holder": "juipukka69"
+      },
+      "verified": false,
+      "dateUploaded": "2016-03-01",
+      "creators": ["danmaster007"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 40,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Circles II",
+      "ids": [
+        {
+          "id": "89364504",
+          "label": "Fix"
+        },
+        {
+          "id": "18939686",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 14.0,
+        "holder": "Weiwot"
+      },
+      "verified": false,
+      "dateUploaded": "2016-04-16",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 41,
+      "section": "main",
+      "onList": true,
+      "name": "Omminous Clouds",
+      "ids": [
+        {
+          "id": "24830400",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 15.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-13",
+      "creators": ["Koyomi24"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 42,
+      "section": "main",
+      "onList": true,
+      "name": "Solid Clubstep",
+      "ids": [
+        {
+          "id": "72625445",
+          "label": "Fix"
+        },
+        {
+          "id": "11543588",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 11.0,
+        "holder": "Koozoo2k"
+      },
+      "verified": false,
+      "dateUploaded": "2015-09-04",
+      "creators": ["CryptiaN"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 43,
+      "section": "main",
+      "onList": false,
+      "name": "Absolute Zero",
+      "ids": [
+        {
+          "id": "8915216",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 23.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-29",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 44,
+      "section": "main",
+      "onList": true,
+      "name": "OMEGA",
+      "ids": [
+        {
+          "id": "21113134",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 4.0,
+        "holder": "Limon4ik2812"
+      },
+      "verified": false,
+      "dateUploaded": "2016-06-26",
+      "creators": ["Aason"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 45,
+      "section": "main",
+      "onList": true,
+      "name": "Sakupen Hell Reborn",
+      "ids": [
+        {
+          "id": "83718466",
+          "label": "Fix"
+        },
+        {
+          "id": "24377772",
+          "label": "Reupload"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 10.0,
+        "holder": "snowspike"
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-27",
+      "creators": ["xJames"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 46,
+      "section": "main",
+      "onList": false,
+      "name": "Silent AcropoliX",
+      "ids": [
+        {
+          "id": "20846131",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 51.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2016-06-17",
+      "creators": ["danmaster007", "SoulsTRK"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 47,
+      "section": "main",
+      "onList": true,
+      "name": "Destructive Circles",
+      "ids": [
+        {
+          "id": "86864148",
+          "label": "Fix"
+        },
+        {
+          "id": "16933135",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 28.44,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-16",
+      "creators": ["Shin3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 48,
+      "section": "main",
+      "onList": false,
+      "name": "Silent clubstep (Unnerfed)",
+      "ids": [
+        {
+          "id": "38692301",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 26.0,
+        "holder": "sobot"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["TheRealSailent"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 49,
+      "section": "main",
+      "onList": false,
+      "name": "H3ll Phase",
+      "ids": [
+        {
+          "id": "96685319",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 36.0,
+        "holder": "Koozoo2k"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["AniFaulscabek"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 50,
+      "section": "main",
+      "onList": false,
+      "name": "Forsaken Wave",
+      "ids": [
+        {
+          "id": "59333797",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 18.0,
+        "holder": "Rqn"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["HiloNubs"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 51,
+      "section": "main",
+      "onList": false,
+      "name": "lost circles",
+      "ids": [
+        {
+          "id": "22319115",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 23.0,
+        "holder": "TheGeensooX"
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-04",
+      "creators": ["hhuuko"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 52,
+      "section": "main",
+      "onList": false,
+      "name": "Doomed Circles",
+      "ids": [
+        {
+          "id": "63966334",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 43.0,
+        "holder": "Sashozz"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["MrRonan"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 53,
+      "section": "main",
+      "onList": true,
+      "name": "Tartarus",
+      "ids": [
+        {
+          "id": "29386571",
+          "label": "Reupload"
+        },
+        {
+          "id": "7721796",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 36.0,
+        "holder": "StormBlazer"
+      },
+      "verified": false,
+      "dateUploaded": "2015-05-27",
+      "creators": ["Riot"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 54,
+      "section": "main",
+      "onList": true,
+      "name": "SARY NEVER CLEAR",
+      "ids": [
+        {
+          "id": "609629",
+          "label": "Reupload"
+        },
+        {
+          "id": "594932",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": "2014-04-20",
+      "creators": ["Optic Sunflow"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 55,
+      "section": "main",
+      "onList": false,
+      "name": "Ultra Sonic Wave",
+      "ids": [
+        {
+          "id": "67182256",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 16.0,
+        "holder": "Cuack"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Kerploosh"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 56,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Machine",
+      "ids": [
+        {
+          "id": "92222394",
+          "label": "Fix"
+        },
+        {
+          "id": "???",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 21.0,
+        "holder": "Achlys"
+      },
+      "verified": false,
+      "dateUploaded": "2015-??-??",
+      "creators": ["xZach2002"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 57,
+      "section": "main",
+      "onList": true,
+      "name": "silent Acropolis",
+      "ids": [
+        {
+          "id": "83143127",
+          "label": "Reupload"
+        },
+        {
+          "id": "13918016",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 66.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-14",
+      "creators": ["danmaster007", "Zobros"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 58,
+      "section": "main",
+      "onList": false,
+      "name": "Ruby World",
+      "ids": [
+        {
+          "id": "96847471",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 9.0,
+        "holder": "Cuack"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["cosmokobold"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 59,
+      "section": "main",
+      "onList": false,
+      "name": "Deadly The Big Black",
+      "ids": [
+        {
+          "id": "15089533",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 10.0,
+        "holder": "Rawre"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-22",
+      "creators": ["NoeTuka"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 60,
+      "section": "main",
+      "onList": false,
+      "name": "Sakupen circles (Old)",
+      "ids": [
+        {
+          "id": "10887708",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "a3dus"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-22",
+      "creators": ["Nick24"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 61,
+      "section": "main",
+      "onList": true,
+      "name": "Chaotic Circles II",
+      "ids": [
+        {
+          "id": "20882984",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 46.0,
+        "holder": "Hipo"
+      },
+      "verified": false,
+      "dateUploaded": "2016-06-18",
+      "creators": ["Kylra"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 62,
+      "section": "main",
+      "onList": true,
+      "name": "Sonic Ocean",
+      "ids": [
+        {
+          "id": "63997386",
+          "label": "Fix"
+        },
+        {
+          "id": "21364486",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 90.0,
+        "holder": "nensa"
+      },
+      "verified": false,
+      "dateUploaded": "2016-07-04",
+      "creators": ["Dyson9"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 63,
+      "section": "main",
+      "onList": false,
+      "name": "Rip It",
+      "ids": [
+        {
+          "id": "62361998",
+          "label": "Deauto"
+        },
+        {
+          "id": "N/A",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 34.0,
+        "holder": "sobot"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Acrk0"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 64,
+      "section": "main",
+      "onList": true,
+      "name": "Sinister ClubStep",
+      "ids": [
+        {
+          "id": "100344767",
+          "label": "Fix"
+        },
+        {
+          "id": "8402135",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 30.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-15",
+      "creators": ["Zephyruz"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 65,
+      "section": "main",
+      "onList": false,
+      "name": "Death Anthem (needs a fix)",
+      "ids": [
+        {
+          "id": "15739708",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 48.0,
+        "holder": "luminovsky"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-10",
+      "creators": ["GeoNinjaX17"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 66,
+      "section": "main",
+      "onList": true,
+      "name": "Silent poltergeist",
+      "ids": [
+        {
+          "id": "13586257",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Whizkid05"
+      },
+      "verified": true,
+      "dateUploaded": "2015-11-01",
+      "creators": ["TheRealSailent"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 67,
+      "section": "main",
+      "onList": false,
+      "name": "Hyper Drink",
+      "ids": [
+        {
+          "id": "5700934",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 90.0,
+        "holder": "DankDrew"
+      },
+      "verified": false,
+      "dateUploaded": "2015-03-14",
+      "creators": ["Benjamaster7"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 68,
+      "section": "main",
+      "onList": false,
+      "name": "Yatagarasu (Unnerfed)",
+      "ids": [
+        {
+          "id": "28224824",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Zoink"
+      },
+      "verified": true,
+      "dateUploaded": "2017-01-13",
+      "creators": ["ViPriN", "Riot"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 69,
+      "section": "main",
+      "onList": false,
+      "name": "Element 111 Rg (Restoration)",
+      "ids": [
+        {
+          "id": "61775814",
+          "label": "Restoration"
+        },
+        {
+          "id": "498620",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "paqoe"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["DarkX", "Compendium"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 70,
+      "section": "main",
+      "onList": false,
+      "name": "Hellhole Underworld",
+      "ids": [
+        {
+          "id": "89334441",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 31.0,
+        "holder": "nensa"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["faren29"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 71,
+      "section": "main",
+      "onList": false,
+      "name": "Yatagarasu (Old)",
+      "ids": [
+        {
+          "id": "97022261",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 25.0,
+        "holder": "Cuack"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["ViPriN", "Riot"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 72,
+      "section": "main",
+      "onList": false,
+      "name": "Silent Mountain",
+      "ids": [
+        {
+          "id": "1244896",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 44.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2014-07-04",
+      "creators": ["DiaCreeper"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 73,
+      "section": "main",
+      "onList": false,
+      "name": "Sonic Wave v2",
+      "ids": [
+        {
+          "id": "64000239",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 13.0,
+        "holder": "Mewtwo557"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["HiloNubs"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 74,
+      "section": "main",
+      "onList": false,
+      "name": "bloodbath circles v2",
+      "ids": [
+        {
+          "id": "80718445",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 8.0,
+        "holder": "pohgii"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["1CicL3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 75,
+      "section": "main",
+      "onList": false,
+      "name": "The Big Black",
+      "ids": [
+        {
+          "id": "23275607",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 16.0,
+        "holder": "snowspike"
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-15",
+      "creators": ["Koopi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 76,
+      "section": "main",
+      "onList": false,
+      "name": "Aftermath v2",
+      "ids": [
+        {
+          "id": "58224600",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mewtwo557"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Electro2001", "Cypher"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 77,
+      "section": "main",
+      "onList": true,
+      "name": "Dreamopolis",
+      "ids": [
+        {
+          "id": "8541165",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-19",
+      "creators": ["gdmiracle"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 78,
+      "section": "main",
+      "onList": true,
+      "name": "Dimensional Galaxy",
+      "ids": [
+        {
+          "id": "127156357",
+          "label": "Deauto"
+        },
+        {
+          "id": "25677893",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Sevant"
+      },
+      "verified": true,
+      "dateUploaded": "2016-10-17",
+      "creators": ["Soulax"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 79,
+      "section": "main",
+      "onList": false,
+      "name": "Theory of Darkness (Unnerfed)",
+      "ids": [
+        {
+          "id": "68243886",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Koopi"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 80,
+      "section": "main",
+      "onList": false,
+      "name": "Sakupen Circles",
+      "ids": [
+        {
+          "id": "90490140",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 23.0,
+        "holder": "azadanzan"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Zimnior12"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 81,
+      "section": "main",
+      "onList": false,
+      "name": "bloodclysm",
+      "ids": [
+        {
+          "id": "15913450",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 31.0,
+        "holder": "Mentrillum"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-16",
+      "creators": ["dozen"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 82,
+      "section": "main",
+      "onList": true,
+      "name": "Elite Z v2",
+      "ids": [
+        {
+          "id": "15200589",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 33.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-25",
+      "creators": ["PLAY 4075365"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 83,
+      "section": "main",
+      "onList": false,
+      "name": "Cyclone Machine (Unnerfed)",
+      "ids": [
+        {
+          "id": "122394881",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Electro2001"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 84,
+      "section": "main",
+      "onList": false,
+      "name": "Blood Wave",
+      "ids": [
+        {
+          "id": "121778835",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 14.0,
+        "holder": "HaloZombies"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Taggis"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 85,
+      "section": "main",
+      "onList": true,
+      "name": "Firepower X",
+      "ids": [
+        {
+          "id": "5370278",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 87.0,
+        "holder": "snowspike"
+      },
+      "verified": false,
+      "dateUploaded": "2015-03-01",
+      "creators": ["Spectruh"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 86,
+      "section": "main",
+      "onList": false,
+      "name": "Wave Challenge",
+      "ids": [
+        {
+          "id": "18633328",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 60.0,
+        "holder": "Sizzli"
+      },
+      "verified": false,
+      "dateUploaded": "2016-04-06",
+      "creators": ["PossibleJump"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 87,
+      "section": "main",
+      "onList": false,
+      "name": "Blade of Justice (Unnerfed)",
+      "ids": [
+        {
+          "id": "35497549",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "MostDefinitelyAlbert"
+      },
+      "verified": true,
+      "dateUploaded": "2017-07-05",
+      "creators": ["Manix648", "LazerBlitz", "knobbelboy"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 88,
+      "section": "main",
+      "onList": true,
+      "name": "Shredder Returns",
+      "ids": [
+        {
+          "id": "13692274",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 32.0,
+        "holder": "Circleguy78"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-06",
+      "creators": ["SeveranceD"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 89,
+      "section": "main",
+      "onList": false,
+      "name": "nova cataclysm",
+      "ids": [
+        {
+          "id": "103459291",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 58.0,
+        "holder": "snowspike"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Piccolini"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 90,
+      "section": "main",
+      "onList": false,
+      "name": "Deadly Circles",
+      "ids": [
+        {
+          "id": "14886389",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 25.0,
+        "holder": "WatchPiggy"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-16",
+      "creators": ["lfaker"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 91,
+      "section": "main",
+      "onList": false,
+      "name": "ExtraSonic",
+      "ids": [
+        {
+          "id": "71254276",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Sevant"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Titan Channel"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 92,
+      "section": "main",
+      "onList": true,
+      "name": "vortex",
+      "ids": [
+        {
+          "id": "8814333",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "exsii"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-26",
+      "creators": ["PLAY 4075365"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 93,
+      "section": "main",
+      "onList": true,
+      "name": "Thinking Space",
+      "ids": [
+        {
+          "id": "54953085",
+          "label": "Reupload"
+        },
+        {
+          "id": "14633948",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Atomic"
+      },
+      "verified": true,
+      "dateUploaded": "2015-12-07",
+      "creators": ["HidekiX"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 94,
+      "section": "main",
+      "onList": true,
+      "name": "Plasma of Doom",
+      "ids": [
+        {
+          "id": "57649651",
+          "label": "Reupload"
+        },
+        {
+          "id": "25801777",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GMDslur"
+      },
+      "verified": true,
+      "dateUploaded": "2016-10-22",
+      "creators": ["ItzRetro", "GoldenCreep"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 95,
+      "section": "main",
+      "onList": false,
+      "name": "Impossible gaps",
+      "ids": [
+        {
+          "id": "119142594",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "conski"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["DTheWolf"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 96,
+      "section": "main",
+      "onList": false,
+      "name": "Narcton Diablo X",
+      "ids": [
+        {
+          "id": "84306024",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "AidanTR"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["ICEDCave"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 97,
+      "section": "main",
+      "onList": true,
+      "name": "Mlg Swag Circles 2",
+      "ids": [
+        {
+          "id": "96056353",
+          "label": "Fix"
+        },
+        {
+          "id": "13704303",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 26.0,
+        "holder": "DankDrew"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-06",
+      "creators": ["JKM GD"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 98,
+      "section": "main",
+      "onList": false,
+      "name": "Silent Circus",
+      "ids": [
+        {
+          "id": "80239633",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Tuggy75"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["EnDerModzKiNG"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 99,
+      "section": "main",
+      "onList": true,
+      "name": "Stereo Demoness",
+      "ids": [
+        {
+          "id": "26751523",
+          "label": "Reupload"
+        },
+        {
+          "id": "260693",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-27",
+      "creators": ["MaJackO"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 100,
+      "section": "main",
+      "onList": true,
+      "name": "Satanic Clubstep",
+      "ids": [
+        {
+          "id": "7874319",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Kiseta"
+      },
+      "verified": true,
+      "dateUploaded": "2015-05-31",
+      "creators": ["IIIspitfireIII"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 101,
+      "section": "main",
+      "onList": false,
+      "name": "Plasma Doom Machine",
+      "ids": [
+        {
+          "id": "71129776",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Hipo"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["ExoSkull7"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 102,
+      "section": "main",
+      "onList": false,
+      "name": "Bloody Knuckles",
+      "ids": [
+        {
+          "id": "27743704",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "enzbro"
+      },
+      "verified": true,
+      "dateUploaded": "2016-12-30",
+      "creators": ["PinchPeak5203"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 103,
+      "section": "main",
+      "onList": false,
+      "name": "Soul Circles",
+      "ids": [
+        {
+          "id": "59388623",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 31.0,
+        "holder": "AkashicRecords"
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Cristian12905"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 104,
+      "section": "main",
+      "onList": true,
+      "name": "red universe",
+      "ids": [
+        {
+          "id": "104332406",
+          "label": "Fix"
+        },
+        {
+          "id": "8609950",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 38.0,
+        "holder": "WellNot"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-21",
+      "creators": ["TheRealSailen"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 105,
+      "section": "main",
+      "onList": false,
+      "name": "Corrupted Souls",
+      "ids": [
+        {
+          "id": "15631343",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 60.0,
+        "holder": "WellNot"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-06",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 106,
+      "section": "main",
+      "onList": true,
+      "name": "Inner Hell (Unnerfed)",
+      "ids": [
+        {
+          "id": "90260967",
+          "label": "Restoration"
+        },
+        {
+          "id": "25666477",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 80.0,
+        "holder": "vao"
+      },
+      "verified": false,
+      "dateUploaded": "2016-10-16",
+      "creators": ["KaotikJumper"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 107,
+      "section": "main",
+      "onList": true,
+      "name": "Sakupen Hell (Buffed)",
+      "ids": [
+        {
+          "id": "65372614",
+          "label": "Reupload"
+        },
+        {
+          "id": "8136616",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ywuChaos"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-26",
+      "creators": ["Noobas"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 108,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Club",
+      "ids": [
+        {
+          "id": "68600127",
+          "label": "Reupload"
+        },
+        {
+          "id": "462797",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Luqualizer"
+      },
+      "verified": true,
+      "dateUploaded": "2014-04-01",
+      "creators": ["blackps2full"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 109,
+      "section": "main",
+      "onList": false,
+      "name": "-critical error-",
+      "ids": [
+        {
+          "id": "19761735",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SpeedyMuffin"
+      },
+      "verified": true,
+      "dateUploaded": "2016-05-12",
+      "creators": ["Yoyo24"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 110,
+      "section": "main",
+      "onList": true,
+      "name": "Bloody Knuckles (Old)",
+      "ids": [
+        {
+          "id": "63594498",
+          "label": "Fix"
+        },
+        {
+          "id": "27743704",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "enzbro"
+      },
+      "verified": true,
+      "dateUploaded": "2016-12-30",
+      "creators": ["PinchPeak5203"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 111,
+      "section": "main",
+      "onList": false,
+      "name": "Heaven and Hell",
+      "ids": [
+        {
+          "id": "167264",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Tuggy75"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-23",
+      "creators": ["roadjunior"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 112,
+      "section": "main",
+      "onList": false,
+      "name": "The Dark Realm I",
+      "ids": [
+        {
+          "id": "10550247",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 34.0,
+        "holder": "WatchPiggy"
+      },
+      "verified": false,
+      "dateUploaded": "2015-08-12",
+      "creators": ["lunar758"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 113,
+      "section": "main",
+      "onList": true,
+      "name": "Icestream X",
+      "ids": [
+        {
+          "id": "64154845",
+          "label": "Fix"
+        },
+        {
+          "id": "24743509",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 35.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-10",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 114,
+      "section": "main",
+      "onList": false,
+      "name": "The Big Black",
+      "ids": [
+        {
+          "id": "6296691",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GeoDasher36"
+      },
+      "verified": true,
+      "dateUploaded": "2015-04-06",
+      "creators": ["Nautilus2K"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 115,
+      "section": "main",
+      "onList": true,
+      "name": "DRY Carbon Diablo X",
+      "ids": [
+        {
+          "id": "16979283",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 77.0,
+        "holder": "zhexyuh"
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-17",
+      "creators": ["Zephyr"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 116,
+      "section": "main",
+      "onList": false,
+      "name": "Endurance Nightmares",
+      "ids": [
+        {
+          "id": "14103875",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Hipolaaa"
+      },
+      "verified": true,
+      "dateUploaded": "2015-11-21",
+      "creators": ["Steel257"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 117,
+      "section": "main",
+      "onList": false,
+      "name": "Theory of Silent",
+      "ids": [
+        {
+          "id": "81954761",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "WatchPiggy"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Kylra"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 118,
+      "section": "main",
+      "onList": false,
+      "name": "Dark Maze (Unnerfed)",
+      "ids": [
+        {
+          "id": "72628634",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "snowspike"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Chloie"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 119,
+      "section": "main",
+      "onList": false,
+      "name": "The Hell origin (Old)",
+      "ids": [
+        {
+          "id": "29386981",
+          "label": "Reupload"
+        },
+        {
+          "id": "187707",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Stormfly"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-31",
+      "creators": ["Sohn0924"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 120,
+      "section": "main",
+      "onList": false,
+      "name": "Deadly clubstep V2",
+      "ids": [
+        {
+          "id": "82459969",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["TheRealSailent"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 121,
+      "section": "main",
+      "onList": false,
+      "name": "Aftercatabath",
+      "ids": [
+        {
+          "id": "57215346",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "eandis"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Ggb0y", "Riot", "Exenity"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 122,
+      "section": "main",
+      "onList": false,
+      "name": "Bloodbath v2",
+      "ids": [
+        {
+          "id": "87573378",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mewtwo557"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Kast987"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 123,
+      "section": "main",
+      "onList": false,
+      "name": "Toilete La Finale X",
+      "ids": [
+        {
+          "id": "83024980",
+          "label": "Fix"
+        },
+        {
+          "id": "20387052",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 28.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2016-06-02",
+      "creators": ["DefenderToiler"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 124,
+      "section": "main",
+      "onList": false,
+      "name": "Sonic Wave",
+      "ids": [
+        {
+          "id": "26681070",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "sunix"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-25",
+      "creators": ["Cyclic"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 125,
+      "section": "main",
+      "onList": true,
+      "name": "FirewallX (Old)",
+      "ids": [
+        {
+          "id": "122010176",
+          "label": "Reupload"
+        },
+        {
+          "id": "20711301",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "snowspike"
+      },
+      "verified": true,
+      "dateUploaded": "2016-06-12",
+      "creators": ["Xyriak"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 126,
+      "section": "main",
+      "onList": true,
+      "name": "Sephiroth",
+      "ids": [
+        {
+          "id": "108391836",
+          "label": "Fix"
+        },
+        {
+          "id": "9303455",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ElEeek"
+      },
+      "verified": true,
+      "dateUploaded": "2015-07-09",
+      "creators": ["Nick24"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 127,
+      "section": "main",
+      "onList": false,
+      "name": "Afterbath",
+      "ids": [
+        {
+          "id": "17190074",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mentrillum"
+      },
+      "verified": true,
+      "dateUploaded": "2016-02-23",
+      "creators": ["HiloNubs"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 128,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Madness",
+      "ids": [
+        {
+          "id": "125318450",
+          "label": "Fix"
+        },
+        {
+          "id": "13584675",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 11.48,
+        "holder": "Anceps"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-01",
+      "creators": ["faren29"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 129,
+      "section": "main",
+      "onList": true,
+      "name": "Silent unity",
+      "ids": [
+        {
+          "id": "17010127",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Lolzaru"
+      },
+      "verified": true,
+      "dateUploaded": "2016-02-18",
+      "creators": ["Majed"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 130,
+      "section": "main",
+      "onList": false,
+      "name": "ICE Carbon Kraken",
+      "ids": [
+        {
+          "id": "20206939",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Furaux"
+      },
+      "verified": true,
+      "dateUploaded": "2016-05-27",
+      "creators": ["GwRo3dBose"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 131,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Cataclysm",
+      "ids": [
+        {
+          "id": "9872528",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mewtwo557"
+      },
+      "verified": true,
+      "dateUploaded": "2015-07-24",
+      "creators": ["AEROSTATIK"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 132,
+      "section": "main",
+      "onList": true,
+      "name": "Inside The Hell",
+      "ids": [
+        {
+          "id": "15906355",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 78.0,
+        "holder": "xaura2k"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-16",
+      "creators": ["Pain"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 133,
+      "section": "main",
+      "onList": false,
+      "name": "Azure Labyrinth",
+      "ids": [
+        {
+          "id": "32375575",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Metalface221"
+      },
+      "verified": true,
+      "dateUploaded": "2017-04-08",
+      "creators": ["Yoyo24"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 134,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Poltergeist (Old)",
+      "ids": [
+        {
+          "id": "110183572",
+          "label": "Fix"
+        },
+        {
+          "id": "13125813",
+          "label": "Reupload"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Hipo"
+      },
+      "verified": true,
+      "dateUploaded": "2015-10-13",
+      "creators": ["TheRealSailent"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 135,
+      "section": "main",
+      "onList": true,
+      "name": "Sonic Wave (Old)",
+      "ids": [
+        {
+          "id": "19451035",
+          "label": "Reupload"
+        },
+        {
+          "id": "8585365",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Hipo"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-20",
+      "creators": ["Cyclic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 136,
+      "section": "main",
+      "onList": true,
+      "name": "Ice Carbon Clone X",
+      "ids": [
+        {
+          "id": "125027517",
+          "label": "Reupload"
+        },
+        {
+          "id": "49776670",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 35.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "201?-??-??",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 137,
+      "section": "main",
+      "onList": false,
+      "name": "Demon on Track",
+      "ids": [
+        {
+          "id": "82947940",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KPGDylan"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Gw Illusion"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 138,
+      "section": "main",
+      "onList": true,
+      "name": "River Styx",
+      "ids": [
+        {
+          "id": "49294791",
+          "label": "Fix"
+        },
+        {
+          "id": "7909461",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Sonic80"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-01",
+      "creators": ["EnemyMOABs"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 139,
+      "section": "main",
+      "onList": false,
+      "name": "Crimsion Clubstep",
+      "ids": [
+        {
+          "id": "13496367",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ButterFish"
+      },
+      "verified": true,
+      "dateUploaded": "2015-10-29",
+      "creators": ["Crimsion ICED"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 140,
+      "section": "main",
+      "onList": false,
+      "name": "end of the world",
+      "ids": [
+        {
+          "id": "1940096",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Luqualizer"
+      },
+      "verified": true,
+      "dateUploaded": "2014-09-03",
+      "creators": ["DemonClown"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 141,
+      "section": "main",
+      "onList": false,
+      "name": "Ghost Realm",
+      "ids": [
+        {
+          "id": "15149883",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "WellNot"
+      },
+      "verified": true,
+      "dateUploaded": "2015-12-24",
+      "creators": ["planckLength"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 142,
+      "section": "main",
+      "onList": false,
+      "name": "Extreme Wave",
+      "ids": [
+        {
+          "id": "8283620",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "BensonGD"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-12",
+      "creators": ["JJjo"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 143,
+      "section": "main",
+      "onList": false,
+      "name": "The Hell Zone (Old)",
+      "ids": [
+        {
+          "id": "142942",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Stormfly"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-08",
+      "creators": ["Sohn0924"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 144,
+      "section": "main",
+      "onList": false,
+      "name": "The Hell World (Old)",
+      "ids": [
+        {
+          "id": "149027",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Stormfly"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-12",
+      "creators": ["Sohn0924"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 145,
+      "section": "main",
+      "onList": true,
+      "name": "Neonic Dreamland (Unnerfed)",
+      "ids": [
+        {
+          "id": "72687179",
+          "label": "Restoration"
+        },
+        {
+          "id": "5322822",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "lkwavs"
+      },
+      "verified": true,
+      "dateUploaded": "2015-02-28",
+      "creators": ["RobBuck"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 146,
+      "section": "main",
+      "onList": true,
+      "name": "Bloody Ruby",
+      "ids": [
+        {
+          "id": "8501393",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-18",
+      "creators": ["Koopi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 147,
+      "section": "main",
+      "onList": true,
+      "name": "1 Comme le vent",
+      "ids": [
+        {
+          "id": "10485394",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Motor8"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-10",
+      "creators": ["leena"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 148,
+      "section": "main",
+      "onList": false,
+      "name": "Cataclysm III",
+      "ids": [
+        {
+          "id": "37163144",
+          "label": "Fix"
+        },
+        {
+          "id": "10430551",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "WellNot"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-08",
+      "creators": ["Helpegasus"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 149,
+      "section": "main",
+      "onList": true,
+      "name": "Golden Forest",
+      "ids": [
+        {
+          "id": "11369520",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Saturny"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-31",
+      "creators": ["Steel257"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 150,
+      "section": "main",
+      "onList": false,
+      "name": "Phobos (Unnerfed)",
+      "ids": [
+        {
+          "id": "26343619",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "WellNot"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-12",
+      "creators": ["GMTSean"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 151,
+      "section": "main",
+      "onList": true,
+      "name": "insomnia of death",
+      "ids": [
+        {
+          "id": "127395541",
+          "label": "Fix"
+        },
+        {
+          "id": "5204981",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "x2147"
+      },
+      "verified": true,
+      "dateUploaded": "2015-02-23",
+      "creators": ["TgSaturne"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 152,
+      "section": "main",
+      "onList": false,
+      "name": "uNation",
+      "ids": [
+        {
+          "id": "24584364",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "snowspike"
+      },
+      "verified": true,
+      "dateUploaded": "2016-09-04",
+      "creators": ["PsychoManiac14"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 153,
+      "section": "main",
+      "onList": false,
+      "name": "Sakupen Hell",
+      "ids": [
+        {
+          "id": "23262780",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Trusta"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-08",
+      "creators": ["Noobas"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 154,
+      "section": "main",
+      "onList": false,
+      "name": "UltraSatanicCircles",
+      "ids": [
+        {
+          "id": "51430121",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Zylenox"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["FRF"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 155,
+      "section": "main",
+      "onList": false,
+      "name": "Shadow Dimension",
+      "ids": [
+        {
+          "id": "4624465",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Xanii"
+      },
+      "verified": true,
+      "dateUploaded": "2015-02-01",
+      "creators": ["Koopi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 156,
+      "section": "main",
+      "onList": false,
+      "name": "nova cataclysm",
+      "ids": [
+        {
+          "id": "7787809",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "DankDrew"
+      },
+      "verified": true,
+      "dateUploaded": "2015-05-29",
+      "creators": ["AnonIIExt"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 157,
+      "section": "main",
+      "onList": false,
+      "name": "Necrosis",
+      "ids": [
+        {
+          "id": "22459415",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "HaloZombies"
+      },
+      "verified": true,
+      "dateUploaded": "2016-08-08",
+      "creators": ["Kerploosh"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 158,
+      "section": "main",
+      "onList": false,
+      "name": "After Sonic Wave",
+      "ids": [
+        {
+          "id": "21105100",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": true,
+      "dateUploaded": "2016-06-25",
+      "creators": ["iIPrototypeIi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 159,
+      "section": "main",
+      "onList": true,
+      "name": "Theory of Darkness",
+      "ids": [
+        {
+          "id": "69491799",
+          "label": "Reupload"
+        },
+        {
+          "id": "14061353",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": "2015-11-19",
+      "creators": ["Koopi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 160,
+      "section": "main",
+      "onList": true,
+      "name": "deadly cataclysm (Unnerfed)",
+      "ids": [
+        {
+          "id": "90635764",
+          "label": "Reupload"
+        },
+        {
+          "id": "6827178",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GeometryJosh"
+      },
+      "verified": true,
+      "dateUploaded": "2015-04-26",
+      "creators": ["Scrypy"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 161,
+      "section": "main",
+      "onList": false,
+      "name": "demon of zStep",
+      "ids": [
+        {
+          "id": "84161848",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KumorY"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["RenStep"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 162,
+      "section": "main",
+      "onList": false,
+      "name": "DeadClocked X",
+      "ids": [
+        {
+          "id": "16546377",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ButterFish"
+      },
+      "verified": true,
+      "dateUploaded": "2016-02-05",
+      "creators": ["Nautilus2K", "PainisCupcake"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 163,
+      "section": "main",
+      "onList": false,
+      "name": "Betrayal of fate v2",
+      "ids": [
+        {
+          "id": "80137875",
+          "label": "Fix"
+        },
+        {
+          "id": "26356280",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KumorY"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-13",
+      "creators": ["JasusGames URG"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 164,
+      "section": "main",
+      "onList": false,
+      "name": "bloodclysm (Old)",
+      "ids": [
+        {
+          "id": "15534262",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mentrillum"
+      },
+      "verified": true,
+      "dateUploaded": "2016-01-03",
+      "creators": ["dozen"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 165,
+      "section": "main",
+      "onList": false,
+      "name": "Paracosm circles (Unnerfed)",
+      "ids": [
+        {
+          "id": "29066567",
+          "label": "Fix"
+        },
+        {
+          "id": "10230060",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Jakercut"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-03",
+      "creators": ["N1XO"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 166,
+      "section": "main",
+      "onList": true,
+      "name": "Back on Mountain (Unnerfed)",
+      "ids": [
+        {
+          "id": "26751794",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Glow"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-27",
+      "creators": ["MaJackO"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 167,
+      "section": "main",
+      "onList": false,
+      "name": "Classical",
+      "ids": [
+        {
+          "id": "15082303",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KumorY"
+      },
+      "verified": true,
+      "dateUploaded": "2015-12-22",
+      "creators": ["Arceans"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 168,
+      "section": "main",
+      "onList": false,
+      "name": "The Darkest Light",
+      "ids": [
+        {
+          "id": "102659070",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GDEDS"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["squirtlesurgeon"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 169,
+      "section": "main",
+      "onList": false,
+      "name": "Hell Lapse",
+      "ids": [
+        {
+          "id": "10274816",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Razzley"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-04",
+      "creators": ["MrPepsea"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 170,
+      "section": "main",
+      "onList": true,
+      "name": "The Catacombs",
+      "ids": [
+        {
+          "id": "26351831",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Angel415"
+      },
+      "verified": true,
+      "dateUploaded": "2015-??-??",
+      "creators": ["Myomei"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 171,
+      "section": "main",
+      "onList": true,
+      "name": "Acid Circles",
+      "ids": [
+        {
+          "id": "9188680",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Mufferasu"
+      },
+      "verified": true,
+      "dateUploaded": "2015-07-06",
+      "creators": ["officialpanda"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 172,
+      "section": "main",
+      "onList": true,
+      "name": "The Weird Ghost",
+      "ids": [
+        {
+          "id": "22279525",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 47.0,
+        "holder": "steuniluver"
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-03",
+      "creators": ["VicesG"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 173,
+      "section": "main",
+      "onList": true,
+      "name": "Silent Ice Hell",
+      "ids": [
+        {
+          "id": "16926091",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Castro 13GD"
+      },
+      "verified": true,
+      "dateUploaded": "2016-02-16",
+      "creators": ["Kamoflage"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 174,
+      "section": "main",
+      "onList": true,
+      "name": "Deadly Hexagon Force (Unnerfed)",
+      "ids": [
+        {
+          "id": "83238246",
+          "label": "Reupload"
+        },
+        {
+          "id": "2699309",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SpeedyMuffin"
+      },
+      "verified": true,
+      "dateUploaded": "2017-01-??",
+      "creators": ["Minus"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 175,
+      "section": "main",
+      "onList": true,
+      "name": "Deadly Journey",
+      "ids": [
+        {
+          "id": "77154347",
+          "label": "Fix"
+        },
+        {
+          "id": "19518103",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Motor8"
+      },
+      "verified": true,
+      "dateUploaded": "2016-05-04",
+      "creators": ["Cubatron3k"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": 176,
+      "section": "main",
+      "onList": false,
+      "name": "fexty (Unnerfed)",
+      "ids": [
+        {
+          "id": "10189562",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SkyJax"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-02",
+      "creators": ["ozpectro"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 177,
+      "section": "main",
+      "onList": true,
+      "name": "The Last Straw",
+      "ids": [
+        {
+          "id": "13429739",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "HequinoX"
+      },
+      "verified": true,
+      "dateUploaded": "2015-10-26",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 178,
+      "section": "main",
+      "onList": false,
+      "name": "Elite Z",
+      "ids": [
+        {
+          "id": "74133176",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ButterFish"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["PLAY 4075365"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 179,
+      "section": "main",
+      "onList": false,
+      "name": "SilentFunk",
+      "ids": [
+        {
+          "id": "10661308",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GeometryJosh"
+      },
+      "verified": true,
+      "dateUploaded": "2015-08-15",
+      "creators": ["Nautilus2K", "Optagonus"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 180,
+      "section": "main",
+      "onList": false,
+      "name": "The Hell dignity",
+      "ids": [
+        {
+          "id": "169913",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Stormfly"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-24",
+      "creators": ["Sohn0924"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 181,
+      "section": "main",
+      "onList": true,
+      "name": "Death Machine",
+      "ids": [
+        {
+          "id": "21982711",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Piracy"
+      },
+      "verified": true,
+      "dateUploaded": "2016-07-24",
+      "creators": ["Geometry Mastrz0"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 182,
+      "section": "main",
+      "onList": true,
+      "name": "Cataclysm X",
+      "ids": [
+        {
+          "id": "14820008",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KumorY"
+      },
+      "verified": true,
+      "dateUploaded": "2015-12-14",
+      "creators": ["Nyxess Moon"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 183,
+      "section": "main",
+      "onList": false,
+      "name": "Ship Space",
+      "ids": [
+        {
+          "id": "1740842",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "TrueJumpy"
+      },
+      "verified": true,
+      "dateUploaded": "2014-08-16",
+      "creators": ["RESTLESS"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 184,
+      "section": "main",
+      "onList": false,
+      "name": "Time of Demon",
+      "ids": [
+        {
+          "id": "248797",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-20",
+      "creators": ["GW JAENG"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 185,
+      "section": "main",
+      "onList": true,
+      "name": "Quadraric Function",
+      "ids": [
+        {
+          "id": "1376712",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "nSwish"
+      },
+      "verified": true,
+      "dateUploaded": "2014-07-16",
+      "creators": ["Megadere"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 186,
+      "section": "main",
+      "onList": false,
+      "name": "Red World",
+      "ids": [
+        {
+          "id": "2374518",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SrGuillester"
+      },
+      "verified": true,
+      "dateUploaded": "2014-10-11",
+      "creators": ["saRy", "IIINePtunEIII"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 187,
+      "section": "main",
+      "onList": true,
+      "name": "Red World (Old)",
+      "ids": [
+        {
+          "id": "26923471",
+          "label": "Reupload"
+        },
+        {
+          "id": "2329419",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-10-07",
+      "creators": ["saRy"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 188,
+      "section": "main",
+      "onList": false,
+      "name": "Flying test",
+      "ids": [
+        {
+          "id": "506624",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "iBrow"
+      },
+      "verified": true,
+      "dateUploaded": "2014-04-07",
+      "creators": ["Critica"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 189,
+      "section": "main",
+      "onList": false,
+      "name": "Creeper Force",
+      "ids": [
+        {
+          "id": "2487191",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Riot"
+      },
+      "verified": true,
+      "dateUploaded": "2014-10-18",
+      "creators": ["CreeperMILK"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 190,
+      "section": "main",
+      "onList": false,
+      "name": "ICE Carbon Diablo X",
+      "ids": [
+        {
+          "id": "814678",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Riot"
+      },
+      "verified": true,
+      "dateUploaded": "2014-05-20",
+      "creators": ["-roadbose-"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 191,
+      "section": "main",
+      "onList": false,
+      "name": "Cataclysm (Old)",
+      "ids": [
+        {
+          "id": "31402255",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Giron"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Ggb0y", "Riot", "Exenity"],
+      "twoPlayer": false,
+      "rateStatus": "Outdated Version"
+    },
+    {
+      "rank": 192,
+      "section": "main",
+      "onList": false,
+      "name": "Space Clubstep",
+      "ids": [
+        {
+          "id": "121743608",
+          "label": "Fix"
+        },
+        {
+          "id": "1853009",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 82.0,
+        "holder": "snowspike"
+      },
+      "verified": false,
+      "dateUploaded": "2014-08-26",
+      "creators": ["Flectx"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 193,
+      "section": "main",
+      "onList": false,
+      "name": "Super Nightmare",
+      "ids": [
+        {
+          "id": "593588",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "snowspike"
+      },
+      "verified": true,
+      "dateUploaded": "2014-04-20",
+      "creators": ["-", "Jax"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 194,
+      "section": "main",
+      "onList": false,
+      "name": "Dark World",
+      "ids": [
+        {
+          "id": "6126068",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": true,
+      "dateUploaded": "2015-03-31",
+      "creators": ["Step4enko", "ZorroZ Zet"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 195,
+      "section": "main",
+      "onList": false,
+      "name": "Necropolis",
+      "ids": [
+        {
+          "id": "2241592",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "GMDElite"
+      },
+      "verified": true,
+      "dateUploaded": "2014-09-29",
+      "creators": ["IIINePtunEIII"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 196,
+      "section": "main",
+      "onList": true,
+      "name": "Nagn on track",
+      "ids": [
+        {
+          "id": "241225",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-17",
+      "creators": ["Nagn"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 197,
+      "section": "main",
+      "onList": false,
+      "name": "Alphabet X",
+      "ids": [
+        {
+          "id": "523638",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Zobros"
+      },
+      "verified": true,
+      "dateUploaded": "2014-04-10",
+      "creators": ["blackp2sfull"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 198,
+      "section": "main",
+      "onList": true,
+      "name": "ICE Carbon Chaos (Restoration)",
+      "ids": [
+        {
+          "id": "116385581",
+          "label": "Restoration"
+        },
+        {
+          "id": "281398",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "monkley gd"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-27",
+      "creators": ["roadjunior"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 199,
+      "section": "main",
+      "onList": false,
+      "name": "ICE Carbon Zust",
+      "ids": [
+        {
+          "id": "151941",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Elzeko"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-14",
+      "creators": ["roadjunior"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 200,
+      "section": "main",
+      "onList": false,
+      "name": "Master Reds Cave",
+      "ids": [
+        {
+          "id": "106555763",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Remy"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Richinator"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 201,
+      "section": "main",
+      "onList": true,
+      "name": "extreme chaos",
+      "ids": [
+        {
+          "id": "2000451",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Kian"
+      },
+      "verified": true,
+      "dateUploaded": "2014-09-08",
+      "creators": ["nether"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 202,
+      "section": "main",
+      "onList": false,
+      "name": "Weird Trash",
+      "ids": [
+        {
+          "id": "971298",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "MetaManZ"
+      },
+      "verified": true,
+      "dateUploaded": "2014-06-06",
+      "creators": ["Megadere"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 203,
+      "section": "main",
+      "onList": true,
+      "name": "NONSENSE world LV12",
+      "ids": [
+        {
+          "id": "215160",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Sevant"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-10",
+      "creators": ["Titanium"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 204,
+      "section": "main",
+      "onList": false,
+      "name": "effot",
+      "ids": [
+        {
+          "id": "8164555",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Koreaqwer"
+      },
+      "verified": true,
+      "dateUploaded": "2015-06-09",
+      "creators": ["ozpectro"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 205,
+      "section": "main",
+      "onList": true,
+      "name": "Alphabet Y",
+      "ids": [
+        {
+          "id": "863294",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Remy"
+      },
+      "verified": true,
+      "dateUploaded": "2014-05-25",
+      "creators": ["OrcaSN"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 206,
+      "section": "main",
+      "onList": false,
+      "name": "Ice cream",
+      "ids": [
+        {
+          "id": "69936244",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Zobros"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["Cyclic"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 207,
+      "section": "main",
+      "onList": false,
+      "name": "Hextech Gunblade",
+      "ids": [
+        {
+          "id": "82474579",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "IceMush"
+      },
+      "verified": true,
+      "dateUploaded": null,
+      "creators": ["GW Mundo"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 208,
+      "section": "main",
+      "onList": false,
+      "name": "swiftness (Old)",
+      "ids": [
+        {
+          "id": "171334",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KrmaL"
+      },
+      "verified": true,
+      "dateUploaded": "2014-01-25",
+      "creators": ["zaRIKU"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 209,
+      "section": "main",
+      "onList": true,
+      "name": "LightninG WaY",
+      "ids": [
+        {
+          "id": "82287758",
+          "label": "Fix"
+        },
+        {
+          "id": "349913",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ButterFish"
+      },
+      "verified": true,
+      "dateUploaded": "2014-03-13",
+      "creators": ["GW mundo"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 210,
+      "section": "main",
+      "onList": true,
+      "name": "deadful Temple",
+      "ids": [
+        {
+          "id": "241963",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "SandwichGuy"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-18",
+      "creators": ["GW mundo"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 211,
+      "section": "main",
+      "onList": false,
+      "name": "hi (2.1+)",
+      "ids": [
+        {
+          "id": "13529",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "RandomB"
+      },
+      "verified": true,
+      "dateUploaded": "2013-10-20",
+      "creators": ["-"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 212,
+      "section": "main",
+      "onList": true,
+      "name": "hard1 (2.2+)",
+      "ids": [
+        {
+          "id": "613",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "3588000038602"
+      },
+      "verified": true,
+      "dateUploaded": "2013-08-25",
+      "creators": ["jackey"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 213,
+      "section": "main",
+      "onList": true,
+      "name": "cave adventure",
+      "ids": [
+        {
+          "id": "19617",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Knali2001"
+      },
+      "verified": true,
+      "dateUploaded": "2013-10-26",
+      "creators": ["gomchi"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 214,
+      "section": "main",
+      "onList": true,
+      "name": "Deadly Hexagon Force",
+      "ids": [
+        {
+          "id": "29723629",
+          "label": "Reupload"
+        },
+        {
+          "id": "2699309",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "선우제갈"
+      },
+      "verified": true,
+      "dateUploaded": "2014-11-02",
+      "creators": ["Minus"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 215,
+      "section": "main",
+      "onList": false,
+      "name": "Deadly ClubStep",
+      "ids": [
+        {
+          "id": "1299298",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "LunarSIMG"
+      },
+      "verified": true,
+      "dateUploaded": "2014-07-09",
+      "creators": ["IIINePtunEIII"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": 216,
+      "section": "main",
+      "onList": false,
+      "name": "Special Food",
+      "ids": [
+        {
+          "id": "1473155",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "HequinoX"
+      },
+      "verified": true,
+      "dateUploaded": "2014-07-25",
+      "creators": ["Megadere"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 217,
+      "section": "main",
+      "onList": true,
+      "name": "Bullet Rain",
+      "ids": [
+        {
+          "id": "6144018",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Knali2001"
+      },
+      "verified": true,
+      "dateUploaded": "2015-04-01",
+      "creators": ["FD HenryCen0"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": 218,
+      "section": "main",
+      "onList": false,
+      "name": "Treasure Mine (Unnerfed)",
+      "ids": [
+        {
+          "id": "26754444",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Tricks33"
+      },
+      "verified": true,
+      "dateUploaded": "2016-11-27",
+      "creators": ["MaJackO"],
+      "twoPlayer": false,
+      "rateStatus": "Formerly Rated"
+    },
+    {
+      "rank": 219,
+      "section": "main",
+      "onList": true,
+      "name": "WXYZ",
+      "ids": [
+        {
+          "id": "21440",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ButterFish"
+      },
+      "verified": true,
+      "dateUploaded": "2013-10-27",
+      "creators": ["s"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "main",
+      "onList": true,
+      "name": "adventure funk",
+      "ids": [
+        {
+          "id": "1523048",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "ChiefWoof"
+      },
+      "verified": true,
+      "dateUploaded": "2014-07-29",
+      "creators": ["lolleo10"],
+      "twoPlayer": false,
+      "rateStatus": "Rated"
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Chaotic Circles",
+      "ids": [
+        {
+          "id": "15892568",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-16",
+      "creators": ["Kyrla"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Debos",
+      "ids": [
+        {
+          "id": "22330500",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": null,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent World",
+      "ids": [
+        {
+          "id": "10989278",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-08-25",
+      "creators": ["Cyrillic"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Impossawave",
+      "ids": [
+        {
+          "id": "103351465",
+          "label": "Restoration"
+        },
+        {
+          "id": "8219828",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-11",
+      "creators": ["animaniacs333"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Back On Track",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Older Red World (Restoration)",
+      "ids": [
+        {
+          "id": "124658639",
+          "label": "Restoration"
+        },
+        {
+          "id": "N/A",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 36.92,
+        "holder": "Anceps"
+      },
+      "verified": false,
+      "dateUploaded": "N/A",
+      "creators": ["saRy"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Pitch Black (Old)",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "13734980",
+          "label": "Reupload"
+        },
+        {
+          "id": "13000623",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 1.89,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-09",
+      "creators": ["Maddirisa"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Pitch Black",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "16202163",
+          "label": "Reupload"
+        },
+        {
+          "id": "13000623",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 1.89,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-24",
+      "creators": ["Maddirisa"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Pitch Black Seeable",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "75607751",
+          "label": "Reupload"
+        },
+        {
+          "id": "14213245",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 2.31,
+        "holder": "Zevzzz"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-24",
+      "creators": ["Maddirisa"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Final Destination",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "18674264",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-04-07",
+      "creators": ["Kylra"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Blizzard",
+      "ids": [
+        {
+          "id": "34679276",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Challenge Club",
+      "ids": [
+        {
+          "id": "9509531",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 34.63,
+        "holder": "Syndrr"
+      },
+      "verified": false,
+      "dateUploaded": "2015-07-14",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Silent Skrillex II",
+      "ids": [
+        {
+          "id": "124401903",
+          "label": "Deauto"
+        },
+        {
+          "id": "24724111",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-10",
+      "creators": ["GDUsr5116"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Matter",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 1.09,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "ICE Carbon Titan X (Restoration)",
+      "ids": [
+        {
+          "id": "122586373",
+          "label": "Restoration"
+        },
+        {
+          "id": "13035922",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 41.0,
+        "holder": "OdieTheGreat"
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-10",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "silent",
+      "ids": [
+        {
+          "id": "16474026",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 62.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-02",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "EXTREME world LV12",
+      "ids": [
+        {
+          "id": "228656",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "BeckettGD"
+      },
+      "verified": true,
+      "dateUploaded": "2014-02-14",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Hells Born",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Lake",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Venom Legend",
+      "ids": [
+        {
+          "id": "65011530",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "M1ndsc4p3",
+      "ids": [
+        {
+          "id": "125748340",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "impossible challenge needs secret way removed",
+      "ids": [
+        {
+          "id": "5891418",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2025-03-22",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "XdeadCycle",
+      "ids": [
+        {
+          "id": "116334055",
+          "label": null
+        },
+        {
+          "id": "355878",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-03-15",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "zaRy cycles",
+      "ids": [
+        {
+          "id": "117025605",
+          "label": null
+        },
+        {
+          "id": "859191",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-05-25",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Carrot",
+      "ids": [
+        {
+          "id": "9134065",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-07-04",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "silent landscape",
+      "ids": [
+        {
+          "id": "116337387",
+          "label": "Deauto"
+        },
+        {
+          "id": "14509072",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-04",
+      "creators": ["1CicL3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "very easy v2",
+      "ids": [
+        {
+          "id": "248877",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-02-20",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Crimson Hell",
+      "ids": [
+        {
+          "id": "20106233",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-05-23",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Deadly Knock",
+      "ids": [
+        {
+          "id": "63708222",
+          "label": null
+        },
+        {
+          "id": "14988816",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-19",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Violent",
+      "ids": [
+        {
+          "id": "12961083",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-08",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "silent toxic",
+      "ids": [
+        {
+          "id": "116081172",
+          "label": null
+        },
+        {
+          "id": "13511019",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-30",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Necrohol of Knights",
+      "ids": [
+        {
+          "id": "6394913",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["EsisOfficial"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "SuperNova",
+      "ids": [
+        {
+          "id": "115986393",
+          "label": null
+        },
+        {
+          "id": "14812429",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-13",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "SUB SONIC",
+      "ids": [
+        {
+          "id": "14579019",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-06",
+      "creators": ["profoxxer"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Flappy impossible (remove secret way!!!)",
+      "ids": [
+        {
+          "id": "2491035",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-10-19",
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Silent Acropolis (1CicL3)",
+      "ids": [
+        {
+          "id": "83061483",
+          "label": "Deauto"
+        },
+        {
+          "id": "14669092",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-09",
+      "creators": ["1CicL3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "silent jawbreaker",
+      "ids": [
+        {
+          "id": "15031577",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "silent wave",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Deauto"
+        },
+        {
+          "id": "15190050",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-25",
+      "creators": ["1CicL3"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Silent mix",
+      "ids": [
+        {
+          "id": "15560810",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-04",
+      "creators": ["1CicL3"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "silent circles v2",
+      "ids": [
+        {
+          "id": "15769277",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "silent sonic",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Deauto"
+        },
+        {
+          "id": "15946774",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-17",
+      "creators": ["1CicL3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "bloodbath circles",
+      "ids": [
+        {
+          "id": "17810590",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-03-13",
+      "creators": ["1CicL3"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Deaths End",
+      "ids": [
+        {
+          "id": "16344622",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Slaughterhouse v3",
+      "ids": [
+        {
+          "id": "16390075",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Shadows Torture",
+      "ids": [
+        {
+          "id": "16257693",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "haunted corridor v2",
+      "ids": [
+        {
+          "id": "18803940",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Deadly Circles",
+      "ids": [
+        {
+          "id": "16485016",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Crimson Hell",
+      "ids": [
+        {
+          "id": "20106233",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Satanic Palm Mutes",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Death Dimension II",
+      "ids": [],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "SlaughterHouse",
+      "ids": [
+        {
+          "id": "127283683",
+          "label": "Fix"
+        },
+        {
+          "id": "25038915",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-22",
+      "creators": ["MrMooDyH", "ItsSailentAgain", "MRforlod"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Death Corridor 2",
+      "ids": [
+        {
+          "id": "127282287",
+          "label": "Fix"
+        },
+        {
+          "id": "25456078",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-10-08",
+      "creators": ["Convindix"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "The Broken Spheres",
+      "ids": [
+        {
+          "id": "126998019",
+          "label": "Fix"
+        },
+        {
+          "id": "19485965",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["ShiN3"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Ripping Terror",
+      "ids": [
+        {
+          "id": "124695884",
+          "label": "Fix"
+        },
+        {
+          "id": "26495348",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["IAmGone"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Extrem Cycles",
+      "ids": [
+        {
+          "id": "124401931",
+          "label": "Fix"
+        },
+        {
+          "id": "524059",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["User ID: 671764"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Circles v2",
+      "ids": [
+        {
+          "id": "77965179",
+          "label": "Fix"
+        },
+        {
+          "id": "13812717",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["Small"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "NukleearStep",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "2800191",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["OldNukleear"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "muumi mai",
+      "ids": [
+        {
+          "id": "126767381",
+          "label": "Fix"
+        },
+        {
+          "id": "146840",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": ["User ID: 194581"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "time marchine",
+      "ids": [
+        {
+          "id": "122209011",
+          "label": "Fix"
+        },
+        {
+          "id": "143034",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Destructive Blade",
+      "ids": [
+        {
+          "id": "79943806",
+          "label": "Fix"
+        },
+        {
+          "id": "21628657",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Hexagon Force",
+      "ids": [
+        {
+          "id": "123268024",
+          "label": "Fix"
+        },
+        {
+          "id": "21666947",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "The Orient Land",
+      "ids": [
+        {
+          "id": "10622938",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "silent poltergeist v2",
+      "ids": [
+        {
+          "id": "83346570",
+          "label": "Fix"
+        },
+        {
+          "id": "14078992",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Forest",
+      "ids": [
+        {
+          "id": "27080965",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Silent Lightspeed",
+      "ids": [
+        {
+          "id": "122209106",
+          "label": "Fix"
+        },
+        {
+          "id": "15490147",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Wild MissingNo",
+      "ids": [
+        {
+          "id": "243818",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "can you do it",
+      "ids": [
+        {
+          "id": "239437",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Sary musnt clear it",
+      "ids": [
+        {
+          "id": "67083683",
+          "label": "Fix"
+        },
+        {
+          "id": "503907",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "silent hell",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "13255949",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-18",
+      "creators": ["IUltraVenomI"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Chaotic Legend",
+      "ids": [
+        {
+          "id": "14711206",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "BlackGhost Land",
+      "ids": [
+        {
+          "id": "15063052",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "The Chaotic World",
+      "ids": [
+        {
+          "id": "16567029",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Chaotics Mind",
+      "ids": [
+        {
+          "id": "17285558",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Chaotic Legend II",
+      "ids": [
+        {
+          "id": "17466082",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Back on Darkness",
+      "ids": [
+        {
+          "id": "18935391",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Chaotic Madness",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "22336993",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-05",
+      "creators": ["Kylra"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "travel to the time",
+      "ids": [
+        {
+          "id": "122276603",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Silent Akbar",
+      "ids": [
+        {
+          "id": "N/A",
+          "label": "Fix"
+        },
+        {
+          "id": "13505433",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-10-30",
+      "creators": ["XaonGD"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "MachineLocked",
+      "ids": [
+        {
+          "id": "25736923",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-10-19",
+      "creators": ["StylesIndo17"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Paxertrill",
+      "ids": [
+        {
+          "id": "7042137",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 84.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2015-05-04",
+      "creators": ["JinHyun"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "InsenInIlatIon Step",
+      "ids": [
+        {
+          "id": "8117018",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 28.0,
+        "holder": "johnlikediamond"
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-07",
+      "creators": ["XHeiDax"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "The Nightmare",
+      "ids": [
+        {
+          "id": "13654267",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 30.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2015-11-03",
+      "creators": ["SeveranceD"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": true,
+      "name": "Diabolic Circles",
+      "ids": [
+        {
+          "id": "15209676",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 40.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2015-12-23",
+      "creators": [
+        "Santrox II",
+        "el max craft",
+        "el macho pocket",
+        "jero",
+        "vibrax 511",
+        "korekonica"
+      ],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Ice Carbon Vivillion",
+      "ids": [
+        {
+          "id": "15904483",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 53.0,
+        "holder": "DankDrew"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-16",
+      "creators": ["Lunar758"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "impossible circles",
+      "ids": [
+        {
+          "id": "15968821",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 28.0,
+        "holder": "qwertyokbomb"
+      },
+      "verified": false,
+      "dateUploaded": "2016-01-17",
+      "creators": ["Ginsay"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Death Club",
+      "ids": [
+        {
+          "id": "19965174",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-05-19",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "supreme Machine",
+      "ids": [
+        {
+          "id": "127761173",
+          "label": "Fix"
+        },
+        {
+          "id": "17127458",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2016-02-21",
+      "creators": ["IiIOpTiCaLIiI"],
+      "twoPlayer": true,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Factory X",
+      "ids": [
+        {
+          "id": "129169504",
+          "label": "Fix"
+        },
+        {
+          "id": "8965065",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-06-30",
+      "creators": ["Zephyruz"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Holdin",
+      "ids": [
+        {
+          "id": "128444773",
+          "label": "Fix"
+        },
+        {
+          "id": "9437124",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2015-07-12",
+      "creators": ["Acr0zeD"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Dark Empire",
+      "ids": [
+        {
+          "id": "22454862",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 48.0,
+        "holder": "Technobuild"
+      },
+      "verified": false,
+      "dateUploaded": "2016-08-07",
+      "creators": ["Aelerity"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "The Loud House",
+      "ids": [
+        {
+          "id": "19975975",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": null,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": null,
+      "creators": [],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Helios",
+      "ids": [
+        {
+          "id": "24876247",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "KumorY"
+      },
+      "verified": true,
+      "dateUploaded": "2016-09-13",
+      "creators": ["AnonIIExt"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Escaping Space",
+      "ids": [
+        {
+          "id": "25176489",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Onibii"
+      },
+      "verified": true,
+      "dateUploaded": "2016-09-27",
+      "creators": ["CaKippie"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Eternal Darkness",
+      "ids": [
+        {
+          "id": "25232346",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 58.0,
+        "holder": "SeptaGon7"
+      },
+      "verified": false,
+      "dateUploaded": "2016-09-30",
+      "creators": ["CorVert"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "hellgiest crazy v",
+      "ids": [
+        {
+          "id": "2339332",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-10-08",
+      "creators": ["Dukekdg777"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Grand and sky",
+      "ids": [
+        {
+          "id": "105843",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "Bää"
+      },
+      "verified": true,
+      "dateUploaded": "2013-12-14",
+      "creators": ["NEON"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "IceCarbonDiabloX V2",
+      "ids": [
+        {
+          "id": "55017403",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "MaruiG"
+      },
+      "verified": true,
+      "dateUploaded": "2016-01-03",
+      "creators": ["youomoples"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "Inevitable Doom",
+      "ids": [
+        {
+          "id": "58501031",
+          "label": null
+        }
+      ],
+      "worldRecord": {
+        "percentage": 100.0,
+        "holder": "RoflGD"
+      },
+      "verified": true,
+      "dateUploaded": "2016-08-10",
+      "creators": ["Andromeda GMD"],
+      "twoPlayer": false,
+      "rateStatus": null
+    },
+    {
+      "rank": null,
+      "section": "pending",
+      "onList": false,
+      "name": "devils playground",
+      "ids": [
+        {
+          "id": "115920964",
+          "label": "Fix"
+        },
+        {
+          "id": "386187",
+          "label": "Original"
+        }
+      ],
+      "worldRecord": {
+        "percentage": 0.0,
+        "holder": null
+      },
+      "verified": false,
+      "dateUploaded": "2014-03-20",
+      "creators": ["Optic Sunflow"],
+      "twoPlayer": false,
+      "rateStatus": null
+    }
+  ]
+}
