@@ -21,11 +21,17 @@ let sortAsc = true;
 let filtered = [];
 let lastModalRank = -1;
 let searchDebounceTimer = null;
+let editingIndex = -1;
+
+let dragSrcIdx = null;
 
 const dom = {};
 
 function cacheDOM() {
   dom.levelList = document.getElementById("levelList");
+  dom.pendingSection = document.getElementById("pendingSection");
+  dom.pendingList = document.getElementById("pendingList");
+  dom.pendingToggle = document.getElementById("pendingToggle");
   dom.searchInput = document.getElementById("searchInput");
   dom.filterStatus = document.getElementById("filterStatus");
   dom.filterDuo = document.getElementById("filterDuo");
@@ -45,9 +51,8 @@ function cacheDOM() {
 const dateCache = new Map();
 function formatDate(d) {
   if (dateCache.has(d)) return dateCache.get(d);
-  if (!d || typeof d !== "string" || d.split("-").length !== 3) {
+  if (!d || typeof d !== "string" || d.split("-").length !== 3)
     return "Invalid date";
-  }
   const [y, m, day] = d.split("-");
   const result = `${MONTHS[+m - 1]} ${+day}, ${y}`;
   dateCache.set(d, result);
@@ -59,6 +64,10 @@ function getRankClass(r) {
   if (r <= 3) return "top3";
   if (r <= 10) return "top10";
   return "";
+}
+
+function isVerified(lvl) {
+  return lvl.worldRecord && lvl.worldRecord.percentage === 100;
 }
 
 function buildThumbHTML(lvl, altText, errorFallback) {
@@ -82,8 +91,9 @@ function buildThumbHTML(lvl, altText, errorFallback) {
 }
 
 function buildRowHTML(lvl, i) {
+  const verified = isVerified(lvl);
   const rCls = getRankClass(lvl.rank);
-  const rowCls = lvl.verified ? "verified-row" : "unverified-row";
+  const rowCls = verified ? "verified-row" : "unverified-row";
   const thumb = buildThumbHTML(
     lvl,
     lvl.name,
@@ -119,34 +129,46 @@ function buildRowHTML(lvl, i) {
 }
 
 function buildTagsHTML(lvl) {
+  const verified = isVerified(lvl);
   const parts = [];
   parts.push(
-    `<span class="tag ${lvl.verified ? "v-yes" : "v-no"}">${lvl.verified ? "VERIFIED" : "UNVERIFIED"}</span>`,
+    `<span class="tag ${verified ? "v-yes" : "v-no"}">${verified ? "VERIFIED" : "UNVERIFIED"}</span>`,
   );
-  if (lvl.twoPlayer) {
-    parts.push(`<span class="tag duo">2-PLAYER</span>`);
-  }
+  if (lvl.twoPlayer) parts.push(`<span class="tag duo">2-PLAYER</span>`);
   return parts.join("");
 }
 
 function renderList() {
-  if (!filtered.length) {
+  const onList = filtered.filter((l) => l.onList !== false);
+  const pending = filtered.filter((l) => l.onList === false);
+
+  if (!onList.length) {
     dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon"></div><p>No levels match your search.</p></div>`;
-    return;
+  } else {
+    dom.levelList.innerHTML = onList
+      .map((lvl, i) => buildRowHTML(lvl, i))
+      .join("");
   }
 
-  dom.levelList.innerHTML = filtered
-    .map((lvl, i) => buildRowHTML(lvl, i))
-    .join("");
+  if (pending.length) {
+    dom.pendingSection.style.display = "";
+    dom.pendingList.innerHTML = pending
+      .map((lvl, i) => buildRowHTML(lvl, i))
+      .join("");
+    dom.pendingToggle.textContent = `Pending (${pending.length})`;
+  } else {
+    dom.pendingSection.style.display = "none";
+  }
 }
 
 function updateStats() {
-  const total = LEVELS.length;
+  const onList = LEVELS.filter((l) => l.onList !== false);
+  const total = onList.length;
   let verified = 0;
   let totalProgress = 0;
 
-  for (const l of LEVELS) {
-    if (l.verified) verified++;
+  for (const l of onList) {
+    if (isVerified(l)) verified++;
     if (l.worldRecord && l.worldRecord.percentage) {
       totalProgress += l.worldRecord.percentage;
     }
@@ -175,11 +197,10 @@ function applyFilters() {
       !lvl.name.toLowerCase().includes(q) &&
       !lvl.creators.some((c) => c.toLowerCase().includes(q)) &&
       !(lvl.ids && lvl.ids.some((id) => id.id.toLowerCase().includes(q)))
-    ) {
+    )
       return false;
-    }
-    if (status === "verified" && !lvl.verified) return false;
-    if (status === "unverified" && lvl.verified) return false;
+    if (status === "verified" && !isVerified(lvl)) return false;
+    if (status === "unverified" && isVerified(lvl)) return false;
     if (duo === "solo" && lvl.twoPlayer) return false;
     if (duo === "duo" && !lvl.twoPlayer) return false;
     return true;
@@ -198,13 +219,12 @@ function toggleSort() {
 }
 
 function openModal(rank) {
-  if (rank === lastModalRank && dom.modal.classList.contains("open")) {
-    return;
-  }
+  if (rank === lastModalRank && dom.modal.classList.contains("open")) return;
   const lvl = rankMap.get(rank);
   if (!lvl) return;
 
   lastModalRank = rank;
+  const verified = isVerified(lvl);
   const thumb = buildThumbHTML(
     lvl,
     lvl.name,
@@ -214,6 +234,7 @@ function openModal(rank) {
   const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
   const wr = wrPct === 100 ? "100%" : !wrPct ? "None" : wrPct + "%";
   const tags = buildTagsHTML(lvl);
+
   const idsHTML =
     lvl.ids && lvl.ids.length
       ? lvl.ids
@@ -230,6 +251,24 @@ function openModal(rank) {
   const verifiedNote =
     wrPct === 100 ? `<div class="progress-verified-note"> Verified</div>` : "";
 
+  const showcaseHTML =
+    lvl.showcaseVideos && lvl.showcaseVideos.length
+      ? `<div class="detail-block full">
+        <div class="detail-key">Showcase Videos</div>
+        <div class="showcase-links">
+          ${lvl.showcaseVideos
+            .map(
+              (v, i) =>
+                `<a href="${esc(v.url)}" target="_blank" rel="noopener" class="showcase-link">
+              ${v.label ? esc(v.label) : `Showcase ${i + 1}`}
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>`,
+            )
+            .join("")}
+        </div>
+      </div>`
+      : "";
+
   dom.modalHero.innerHTML = `
   <div class="modal-thumb">${thumb}</div>
   <div class="modal-title-area">
@@ -245,16 +284,15 @@ function openModal(rank) {
   <div class="detail-block full"><div class="detail-key">Level IDs</div>${idsHTML}</div>
   <div class="detail-block"><div class="detail-key">Date Uploaded</div><div class="detail-val">${formatDate(lvl.dateUploaded)}</div></div>
   <div class="detail-block"><div class="detail-key">2-Player</div><div class="detail-val">${lvl.twoPlayer ? "Yes" : "No"}</div></div>
-  <div class="detail-block half"><div class="detail-key">Creators</div><div class="detail-val">${lvl.creators.join("  ")}</div></div>`;
+  <div class="detail-block half"><div class="detail-key">Creators</div><div class="detail-val">${lvl.creators.join("  ")}</div></div>
+  ${showcaseHTML}`;
 
   dom.modal.classList.add("open");
   document.body.style.overflow = "hidden";
 }
 
 function closeModal(e) {
-  if (e.target === dom.modal) {
-    closeModalDirect();
-  }
+  if (e.target === dom.modal) closeModalDirect();
 }
 
 function closeModalDirect() {
@@ -310,6 +348,13 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 
+function togglePending() {
+  const list = dom.pendingList;
+  const isHidden = list.style.display === "none";
+  list.style.display = isHidden ? "" : "none";
+  dom.pendingToggle.dataset.open = isHidden ? "true" : "false";
+}
+
 function init() {
   cacheDOM();
 
@@ -344,6 +389,7 @@ function init() {
 }
 
 init();
+
 function openEditMenu() {
   dom.editModal.classList.add("open");
   document.body.style.overflow = "hidden";
@@ -384,14 +430,24 @@ function renderEditTable(filterQ) {
     .map((lvl) => {
       const idx = LEVELS.indexOf(lvl);
       const firstId = lvl.ids && lvl.ids.length ? lvl.ids[0].id : "—";
-      return `<tr>
-      <td class="edit-td-rank">${lvl.rank ?? "—"}</td>
+      const verified = isVerified(lvl);
+      return `<tr
+      draggable="true"
+      data-idx="${idx}"
+      ondragstart="onDragStart(event, ${idx})"
+      ondragover="onDragOver(event)"
+      ondragleave="onDragLeave(event)"
+      ondrop="onDrop(event, ${idx})"
+      ondragend="onDragEnd(event)"
+      class="edit-drag-row"
+    >
+      <td class="edit-td-rank drag-handle" title="Drag to reorder">⠿ ${lvl.rank ?? "—"}</td>
       <td class="edit-td-name">${esc(lvl.name)}</td>
       <td class="edit-td-creator">${esc(lvl.creators.join(", "))}</td>
       <td class="edit-td-id">${esc(firstId)}</td>
-      <td class="edit-td-section">${lvl.section}</td>
-      <td class="edit-td-status" style="color:${lvl.verified ? "var(--verified)" : "var(--unverified)"}">
-        ${lvl.verified ? "✓ Verified" : "✗ Unverified"}
+      <td class="edit-td-section">${lvl.onList === false ? "<em style='color:var(--muted)'>Pending</em>" : lvl.section || "main"}</td>
+      <td class="edit-td-status" style="color:${verified ? "var(--verified)" : "var(--unverified)"}">
+        ${verified ? "✓ Verified" : "✗ Unverified"}
       </td>
       <td class="edit-td-actions">
         <button class="ebtn ebtn-ghost ebtn-sm" onclick="openLevelForm(${idx})">Edit</button>
@@ -400,6 +456,55 @@ function renderEditTable(filterQ) {
     </tr>`;
     })
     .join("");
+}
+
+function onDragStart(e, idx) {
+  dragSrcIdx = idx;
+  e.dataTransfer.effectAllowed = "move";
+  e.currentTarget.classList.add("dragging");
+}
+
+function onDragOver(e) {
+  e.preventDefault();
+  e.dataTransfer.dropEffect = "move";
+  e.currentTarget.classList.add("drag-over");
+}
+
+function onDragLeave(e) {
+  e.currentTarget.classList.remove("drag-over");
+}
+
+function onDrop(e, targetIdx) {
+  e.preventDefault();
+  e.currentTarget.classList.remove("drag-over");
+  if (dragSrcIdx === null || dragSrcIdx === targetIdx) return;
+
+  const moved = LEVELS.splice(dragSrcIdx, 1)[0];
+  LEVELS.splice(targetIdx, 0, moved);
+
+  let rankCounter = 1;
+  for (const lvl of LEVELS) {
+    if (lvl.onList !== false) {
+      lvl.rank = rankCounter++;
+    } else {
+      lvl.rank = null;
+    }
+  }
+
+  rebuildRankMap();
+  saveLocal();
+  updateStats();
+  applyFilters();
+  renderEditTable(document.getElementById("edit-search").value);
+  flashMessage("✓ REORDERED");
+}
+
+function onDragEnd(e) {
+  e.currentTarget.classList.remove("dragging");
+  document
+    .querySelectorAll(".drag-over")
+    .forEach((el) => el.classList.remove("drag-over"));
+  dragSrcIdx = null;
 }
 
 function openLevelForm(idx) {
@@ -421,12 +526,12 @@ function openLevelForm(idx) {
         name: "",
         ids: [{ id: "", label: null }],
         worldRecord: { percentage: 0, holder: null, video: null },
-        verified: false,
         dateUploaded: null,
         creators: [],
         twoPlayer: false,
         rateStatus: null,
         video: null,
+        showcaseVideos: [],
       }
     : LEVELS[idx];
 
@@ -435,7 +540,6 @@ function openLevelForm(idx) {
   document.getElementById("f-rank").value = item.rank ?? "";
   document.getElementById("f-section").value = item.section || "main";
   document.getElementById("f-onlist").value = String(item.onList !== false);
-  document.getElementById("f-verified").value = String(!!item.verified);
   document.getElementById("f-twoplayer").value = String(!!item.twoPlayer);
   document.getElementById("f-date").value = item.dateUploaded || "";
   document.getElementById("f-ratestatus").value = item.rateStatus || "";
@@ -448,6 +552,10 @@ function openLevelForm(idx) {
   idsList.innerHTML = "";
   (item.ids || []).forEach((entry) => addIdRow(entry.id, entry.label));
   if (!(item.ids && item.ids.length)) addIdRow();
+
+  const showcaseList = document.getElementById("showcase-list");
+  showcaseList.innerHTML = "";
+  (item.showcaseVideos || []).forEach((v) => addShowcaseRow(v.url, v.label));
 
   showEditView("form");
   document.getElementById("edit-modal").scrollTop = 0;
@@ -467,6 +575,24 @@ function addIdRow(id, label) {
       <input class="form-input" data-field="label" type="text" value="${esc(String(label || ""))}" placeholder="Fix / Original / Reupload">
     </div>
     <button class="ebtn ebtn-red ebtn-sm id-remove-btn" onclick="this.closest('.id-entry').remove()">✕</button>
+  </div>`;
+  list.appendChild(div);
+}
+
+function addShowcaseRow(url, label) {
+  const list = document.getElementById("showcase-list");
+  const div = document.createElement("div");
+  div.className = "showcase-entry";
+  div.innerHTML = `<div class="id-entry-grid">
+    <div class="form-group">
+      <label class="form-label">URL</label>
+      <input class="form-input" data-field="url" type="text" value="${esc(String(url || ""))}" placeholder="https://youtube.com/...">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Label</label>
+      <input class="form-input" data-field="slabel" type="text" value="${esc(String(label || ""))}" placeholder="e.g. 60hz showcase">
+    </div>
+    <button class="ebtn ebtn-red ebtn-sm id-remove-btn" onclick="this.closest('.showcase-entry').remove()">✕</button>
   </div>`;
   list.appendChild(div);
 }
@@ -494,14 +620,24 @@ function saveLevelForm() {
     }))
     .filter((entry) => entry.id);
 
+  const showcaseVideos = Array.from(
+    document.querySelectorAll(".showcase-entry"),
+  )
+    .map((el) => ({
+      url: el.querySelector('[data-field="url"]').value.trim(),
+      label: el.querySelector('[data-field="slabel"]').value.trim() || null,
+    }))
+    .filter((entry) => entry.url);
+
   const wrPct = parseFloat(document.getElementById("f-wr-pct").value);
   const wrHolder = document.getElementById("f-wr-holder").value.trim() || null;
   const wrVideo = document.getElementById("f-wr-video").value.trim() || null;
+  const onList = document.getElementById("f-onlist").value === "true";
 
   const item = {
-    rank,
+    rank: onList ? rank : null,
     section: document.getElementById("f-section").value,
-    onList: document.getElementById("f-onlist").value === "true",
+    onList,
     name,
     ids,
     worldRecord: {
@@ -509,12 +645,12 @@ function saveLevelForm() {
       holder: wrHolder,
       video: wrVideo,
     },
-    verified: document.getElementById("f-verified").value === "true",
     dateUploaded: document.getElementById("f-date").value.trim() || null,
     creators,
     twoPlayer: document.getElementById("f-twoplayer").value === "true",
     rateStatus: document.getElementById("f-ratestatus").value.trim() || null,
     video: null,
+    showcaseVideos,
   };
 
   if (editingIndex === -1) {
@@ -567,9 +703,7 @@ function exportJSON() {
   const out = JSON.stringify({ levels: LEVELS }, null, 2);
   navigator.clipboard
     .writeText(out)
-    .then(() => {
-      flashMessage("✓ COPIED TO CLIPBOARD");
-    })
+    .then(() => flashMessage("✓ COPIED TO CLIPBOARD"))
     .catch(() => {
       const blob = new Blob([out], { type: "application/json" });
       const a = document.createElement("a");
