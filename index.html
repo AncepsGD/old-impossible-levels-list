@@ -73,10 +73,20 @@
     <div id="levelList"></div>
   </div>
 
-  <div id="pendingSection" style="display:none; margin-top: 32px;">
-    <button id="pendingToggle" data-open="true" onclick="togglePending()" class="pending-toggle-btn">
-      Pending (0)
-    </button>
+  <div id="pendingSection" style="display:none;">
+    <div class="pending-section-header">
+      <div class="pending-section-title">
+        <span class="pending-section-icon">⏳</span>
+        Pending
+      </div>
+      <p class="pending-section-desc">These levels are under consideration for the list.</p>
+    </div>
+    <div class="list-header">
+      <div class="lh-cell">#</div>
+      <div class="lh-cell">Thumbnail</div>
+      <div class="lh-cell">Level Info</div>
+      <div class="lh-cell">World Record</div>
+    </div>
     <div id="pendingList"></div>
   </div>
 
@@ -155,15 +165,8 @@
           <div class="form-group">
             <label class="form-label">Section</label>
             <select class="form-select" id="f-section">
-              <option value="main">main</option>
-              <option value="pending">pending</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">On List</label>
-            <select class="form-select" id="f-onlist">
-              <option value="true">Yes</option>
-              <option value="false">No (Pending)</option>
+              <option value="main">Main</option>
+              <option value="pending">Pending</option>
             </select>
           </div>
           <div class="form-group">
@@ -186,7 +189,8 @@
         <div class="form-section-title">World Record</div>
         <div class="form-grid cols-3">
           <div class="form-group">
-            <label class="form-label">WR %</label>
+            <label class="form-label">WR % <span style="color:var(--muted);font-weight:400;font-size:11px">(100% =
+                auto-verified)</span></label>
             <input class="form-input" id="f-wr-pct" type="number" step="0.01" placeholder="0.00" min="0" max="100" />
           </div>
           <div class="form-group">
@@ -206,10 +210,12 @@
         <div id="ids-list"></div>
 
         <div class="form-section-title">
-          Showcase Video
+          Showcase Videos
           <button class="ebtn ebtn-purple ebtn-sm" onclick="addShowcaseRow()" style="margin-left: 12px">+ Add
             Video</button>
         </div>
+        <p style="font-size:12px;color:var(--muted);margin:0 0 10px 0">Clean showcases of the level — separate from the
+          WR completion video.</p>
         <div id="showcase-list"></div>
 
         <div class="form-actions">
