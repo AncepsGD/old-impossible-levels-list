@@ -155,6 +155,10 @@ function buildTagsHTML(lvl) {
     `<span class="tag ${verified ? "v-yes" : "v-no"}">${verified ? "VERIFIED" : "UNVERIFIED"}</span>`,
   );
   if (lvl.twoPlayer) parts.push(`<span class="tag duo">2-PLAYER</span>`);
+  if (lvl.rateStatus)
+    parts.push(
+      `<span class="tag rate">${esc(lvl.rateStatus).toUpperCase()}</span>`,
+    );
   return parts.join("");
 }
 
@@ -259,45 +263,62 @@ function openModalForLevel(lvl) {
   );
   const wrPct = lvl.worldRecord ? lvl.worldRecord.percentage : null;
   const wrHolder = lvl.worldRecord ? lvl.worldRecord.holder : null;
+  const wrVideo = lvl.worldRecord ? lvl.worldRecord.video : null;
   const wr = wrPct === 100 ? "100%" : !wrPct ? "None" : wrPct + "%";
   const tags = buildTagsHTML(lvl);
 
   const idsHTML =
     lvl.ids && lvl.ids.length
-      ? lvl.ids
+      ? `<div class="modal-ids-list">${lvl.ids
           .map(
             (entry) =>
-              `<span class="detail-val code" style="display:block;margin-bottom:4px">${entry.id}${entry.label ? `<span style="font-family:sans-serif;font-size:10px;color:var(--muted);margin-left:8px;letter-spacing:0">${entry.label}</span>` : ""}</span>`,
+              `<div class="modal-id-row"><span class="detail-val code">${entry.id}</span>${entry.label ? `<span class="modal-id-label">${esc(entry.label)}</span>` : ""}</div>`,
           )
-          .join("")
+          .join("")}</div>`
       : `<span class="detail-val" style="color:var(--muted)">—</span>`;
 
-  const progressDisplay = wrPct != null ? wrPct + "%" : "";
-  const progressCls =
-    wrPct === 100 ? "big green" : wrPct != null ? "big" : "detail-val";
-  const verifiedNote =
-    wrPct === 100 ? `<div class="progress-verified-note">✓ Verified</div>` : "";
+  const progressPct = wrPct != null ? wrPct : 0;
+  const progressCls = wrPct === 100 ? "complete" : "";
 
   const rankBadge = isPending(lvl)
     ? `<div class="modal-rank-badge pending-badge">PENDING</div>`
     : `<div class="modal-rank-badge">RANK #${lvl.rank}</div>`;
 
+  const wrVideoHTML = wrVideo
+    ? `<a href="${esc(wrVideo)}" target="_blank" rel="noopener" class="wr-video-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Watch completion video
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="11" height="11"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>`
+    : "";
+
   const showcaseHTML =
     lvl.showcaseVideos && lvl.showcaseVideos.length
-      ? `<div class="detail-block full">
-        <div class="detail-key">Showcase Videos</div>
-        <div class="showcase-links">
-          ${lvl.showcaseVideos
-            .map(
-              (v, i) =>
-                `<a href="${esc(v.url)}" target="_blank" rel="noopener" class="showcase-link">
-              Showcase ${i + 1}
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-            </a>`,
-            )
-            .join("")}
-        </div>
-      </div>`
+      ? `<div class="modal-showcase-section">
+          <div class="detail-key" style="margin-bottom:10px">Showcase Videos</div>
+          <div class="modal-showcase-grid">
+            ${lvl.showcaseVideos
+              .map((v, i) => {
+                const ytMatch = v.url.match(
+                  /(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/,
+                );
+                const thumbSrc = ytMatch
+                  ? `https://img.youtube.com/vi/${ytMatch[1]}/mqdefault.jpg`
+                  : "";
+                const thumbEl = thumbSrc
+                  ? `<img class="showcase-card-thumb" src="${thumbSrc}" alt="Showcase ${i + 1}" loading="lazy" onerror="this.style.display='none'">`
+                  : `<div class="showcase-card-thumb no-thumb"></div>`;
+                return `<a href="${esc(v.url)}" target="_blank" rel="noopener" class="showcase-card-link">
+                  ${thumbEl}
+                  <div class="showcase-card-label">
+                    Showcase ${i + 1}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="10" height="10"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </div>
+                </a>`;
+              })
+              .join("")}
+          </div>
+        </div>`
       : "";
 
   dom.modalHero.innerHTML = `
@@ -310,12 +331,22 @@ function openModalForLevel(lvl) {
   </div>`;
 
   dom.modalGrid.innerHTML = `
-  <div class="detail-block"><div class="detail-key">Progress</div><div class="detail-val ${progressCls}">${progressDisplay}</div>${verifiedNote}</div>
-  <div class="detail-block"><div class="detail-key">Record Holder</div><div class="detail-val">${wrHolder || "—"}</div></div>
-  <div class="detail-block full"><div class="detail-key">Level IDs</div>${idsHTML}</div>
-  <div class="detail-block"><div class="detail-key">Date Uploaded</div><div class="detail-val">${formatDate(lvl.dateUploaded)}</div></div>
-  <div class="detail-block"><div class="detail-key">2-Player</div><div class="detail-val">${lvl.twoPlayer ? "Yes" : "No"}</div></div>
-  <div class="detail-block half"><div class="detail-key">Creators</div><div class="detail-val">${lvl.creators.join("  ")}</div></div>
+  <div class="modal-progress-section">
+    <div class="modal-progress-header">
+      <span class="modal-progress-pct ${progressCls}">${wrPct != null ? wrPct + "%" : "—"}</span>
+      <span class="modal-progress-label">World Record</span>
+    </div>
+    <div class="modal-progress-track"><div class="modal-progress-fill ${progressCls}" style="width:${progressPct}%"></div></div>
+    ${wrHolder ? `<div class="modal-wr-holder">Held by <strong>${esc(wrHolder)}</strong></div>` : ""}
+    ${wrVideoHTML}
+  </div>
+  <div class="modal-details-grid">
+    <div class="detail-block"><div class="detail-key">Date Uploaded</div><div class="detail-val">${formatDate(lvl.dateUploaded)}</div></div>
+    <div class="detail-block"><div class="detail-key">2-Player</div><div class="detail-val">${lvl.twoPlayer ? "Yes" : "No"}</div></div>
+    <div class="detail-block"><div class="detail-key">Rate Status</div><div class="detail-val" style="color:var(--purple-light)">${lvl.rateStatus ? esc(lvl.rateStatus) : "—"}</div></div>
+    <div class="detail-block full"><div class="detail-key">Level IDs</div>${idsHTML}</div>
+    <div class="detail-block half"><div class="detail-key">Creators</div><div class="detail-val">${lvl.creators.join(", ")}</div></div>
+  </div>
   ${showcaseHTML}`;
 
   dom.modal.classList.add("open");
