@@ -1052,38 +1052,39 @@ select:focus {
   opacity: 1;
   transform: translateY(0);
 }
-.pending-toggle-btn {
+
+.pending-section-header {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.pending-section-title {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--muted);
-  font-family: inherit;
-  font-size: 11px;
+  gap: 10px;
+  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 10px 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 8px;
-  transition:
-    border-color 0.15s,
-    color 0.15s;
+  color: var(--muted);
 }
-.pending-toggle-btn::before {
-  content: "▼";
-  font-size: 9px;
-  transition: transform 0.2s;
+.pending-section-icon {
+  font-size: 16px;
 }
-.pending-toggle-btn[data-open="false"]::before {
-  transform: rotate(-90deg);
+.pending-section-desc {
+  margin: 6px 0 0 0;
+  font-size: 13px;
+  color: var(--muted);
 }
-.pending-toggle-btn:hover {
-  border-color: var(--purple-light);
-  color: var(--purple-light);
+.pending-rank {
+  color: var(--muted);
+  font-size: 13px;
+}
+.pending-badge {
+  background: rgba(156, 163, 175, 0.15) !important;
+  color: var(--muted) !important;
+  border: 1px solid rgba(156, 163, 175, 0.2) !important;
 }
 .showcase-links {
   display: flex;
@@ -1110,6 +1111,15 @@ select:focus {
 .showcase-link:hover {
   background: rgba(139, 92, 246, 0.22);
   border-color: rgba(139, 92, 246, 0.5);
+}
+.showcase-entry-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.showcase-entry-row .form-input {
+  flex: 1;
 }
 .drag-hint {
   font-size: 11px;
