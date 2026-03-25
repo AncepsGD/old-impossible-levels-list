@@ -22,7 +22,6 @@ let filtered = [];
 let lastModalRank = -1;
 let searchDebounceTimer = null;
 let editingIndex = -1;
-
 let dragSrcIdx = null;
 
 const dom = {};
@@ -31,7 +30,6 @@ function cacheDOM() {
   dom.levelList = document.getElementById("levelList");
   dom.pendingSection = document.getElementById("pendingSection");
   dom.pendingList = document.getElementById("pendingList");
-  dom.pendingToggle = document.getElementById("pendingToggle");
   dom.searchInput = document.getElementById("searchInput");
   dom.filterStatus = document.getElementById("filterStatus");
   dom.filterDuo = document.getElementById("filterDuo");
@@ -46,6 +44,22 @@ function cacheDOM() {
   dom.modalGrid = document.getElementById("modalGrid");
   dom.toast = document.getElementById("toast");
   dom.editModal = document.getElementById("edit-modal");
+}
+
+function migrateLevels(levels) {
+  for (const l of levels) {
+    if (!l.section || (l.section !== "main" && l.section !== "pending")) {
+      l.section = l.onList === false ? "pending" : "main";
+    }
+    delete l.onList;
+    if (!l.showcaseVideos) l.showcaseVideos = [];
+    if (l.section === "pending") l.rank = null;
+  }
+  return levels;
+}
+
+function isPending(lvl) {
+  return lvl.section === "pending";
 }
 
 const dateCache = new Map();
@@ -90,9 +104,8 @@ function buildThumbHTML(lvl, altText, errorFallback) {
   return `<div class="thumb-placeholder"></div>`;
 }
 
-function buildRowHTML(lvl, i) {
+function buildRowHTML(lvl, i, isPendingRow) {
   const verified = isVerified(lvl);
-  const rCls = getRankClass(lvl.rank);
   const rowCls = verified ? "verified-row" : "unverified-row";
   const thumb = buildThumbHTML(
     lvl,
@@ -107,9 +120,16 @@ function buildRowHTML(lvl, i) {
     i < ANIMATION_CAP ? ` style="animation-delay:${i * 0.05}s"` : "";
   const tags = buildTagsHTML(lvl);
   const firstId = lvl.ids && lvl.ids.length ? lvl.ids[0] : null;
+  const rankDisplay = isPendingRow
+    ? `<span class="rank-num pending-rank">—</span>`
+    : `<span class="rank-num ${getRankClass(lvl.rank)}">#${lvl.rank}</span>`;
+  const clickId = isPendingRow ? `pending_${lvl.name}` : lvl.rank;
+  const openCall = isPendingRow
+    ? `openModalByName('${lvl.name.replace(/'/g, "\\'")}')`
+    : `openModal(${lvl.rank})`;
 
-  return `<div class="level-row ${rowCls}" onclick="openModal(${lvl.rank})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${lvl.rank});}" role="button" tabindex="0" aria-label="View details for ${lvl.name}"${delay}>
-  <div class="rank-col"><span class="rank-num ${rCls}">#${lvl.rank}</span></div>
+  return `<div class="level-row ${rowCls}" onclick="${openCall}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();${openCall};}" role="button" tabindex="0" aria-label="View details for ${lvl.name}"${delay}>
+  <div class="rank-col">${rankDisplay}</div>
   <div class="thumb-col"><div class="thumb-inner">${thumb}</div></div>
   <div class="info-col">
     <div class="level-name">${lvl.name}</div>
@@ -139,35 +159,34 @@ function buildTagsHTML(lvl) {
 }
 
 function renderList() {
-  const onList = filtered.filter((l) => l.onList !== false);
-  const pending = filtered.filter((l) => l.onList === false);
+  const mainLevels = filtered.filter((l) => !isPending(l));
+  const pendingLevels = filtered.filter((l) => isPending(l));
 
-  if (!onList.length) {
+  if (!mainLevels.length) {
     dom.levelList.innerHTML = `<div class="empty-state"><div class="empty-icon"></div><p>No levels match your search.</p></div>`;
   } else {
-    dom.levelList.innerHTML = onList
-      .map((lvl, i) => buildRowHTML(lvl, i))
+    dom.levelList.innerHTML = mainLevels
+      .map((lvl, i) => buildRowHTML(lvl, i, false))
       .join("");
   }
 
-  if (pending.length) {
+  if (pendingLevels.length) {
     dom.pendingSection.style.display = "";
-    dom.pendingList.innerHTML = pending
-      .map((lvl, i) => buildRowHTML(lvl, i))
+    dom.pendingList.innerHTML = pendingLevels
+      .map((lvl, i) => buildRowHTML(lvl, i, true))
       .join("");
-    dom.pendingToggle.textContent = `Pending (${pending.length})`;
   } else {
     dom.pendingSection.style.display = "none";
   }
 }
 
 function updateStats() {
-  const onList = LEVELS.filter((l) => l.onList !== false);
-  const total = onList.length;
+  const mainLevels = LEVELS.filter((l) => !isPending(l));
+  const total = mainLevels.length;
   let verified = 0;
   let totalProgress = 0;
 
-  for (const l of onList) {
+  for (const l of mainLevels) {
     if (isVerified(l)) verified++;
     if (l.worldRecord && l.worldRecord.percentage) {
       totalProgress += l.worldRecord.percentage;
@@ -212,19 +231,27 @@ function applyFilters() {
 
 function toggleSort() {
   sortAsc = !sortAsc;
-  dom.sortBtn.textContent = (sortAsc ? "" : "") + " RANK";
+  dom.sortBtn.textContent = (sortAsc ? "▲" : "▼") + " RANK";
   dom.sortBtn.classList.toggle("desc", !sortAsc);
   filtered.reverse();
   renderList();
 }
 
+function openModalByName(name) {
+  const lvl = LEVELS.find((l) => l.name === name);
+  if (!lvl) return;
+  openModalForLevel(lvl);
+}
+
 function openModal(rank) {
-  if (rank === lastModalRank && dom.modal.classList.contains("open")) return;
   const lvl = rankMap.get(rank);
   if (!lvl) return;
+  if (rank === lastModalRank && dom.modal.classList.contains("open")) return;
+  openModalForLevel(lvl);
+}
 
-  lastModalRank = rank;
-  const verified = isVerified(lvl);
+function openModalForLevel(lvl) {
+  lastModalRank = lvl.rank;
   const thumb = buildThumbHTML(
     lvl,
     lvl.name,
@@ -243,13 +270,17 @@ function openModal(rank) {
               `<span class="detail-val code" style="display:block;margin-bottom:4px">${entry.id}${entry.label ? `<span style="font-family:sans-serif;font-size:10px;color:var(--muted);margin-left:8px;letter-spacing:0">${entry.label}</span>` : ""}</span>`,
           )
           .join("")
-      : `<span class="detail-val" style="color:var(--muted)"></span>`;
+      : `<span class="detail-val" style="color:var(--muted)">—</span>`;
 
   const progressDisplay = wrPct != null ? wrPct + "%" : "";
   const progressCls =
     wrPct === 100 ? "big green" : wrPct != null ? "big" : "detail-val";
   const verifiedNote =
-    wrPct === 100 ? `<div class="progress-verified-note"> Verified</div>` : "";
+    wrPct === 100 ? `<div class="progress-verified-note">✓ Verified</div>` : "";
+
+  const rankBadge = isPending(lvl)
+    ? `<div class="modal-rank-badge pending-badge">PENDING</div>`
+    : `<div class="modal-rank-badge">RANK #${lvl.rank}</div>`;
 
   const showcaseHTML =
     lvl.showcaseVideos && lvl.showcaseVideos.length
@@ -260,7 +291,7 @@ function openModal(rank) {
             .map(
               (v, i) =>
                 `<a href="${esc(v.url)}" target="_blank" rel="noopener" class="showcase-link">
-              ${v.label ? esc(v.label) : `Showcase ${i + 1}`}
+              Showcase ${i + 1}
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>`,
             )
@@ -272,7 +303,7 @@ function openModal(rank) {
   dom.modalHero.innerHTML = `
   <div class="modal-thumb">${thumb}</div>
   <div class="modal-title-area">
-    <div class="modal-rank-badge">RANK #${lvl.rank}</div>
+    ${rankBadge}
     <div class="modal-name">${lvl.name}</div>
     <div class="modal-creators-line">by ${lvl.creators.join(", ")}</div>
     <div class="modal-tags-row">${tags}</div>
@@ -280,7 +311,7 @@ function openModal(rank) {
 
   dom.modalGrid.innerHTML = `
   <div class="detail-block"><div class="detail-key">Progress</div><div class="detail-val ${progressCls}">${progressDisplay}</div>${verifiedNote}</div>
-  <div class="detail-block"><div class="detail-key">Record Holder</div><div class="detail-val">${wrHolder || ""}</div></div>
+  <div class="detail-block"><div class="detail-key">Record Holder</div><div class="detail-val">${wrHolder || "—"}</div></div>
   <div class="detail-block full"><div class="detail-key">Level IDs</div>${idsHTML}</div>
   <div class="detail-block"><div class="detail-key">Date Uploaded</div><div class="detail-val">${formatDate(lvl.dateUploaded)}</div></div>
   <div class="detail-block"><div class="detail-key">2-Player</div><div class="detail-val">${lvl.twoPlayer ? "Yes" : "No"}</div></div>
@@ -316,7 +347,7 @@ function loadLevels() {
   if (saved) {
     try {
       const parsed = JSON.parse(saved);
-      LEVELS = parsed.levels || [];
+      LEVELS = migrateLevels(parsed.levels || []);
       rebuildRankMap();
       updateStats();
       applyFilters();
@@ -329,7 +360,7 @@ function loadLevels() {
       return r.json();
     })
     .then((data) => {
-      LEVELS = data.levels || [];
+      LEVELS = migrateLevels(data.levels || []);
       rebuildRankMap();
       updateStats();
       applyFilters();
@@ -346,13 +377,6 @@ function esc(s) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;");
-}
-
-function togglePending() {
-  const list = dom.pendingList;
-  const isHidden = list.style.display === "none";
-  list.style.display = isHidden ? "" : "none";
-  dom.pendingToggle.dataset.open = isHidden ? "true" : "false";
 }
 
 function init() {
@@ -423,7 +447,7 @@ function renderEditTable(filterQ) {
   }
   if (!data.length) {
     tbody.innerHTML =
-      '<tr><td colspan="7" style="padding:24px;text-align:center;color:var(--muted);font-size:13px">No levels found</td></tr>';
+      '<tr><td colspan="6" style="padding:24px;text-align:center;color:var(--muted);font-size:13px">No levels found</td></tr>';
     return;
   }
   tbody.innerHTML = data
@@ -431,6 +455,7 @@ function renderEditTable(filterQ) {
       const idx = LEVELS.indexOf(lvl);
       const firstId = lvl.ids && lvl.ids.length ? lvl.ids[0].id : "—";
       const verified = isVerified(lvl);
+      const pending = isPending(lvl);
       return `<tr
       draggable="true"
       data-idx="${idx}"
@@ -445,7 +470,9 @@ function renderEditTable(filterQ) {
       <td class="edit-td-name">${esc(lvl.name)}</td>
       <td class="edit-td-creator">${esc(lvl.creators.join(", "))}</td>
       <td class="edit-td-id">${esc(firstId)}</td>
-      <td class="edit-td-section">${lvl.onList === false ? "<em style='color:var(--muted)'>Pending</em>" : lvl.section || "main"}</td>
+      <td class="edit-td-section" style="${pending ? "color:var(--muted);font-style:italic" : ""}">
+        ${pending ? "Pending" : "Main"}
+      </td>
       <td class="edit-td-status" style="color:${verified ? "var(--verified)" : "var(--unverified)"}">
         ${verified ? "✓ Verified" : "✗ Unverified"}
       </td>
@@ -484,7 +511,7 @@ function onDrop(e, targetIdx) {
 
   let rankCounter = 1;
   for (const lvl of LEVELS) {
-    if (lvl.onList !== false) {
+    if (!isPending(lvl)) {
       lvl.rank = rankCounter++;
     } else {
       lvl.rank = null;
@@ -522,7 +549,6 @@ function openLevelForm(idx) {
     ? {
         rank: null,
         section: "main",
-        onList: true,
         name: "",
         ids: [{ id: "", label: null }],
         worldRecord: { percentage: 0, holder: null, video: null },
@@ -539,7 +565,6 @@ function openLevelForm(idx) {
   document.getElementById("f-creators").value = item.creators.join(", ");
   document.getElementById("f-rank").value = item.rank ?? "";
   document.getElementById("f-section").value = item.section || "main";
-  document.getElementById("f-onlist").value = String(item.onList !== false);
   document.getElementById("f-twoplayer").value = String(!!item.twoPlayer);
   document.getElementById("f-date").value = item.dateUploaded || "";
   document.getElementById("f-ratestatus").value = item.rateStatus || "";
@@ -555,7 +580,7 @@ function openLevelForm(idx) {
 
   const showcaseList = document.getElementById("showcase-list");
   showcaseList.innerHTML = "";
-  (item.showcaseVideos || []).forEach((v) => addShowcaseRow(v.url, v.label));
+  (item.showcaseVideos || []).forEach((v) => addShowcaseRow(v.url));
 
   showEditView("form");
   document.getElementById("edit-modal").scrollTop = 0;
@@ -579,20 +604,13 @@ function addIdRow(id, label) {
   list.appendChild(div);
 }
 
-function addShowcaseRow(url, label) {
+function addShowcaseRow(url) {
   const list = document.getElementById("showcase-list");
   const div = document.createElement("div");
   div.className = "showcase-entry";
-  div.innerHTML = `<div class="id-entry-grid">
-    <div class="form-group">
-      <label class="form-label">URL</label>
-      <input class="form-input" data-field="url" type="text" value="${esc(String(url || ""))}" placeholder="https://youtube.com/...">
-    </div>
-    <div class="form-group">
-      <label class="form-label">Label</label>
-      <input class="form-input" data-field="slabel" type="text" value="${esc(String(label || ""))}" placeholder="e.g. 60hz showcase">
-    </div>
-    <button class="ebtn ebtn-red ebtn-sm id-remove-btn" onclick="this.closest('.showcase-entry').remove()">✕</button>
+  div.innerHTML = `<div class="showcase-entry-row">
+    <input class="form-input" data-field="url" type="text" value="${esc(String(url || ""))}" placeholder="https://youtube.com/...">
+    <button class="ebtn ebtn-red ebtn-sm" onclick="this.closest('.showcase-entry').remove()">✕</button>
   </div>`;
   list.appendChild(div);
 }
@@ -610,8 +628,10 @@ function saveLevelForm() {
     .map((c) => c.trim())
     .filter(Boolean);
 
+  const section = document.getElementById("f-section").value;
   const rankVal = document.getElementById("f-rank").value.trim();
-  const rank = rankVal === "" ? null : parseInt(rankVal);
+  const rank =
+    section === "pending" || rankVal === "" ? null : parseInt(rankVal);
 
   const ids = Array.from(document.querySelectorAll(".id-entry"))
     .map((el) => ({
@@ -623,21 +643,16 @@ function saveLevelForm() {
   const showcaseVideos = Array.from(
     document.querySelectorAll(".showcase-entry"),
   )
-    .map((el) => ({
-      url: el.querySelector('[data-field="url"]').value.trim(),
-      label: el.querySelector('[data-field="slabel"]').value.trim() || null,
-    }))
+    .map((el) => ({ url: el.querySelector('[data-field="url"]').value.trim() }))
     .filter((entry) => entry.url);
 
   const wrPct = parseFloat(document.getElementById("f-wr-pct").value);
   const wrHolder = document.getElementById("f-wr-holder").value.trim() || null;
   const wrVideo = document.getElementById("f-wr-video").value.trim() || null;
-  const onList = document.getElementById("f-onlist").value === "true";
 
   const item = {
-    rank: onList ? rank : null,
-    section: document.getElementById("f-section").value,
-    onList,
+    rank,
+    section,
     name,
     ids,
     worldRecord: {
@@ -720,7 +735,7 @@ function resetToOriginal() {
   fetch("levels.json")
     .then((r) => r.json())
     .then((data) => {
-      LEVELS = data.levels || [];
+      LEVELS = migrateLevels(data.levels || []);
       rebuildRankMap();
       updateStats();
       applyFilters();
