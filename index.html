@@ -1,344 +1,228 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Old Impossible Levels List</title>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>The Old Impossible Levels List</h1>
-      <p style="margin: 8px 0 0 0">
-        <a
-          href="https://discord.gg/example"
-          target="_blank"
-          style="
-            color: var(--purple-light);
-            font-size: 12px;
-            text-decoration: none;
-          "
-          >Join our Discord</a
-        >
-      </p>
-    </header>
 
-    <div class="stats-bar">
-      <div class="stat-cell">
-        <span class="stat-label">Verified</span>
-        <span class="stat-value green" id="statVerified">—</span>
-        <span class="stat-sub">beaten legitimately</span>
-      </div>
-      <div class="stat-cell">
-        <span class="stat-label">Unverified</span>
-        <span class="stat-value red" id="statUnverified">—</span>
-        <span class="stat-sub">still standing</span>
-      </div>
-      <div class="stat-cell">
-        <span class="stat-value purple" id="statPercent">—</span>
-        <span class="stat-sub" id="statPercentSub">of the list completed</span>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Old Impossible Levels List</title>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>The Old Impossible Levels List</h1>
+    <p style="margin: 8px 0 0 0">
+      <a href="https://discord.gg/example" target="_blank"
+        style="color: var(--purple-light); font-size: 12px; text-decoration: none;">Join our Discord</a>
+    </p>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat-cell">
+      <span class="stat-label">Verified</span>
+      <span class="stat-value green" id="statVerified">—</span>
+      <span class="stat-sub">beaten legitimately</span>
     </div>
-
-    <div class="progress-track">
-      <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+    <div class="stat-cell">
+      <span class="stat-label">Unverified</span>
+      <span class="stat-value red" id="statUnverified">—</span>
+      <span class="stat-sub">still standing</span>
     </div>
+    <div class="stat-cell">
+      <span class="stat-value purple" id="statPercent">—</span>
+      <span class="stat-sub" id="statPercentSub">of the list completed</span>
+    </div>
+  </div>
 
-    <div class="controls">
-      <div class="search-wrap">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.35-4.35" />
+  <div class="progress-track">
+    <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+  </div>
+
+  <div class="controls">
+    <div class="search-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8" />
+        <path d="m21 21-4.35-4.35" />
+      </svg>
+      <input type="text" id="searchInput" placeholder="Search by name, creator, or level ID…"
+        aria-label="Search levels by name, creator, or level ID" />
+    </div>
+    <select id="filterStatus" aria-label="Filter levels by verification status">
+      <option value="all">All Statuses</option>
+      <option value="verified">Verified</option>
+      <option value="unverified">Unverified</option>
+    </select>
+    <select id="filterDuo" aria-label="Filter levels by player mode">
+      <option value="all">Solo &amp; 2-Player</option>
+      <option value="solo">Solo Only</option>
+      <option value="duo">2-Player Only</option>
+    </select>
+    <button class="btn-sort" id="sortBtn" onclick="toggleSort()" aria-label="Toggle sort order by rank">▲ RANK</button>
+  </div>
+
+  <div>
+    <div class="list-header">
+      <div class="lh-cell">#</div>
+      <div class="lh-cell">Thumbnail</div>
+      <div class="lh-cell">Level Info</div>
+      <div class="lh-cell">World Record</div>
+    </div>
+    <div id="levelList"></div>
+  </div>
+
+  <div id="pendingSection" style="display:none; margin-top: 32px;">
+    <button id="pendingToggle" data-open="true" onclick="togglePending()" class="pending-toggle-btn">
+      Pending (0)
+    </button>
+    <div id="pendingList"></div>
+  </div>
+
+  <div class="modal-backdrop" id="modal" onclick="closeModal(event)">
+    <div class="modal" id="modalBox" role="dialog" aria-modal="true" aria-labelledby="modalHero">
+      <button class="modal-close" onclick="closeModalDirect()" aria-label="Close level details">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5">
+          <path d="M18 6 6 18M6 6l12 12" />
         </svg>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search by name, creator, or level ID…"
-          aria-label="Search levels by name, creator, or level ID"
-        />
-      </div>
-      <select
-        id="filterStatus"
-        aria-label="Filter levels by verification status"
-      >
-        <option value="all">All Statuses</option>
-        <option value="verified">Verified</option>
-        <option value="unverified">Unverified</option>
-      </select>
-      <select id="filterDuo" aria-label="Filter levels by player mode">
-        <option value="all">Solo &amp; 2-Player</option>
-        <option value="solo">Solo Only</option>
-        <option value="duo">2-Player Only</option>
-      </select>
-      <button
-        class="btn-sort"
-        id="sortBtn"
-        onclick="toggleSort()"
-        aria-label="Toggle sort order by rank"
-      >
-        ▲ RANK
       </button>
+      <div class="modal-hero" id="modalHero"></div>
+      <div class="modal-grid" id="modalGrid"></div>
     </div>
+  </div>
 
-    <div>
-      <div class="list-header">
-        <div class="lh-cell">#</div>
-        <div class="lh-cell">Thumbnail</div>
-        <div class="lh-cell">Level Info</div>
-        <div class="lh-cell">World Record</div>
+  <div class="toast" id="toast"></div>
+
+  <div id="edit-modal" class="edit-modal-backdrop">
+    <div class="edit-modal-wrap">
+      <div class="edit-topbar">
+        <h2 class="edit-title">⚙ List Editor</h2>
+        <span class="edit-hint">SHIFT+M TO TOGGLE · ESC TO CLOSE</span>
+        <div class="edit-topbar-actions">
+          <button class="ebtn ebtn-ghost" onclick="resetToOriginal()">Reset to Original</button>
+          <button class="ebtn ebtn-purple" onclick="exportJSON()">Export JSON</button>
+          <button class="ebtn ebtn-ghost" onclick="closeEditMenu()">Close ✕</button>
+        </div>
       </div>
-      <div id="levelList"></div>
-    </div>
 
-    <div class="modal-backdrop" id="modal" onclick="closeModal(event)">
-      <div
-        class="modal"
-        id="modalBox"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modalHero"
-      >
-        <button
-          class="modal-close"
-          onclick="closeModalDirect()"
-          aria-label="Close level details"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="13"
-            height="13"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2.5"
-          >
-            <path d="M18 6 6 18M6 6l12 12" />
-          </svg>
-        </button>
-        <div class="modal-hero" id="modalHero"></div>
-        <div class="modal-grid" id="modalGrid"></div>
+      <div id="edit-view-list" class="edit-view active">
+        <div class="edit-list-actions">
+          <button class="ebtn ebtn-purple" onclick="openLevelForm(-1)">+ Add Level</button>
+          <input class="edit-search" id="edit-search" type="text" placeholder="Filter by name, creator, or ID…"
+            oninput="renderEditTable(this.value)" />
+        </div>
+        <p class="drag-hint">⠿ Drag rows by the rank column to reorder. Ranks update automatically.</p>
+        <div class="edit-table-wrap">
+          <table class="edit-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Creators</th>
+                <th>First ID</th>
+                <th>Section</th>
+                <th>Status</th>
+                <th style="text-align: right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="edit-table-body"></tbody>
+          </table>
+        </div>
       </div>
-    </div>
 
-    <div class="toast" id="toast"></div>
+      <div id="edit-view-form" class="edit-view">
+        <div class="form-header">
+          <button class="ebtn ebtn-ghost" onclick="showEditView('list')">← Back</button>
+          <h3 id="form-title" class="form-title-h3">Add Level</h3>
+          <button class="ebtn ebtn-red" id="form-delete-btn" onclick="deleteCurrentLevel()">Delete Level</button>
+        </div>
 
-    <!-- ── Editor Modal ─────────────────────────────────────────── -->
-    <div id="edit-modal" class="edit-modal-backdrop">
-      <div class="edit-modal-wrap">
-        <div class="edit-topbar">
-          <h2 class="edit-title">⚙ List Editor</h2>
-          <span class="edit-hint">SHIFT+M TO TOGGLE · ESC TO CLOSE</span>
-          <div class="edit-topbar-actions">
-            <button class="ebtn ebtn-ghost" onclick="resetToOriginal()">
-              Reset to Original
-            </button>
-            <button class="ebtn ebtn-purple" onclick="exportJSON()">
-              Export JSON
-            </button>
-            <button class="ebtn ebtn-ghost" onclick="closeEditMenu()">
-              Close ✕
-            </button>
+        <div class="form-grid">
+          <div class="form-group">
+            <label class="form-label">Level Name</label>
+            <input class="form-input" id="f-name" type="text" placeholder="e.g. Bloodbath" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Creators (comma-separated)</label>
+            <input class="form-input" id="f-creators" type="text" placeholder="e.g. Riot, Manix648" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Rank</label>
+            <input class="form-input" id="f-rank" type="number" placeholder="leave blank for unranked" min="1" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Section</label>
+            <select class="form-select" id="f-section">
+              <option value="main">main</option>
+              <option value="pending">pending</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">On List</label>
+            <select class="form-select" id="f-onlist">
+              <option value="true">Yes</option>
+              <option value="false">No (Pending)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">2-Player</label>
+            <select class="form-select" id="f-twoplayer">
+              <option value="false">No</option>
+              <option value="true">Yes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Date Uploaded (YYYY-MM-DD)</label>
+            <input class="form-input" id="f-date" type="text" placeholder="2016-01-01" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Rate Status</label>
+            <input class="form-input" id="f-ratestatus" type="text" placeholder="Rated / Formerly Rated / etc." />
           </div>
         </div>
 
-        <!-- List View -->
-        <div id="edit-view-list" class="edit-view active">
-          <div class="edit-list-actions">
-            <button class="ebtn ebtn-purple" onclick="openLevelForm(-1)">
-              + Add Level
-            </button>
-            <input
-              class="edit-search"
-              id="edit-search"
-              type="text"
-              placeholder="Filter by name, creator, or ID…"
-              oninput="renderEditTable(this.value)"
-            />
+        <div class="form-section-title">World Record</div>
+        <div class="form-grid cols-3">
+          <div class="form-group">
+            <label class="form-label">WR %</label>
+            <input class="form-input" id="f-wr-pct" type="number" step="0.01" placeholder="0.00" min="0" max="100" />
           </div>
-          <div class="edit-table-wrap">
-            <table class="edit-table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Name</th>
-                  <th>Creators</th>
-                  <th>First ID</th>
-                  <th>Section</th>
-                  <th>Status</th>
-                  <th style="text-align: right">Actions</th>
-                </tr>
-              </thead>
-              <tbody id="edit-table-body"></tbody>
-            </table>
+          <div class="form-group">
+            <label class="form-label">WR Holder</label>
+            <input class="form-input" id="f-wr-holder" type="text" placeholder="Player name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">WR Video URL</label>
+            <input class="form-input" id="f-wr-video" type="text" placeholder="https://..." />
           </div>
         </div>
 
-        <!-- Form View -->
-        <div id="edit-view-form" class="edit-view">
-          <div class="form-header">
-            <button class="ebtn ebtn-ghost" onclick="showEditView('list')">
-              ← Back
-            </button>
-            <h3 id="form-title" class="form-title-h3">Add Level</h3>
-            <button
-              class="ebtn ebtn-red"
-              id="form-delete-btn"
-              onclick="deleteCurrentLevel()"
-            >
-              Delete Level
-            </button>
-          </div>
+        <div class="form-section-title">
+          Level IDs
+          <button class="ebtn ebtn-purple ebtn-sm" onclick="addIdRow()" style="margin-left: 12px">+ Add ID</button>
+        </div>
+        <div id="ids-list"></div>
 
-          <div class="form-grid">
-            <div class="form-group">
-              <label class="form-label">Level Name</label>
-              <input
-                class="form-input"
-                id="f-name"
-                type="text"
-                placeholder="e.g. Bloodbath"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Creators (comma-separated)</label>
-              <input
-                class="form-input"
-                id="f-creators"
-                type="text"
-                placeholder="e.g. Riot, Manix648"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Rank</label>
-              <input
-                class="form-input"
-                id="f-rank"
-                type="number"
-                placeholder="leave blank for unranked"
-                min="1"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Section</label>
-              <select class="form-select" id="f-section">
-                <option value="main">main</option>
-                <option value="pending">pending</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">On List</label>
-              <select class="form-select" id="f-onlist">
-                <option value="true">Yes</option>
-                <option value="false">No</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Verified</label>
-              <select class="form-select" id="f-verified">
-                <option value="false">No</option>
-                <option value="true">Yes</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">2-Player</label>
-              <select class="form-select" id="f-twoplayer">
-                <option value="false">No</option>
-                <option value="true">Yes</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Date Uploaded (YYYY-MM-DD)</label>
-              <input
-                class="form-input"
-                id="f-date"
-                type="text"
-                placeholder="2016-01-01"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">Rate Status</label>
-              <input
-                class="form-input"
-                id="f-ratestatus"
-                type="text"
-                placeholder="Rated / Formerly Rated / etc."
-              />
-            </div>
-          </div>
+        <div class="form-section-title">
+          Showcase Video
+          <button class="ebtn ebtn-purple ebtn-sm" onclick="addShowcaseRow()" style="margin-left: 12px">+ Add
+            Video</button>
+        </div>
+        <div id="showcase-list"></div>
 
-          <div class="form-section-title">World Record</div>
-          <div class="form-grid cols-3">
-            <div class="form-group">
-              <label class="form-label">WR %</label>
-              <input
-                class="form-input"
-                id="f-wr-pct"
-                type="number"
-                step="0.01"
-                placeholder="0.00"
-                min="0"
-                max="100"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">WR Holder</label>
-              <input
-                class="form-input"
-                id="f-wr-holder"
-                type="text"
-                placeholder="Player name"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label">WR Video URL</label>
-              <input
-                class="form-input"
-                id="f-wr-video"
-                type="text"
-                placeholder="https://..."
-              />
-            </div>
-          </div>
-
-          <div class="form-section-title">
-            Level IDs
-            <button
-              class="ebtn ebtn-purple ebtn-sm"
-              onclick="addIdRow()"
-              style="margin-left: 12px"
-            >
-              + Add ID
-            </button>
-          </div>
-          <div id="ids-list"></div>
-
-          <div class="form-actions">
-            <button class="ebtn ebtn-green" onclick="saveLevelForm()">
-              Save Level
-            </button>
-            <button class="ebtn ebtn-ghost" onclick="showEditView('list')">
-              Cancel
-            </button>
-          </div>
+        <div class="form-actions">
+          <button class="ebtn ebtn-green" onclick="saveLevelForm()">Save Level</button>
+          <button class="ebtn ebtn-ghost" onclick="showEditView('list')">Cancel</button>
         </div>
       </div>
     </div>
-    <!-- ── End Editor Modal ─────────────────────────────────────── -->
+  </div>
 
-    <div class="save-flash" id="save-flash">✓ SAVED</div>
+  <div class="save-flash" id="save-flash">✓ SAVED</div>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
